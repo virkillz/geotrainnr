@@ -1,0 +1,33 @@
+<.header>
+  Listing Clues
+  <:actions>
+    <.link href={~p"/clues/new"}>
+      <.button>New Clue</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="clues" rows={@clues} row_click={&JS.navigate(~p"/clues/#{&1}")}>
+  <:col :let={clue} label="ID"><%= clue.id %></:col>
+  <:col :let={clue} label="Type"><%= clue.type %></:col>
+  <:col :let={clue} label="Image">
+
+  <%= if not is_nil(clue.image) do %>
+  <img src={"/images/"<> clue.image} alt="Clue image" class="" />
+  <% end %>
+
+  </:col>
+  <:col :let={clue} label="Description"><%= clue.description %></:col>
+  <:col :let={clue} label="Format"><%= clue.format %></:col>
+  <:action :let={clue}>
+    <div class="sr-only">
+      <.link navigate={~p"/clues/#{clue}"}>Show</.link>
+    </div>
+    <.link navigate={~p"/clues/#{clue}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={clue}>
+    <.link href={~p"/clues/#{clue}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>

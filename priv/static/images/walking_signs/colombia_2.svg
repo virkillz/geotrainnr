@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="81.945999cm" height="81.945999cm" viewBox="0 0 819.45999 819.45997" version="1.1" id="svg8" inkscape:version="0.92.4 (5da689c313, 2019-01-14)" sodipodi:docname="Colombia_road_sign_SP-46.svg">
+  <defs id="defs2"/>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.15879247" inkscape:cx="3181.5819" inkscape:cy="1305.5391" inkscape:document-units="cm" inkscape:current-layer="layer1" showgrid="false" units="cm" inkscape:window-width="1920" inkscape:window-height="1057" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" fit-margin-top="0" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0"/>
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-256,677.46)">
+    <rect style="fill:#cdff00;fill-opacity:1;stroke:none;stroke-width:59.79019928;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect815" width="600" height="600" x="360.05862" y="-18.571518" rx="40" ry="40" transform="rotate(-45)"/>
+    <rect y="-6.5715189" x="372.05862" height="576" width="576" id="rect12551" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:57.39859009;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" rx="28" ry="28" transform="rotate(-45)"/>
+    <rect y="5.4284811" x="384.05859" height="552" width="552" id="rect12553" style="fill:#cdff00;fill-opacity:1;stroke:none;stroke-width:55.00698471;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" rx="16" ry="16" transform="rotate(-45)"/>
+    <path d="m 623.33453,-409.84831 -39.49567,79.7676 -59.63005,18.588 c -17.77311,9.1399 -10.3354,32.166 6.96719,26.3315 l 72.02416,-16.2627 30.97621,-40.2749 30.97926,79.7706 -59.6331,103.7735 -32.52551,118.490079 c -6.51173,19.79282 24.72229,35.5670995 35.62401,10.0657 l 32.52551,-113.842279 59.63013,-61.95251 54.98828,181.988829 c 11.25237,17.5752595 38.21013,4.465 34.85085,-10.83886 L 754.21566,-237.92517 c 7.91118,-5.67562 10.73395,-20.79364 4.64482,-30.97624 l -48.7883,-114.6154 51.88978,22.4598 22.45683,59.6331 c 8.88506,17.4644 31.2849,7.1679 25.55534,-10.0688 l -24.0091,-72.8002 -101.45115,-45.6898 z" style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.99663734" id="path1755" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccccccccccccccccccccc"/>
+    <circle style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:20.11700821;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path2407" cx="633.76996" cy="-469.5" r="39.5"/>
+  </g>
+</svg>

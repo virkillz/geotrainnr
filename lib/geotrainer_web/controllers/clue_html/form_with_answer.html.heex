@@ -1,0 +1,15 @@
+<.simple_form :let={f} for={@changeset} action={@action} multipart>
+  <.error :if={@changeset.action}>
+    Oops, something went wrong! Please check the errors below.
+  </.error>
+  <.input field={f[:type]} type="select" options={Geotrainer.Content.Clue.list_types()} label="Type" />
+  <.input field={f[:photo]} type="file" label="Image" />
+  <.input field={f[:description]} type="textarea" label="Description" />
+  <.input field={f[:explanation]} type="textarea" label="Explanation" />
+  <.input field={f[:answer_id]} type="hidden" value={@answer_id}/>
+  <.input field={f[:is_spesific]} type="checkbox" label="Is Spesific" />
+  <.input field={f[:format]} type="select" options={Geotrainer.Content.Clue.list_formats()} label="Format" />
+  <:actions>
+    <.button>Save Clue</.button>
+  </:actions>
+</.simple_form>

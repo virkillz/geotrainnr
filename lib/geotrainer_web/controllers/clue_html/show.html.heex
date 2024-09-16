@@ -1,0 +1,62 @@
+<.back navigate={~p"/clues"}>Back to clues</.back>
+<.header>
+  Clue <%= @clue.id %>
+  <:subtitle>This is a clue record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/clues/#{@clue}/edit"}>
+      <.button>Edit clue</.button>
+    </.link>
+    <.link href={~p"/clues/#{@clue}"} method="delete" data-confirm="Are you sure?" class="text-red-500 ml-2">
+      Delete
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="ID"><%= @clue.id %></:item>
+  <:item title="Type"><%= @clue.type %></:item>
+  <:item title="Image">
+
+  <%= if not is_nil(@clue.image) do %>
+
+  <img src={"/images/"<> @clue.image} alt="Clue image" />
+
+  <% end %>
+
+  <%= @clue.image %>
+
+  </:item>
+  <:item title="Description"><%= @clue.description %></:item>
+  <:item title="Explanation"><%= @clue.explanation %></:item>
+  <:item title="Format"><%= @clue.format %></:item>
+</.list>
+
+<div class="mt-16"></div>
+
+<.header>
+  Possible Country
+  <:actions>
+    <.link href={~p"/clues/add_country/#{@clue.id}"}>
+      <.button>Add Possible Country</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="answers" rows={@answers} row_click={&JS.navigate(~p"/answers/#{&1.answer_id}")}>
+  <:col :let={answer} label="ID"><%= answer.id %></:col>
+  <:col :let={answer} label="Country">
+  <img src={"/images/flags/Flag_of_"<> answer.answer.country <> ".svg.png"} alt="Flag" class="max-w-xs" />
+  </:col>
+  <:col :let={answer} label="Country"><%= answer.answer.country %></:col>
+  <:action :let={answer}>
+    <div class="sr-only">
+      <.link navigate={~p"/acceptable_answers/#{answer}"}>Show</.link>
+    </div>
+    <.link navigate={~p"/acceptable_answers/#{answer}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={answer}>
+    <.link href={~p"/acceptable_answers/#{answer}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>

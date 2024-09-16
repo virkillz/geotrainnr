@@ -1,0 +1,15 @@
+<.header>
+  New Acceptable answer
+  <:subtitle>Use this form to manage acceptable_answer records in your database.</:subtitle>
+</.header>
+
+<.simple_form :let={f} for={@changeset} action={~p"/acceptable_answers"}>
+  <.error :if={@changeset.action}>
+    Oops, something went wrong! Please check the errors below.
+  </.error>
+  <.input field={f[:clue_id]} type="hidden" label="" />
+    <.input field={f[:answer_id]} type="select" options={@answers} label="Answer ID" />
+  <:actions>
+    <.button>Save Acceptable answer</.button>
+  </:actions>
+</.simple_form>

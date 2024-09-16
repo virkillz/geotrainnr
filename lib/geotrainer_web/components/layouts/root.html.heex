@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="[scrollbar-gutter:stable]">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <.live_title suffix=" · Phoenix Framework">
+      <%= assigns[:page_title] || "Geotrainer" %>
+    </.live_title>
+    <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white antialiased font-ZillaFont">
+    <ul class="relative z-10 flex items-center gap-4 px-4 sm:px-6 lg:px-8 justify-end">
+      <%= if @current_user do %>
+        <li class="text-[0.8125rem] leading-6 text-zinc-900">
+          <%= @current_user.email %>
+        </li>
+        <li>
+          <.link
+            href={~p"/users/settings"}
+            class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+          >
+            Settings
+          </.link>
+        </li>
+        <li>
+          <.link
+            href={~p"/users/log_out"}
+            method="delete"
+            class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
+          >
+            Log out
+          </.link>
+        </li>
+      <% end %>
+    </ul>
+    <%= @inner_content %>
+  </body>
+</html>

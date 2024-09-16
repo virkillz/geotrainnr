@@ -1,0 +1,40 @@
+<.header>
+  Listing <%= Enum.count(@clues) %> Clues
+</.header>
+
+
+<div class="py-8 px-16 flex">
+  <%= for region <- @regions do %>
+  <a href={"/clue_category/#{@type}/#{region}"}>
+    <div class="border p-4 mx-4">
+      <h2><%= region %></h2>
+    </div>
+  </a>
+  <% end %>
+</div>
+
+
+<.table id="clues" rows={@clues} row_click={&JS.navigate(~p"/clues/#{&1}")}>
+  <:col :let={clue} label="ID"><%= clue.id %></:col>
+  <:col :let={clue} label="Image">
+
+  <%= if not is_nil(clue.image) do %>
+  <img src={"/images/"<> clue.image} alt="Clue image" class="max-w-xs" />
+  <% end %>
+
+  <%= clue.description %>
+
+  </:col>
+  <:col :let={clue} label="Possible Answer">
+
+    <%= for answer <- clue.answers do %>
+
+    <div>
+        <%= answer.country %>
+    </div>
+
+    <% end %>
+
+  </:col>
+
+</.table>

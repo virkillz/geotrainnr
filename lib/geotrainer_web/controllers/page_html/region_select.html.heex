@@ -1,0 +1,26 @@
+<div class="">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <img class="max-h-12 w-full object-contain" src={"/images/#{@type}.webp"} alt="Reform" width="158" height="48">
+    <div class="text-center text-gray-700 text-3xl font-bold mb-8"><%= @type |> String.capitalize %></div>
+    <div class="text-center text-gray-700 font-bold mb-8">Total Clues in this category: <%= @total_clues %></div>
+    <div class="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
+      <a href={"/train/#{@type}/world"}>
+        <div class="bg-black p-8 sm:p-10">
+          <img class="max-h-12 w-full object-contain" src="/images/icon/world.webp" alt="Reform" width="158" height="48">
+          <div class="text-center text-white max-h-12 w-full object-contain text-3xl">World</div>
+        </div>
+      </a>
+      <%= for region <- @regions do %>
+      <a href={"/train/#{@type}/#{region["name"]}"}>
+        <div class="bg-black p-8 sm:p-10">
+          <img class="max-h-12 w-full object-contain" src={"/images/icon/#{region["icon"]}.webp"} alt="Reform" width="158" height="48">
+          <div class="text-center text-white max-h-12 w-full object-contain text-3xl"><%= region["name"] %></div>
+        </div>
+      </a>
+      <% end %>
+    </div>
+      <div class="mt-6 text-center">
+        Simple quiz designed to quickly memorize various clues which can help us to improve our skill in Geoguessr. We believe repetition and quick iteration can quickly acelerate the time to memorize it. Some of the material taken from <a href="https://www.plonkit.net/">Plonkit</a>, <a href="https://www.geotips.net/">Geotips</a> and <a href="https://geohints.com">Geohints</a>.
+      </div>
+  </div>
+</div>

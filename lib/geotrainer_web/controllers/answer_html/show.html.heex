@@ -1,0 +1,56 @@
+<.back navigate={~p"/answers"}>Back to answers</.back>
+
+
+
+<.header>
+  <div class="text-3xl font-bold"><%= @answer.country %></div>
+  <:actions>
+    <.link href={~p"/clues/new/#{@answer.id}"}>
+      <.button>Add Clue</.button>
+    </.link>
+  </:actions>
+</.header>
+
+
+<h2 class="text-md font-semibold mt-10"> Filter based on Type</h2>
+
+<div class="grid grid-cols-4 gap-4 mt-5">
+
+<a href={"/answers/#{@answer.id}"}>
+  <div class="border p-2 mx-4">
+      <h2>All</h2>
+  </div>
+</a>
+
+<%= for clue <- @clue_types do %>
+
+<a href={"/answers/#{@answer.id}/type/#{clue}"}>
+  <div class="border p-2 mx-4">
+      <h2><%= clue |> String.replace("_", " ") |> String.capitalize() %></h2>
+  </div>
+</a>
+
+
+<% end %>
+
+
+</div>
+
+
+<div class="my-16"></div>
+
+<.table id="clues" rows={@answer.clues} row_click={&JS.navigate(~p"/clues/#{&1}")}>
+  <:col :let={clue} label="Type"><%= clue.type |> String.capitalize() %></:col>
+  <:col :let={clue} label="Clue">
+
+  <%= if not is_nil(clue.image) do %>
+    <div class="max-w-xs">
+      <img src={"/images/"<> clue.image} alt="Clue image" />
+    </div>
+  <% end %>
+
+  <%= clue.description %>
+
+  </:col>
+  <:col :let={clue} label="Explanation"><%= clue.explanation %></:col>
+</.table>

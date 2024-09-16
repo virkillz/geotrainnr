@@ -1,0 +1,15 @@
+<div class="py-8 px-16 flex">
+
+<%= for s <- @selection do %>
+
+<a href={"/train/#{@region}/#{s}"}>
+<div class="border p-4 mx-4">
+    <h2><%= s %></h2>
+</div>
+</a>
+
+
+<% end %>
+
+
+</div>

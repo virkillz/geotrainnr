@@ -1,0 +1,30 @@
+<div>
+
+<.header>
+  Listing Clues
+  <:actions>
+    <.link href={~p"/clues/new"}>
+      <.button>New Clue</.button>
+    </.link>
+  </:actions>
+</.header>
+
+    <ul class="mt-4 grid grid-cols-1 gap-5 sm:gap-3 sm:grid-cols-2">
+        <%= for category <- @clues_category do %>
+            <li class="col-span-1 flex shadow-sm rounded-md">
+              <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-r-md truncate">
+                <div class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+                  <a
+                    href={"/clue_category/#{category}"}
+                    class="text-gray-900 font-semibold hover:text-gray-600 focus:outline-none focus:underline"
+                  >
+                    <%= String.capitalize(category) %>
+                  </a>
+                  <p class="text-gray-500"></p>
+                </div>
+              </div>
+            </li>
+        <% end %>
+    </ul>
+
+</div>

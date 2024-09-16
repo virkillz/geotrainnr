@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1029.5959mm" height="1029.5959mm" viewBox="0 0 1029.5959 1029.5959" version="1.1" id="svg8" inkscape:version="0.92.4 (5da689c313, 2019-01-14)" sodipodi:docname="Ontario_Wc-21.svg">
+  <defs id="defs2"/>
+  <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="0.10855249" inkscape:cx="5076.6181" inkscape:cy="1212.8283" inkscape:document-units="mm" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1920" inkscape:window-height="1057" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" showborder="true" inkscape:snap-global="false"/>
+  <metadata id="metadata5">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,732.5963)">
+    <rect style="opacity:1;fill:#fad214;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:11.58005238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect1383" width="750" height="750" x="143.02367" y="-164.98946" rx="40" ry="40" transform="rotate(-45)"/>
+    <rect ry="27.5" rx="27.5" y="-152.48946" x="155.52373" height="725" width="725" id="rect1396" style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:11.19404984;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="rotate(-45)"/>
+    <rect ry="15" rx="15" y="-139.98946" x="168.02373" height="700" width="700" id="rect1398" style="opacity:1;fill:#fad214;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.80804825;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" transform="rotate(-45)"/>
+    <path inkscape:connector-curvature="0" id="path399" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.01925898" d="m 329.298,10.99973 h 371 l 12,-11.9999998 h -395 z" sodipodi:nodetypes="ccccc"/>
+    <path d="m 605.1573,-259.89387 c -10.1277,-25.84744 -15.837,-51.69739 -25.5173,-81.07939 l -36.6236,-11.67327 117.0816,320.53836 -34.7765,12.52457 -93.5955,-190.40026 -50.0793,86.34832 -9.5994,107.63527 -40.9359,-2.05351 7.6344,-126.86101 54.399,-104.80834 -30.158,-73.5585 c -10.9328,8.07704 -21.4285,20.13102 -33.1339,28.32016 l -70.7717,37.975 -14.9832,-22.96654 73.9008,-52.98338 55.4499,-76.54468 27.8191,-11.5192 114.5896,57.00398 17.9873,104.07243 h -28.6874 z" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.01637697" id="path403" inkscape:connector-curvature="0"/>
+    <circle style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.21141456;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path405" cx="469.09802" cy="-451.50031" r="32.5"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- GeoHints -->
+<svg width="100%" height="100%" viewBox="0 0 880 1134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1.07765,0,0,1.06078,-65.1637,-65.5988)">
+        <rect x="60.468" y="61.84" width="816.289" height="1068.29" style="fill:white;"/>
+    </g>
+    <g transform="matrix(0.998106,0,0,1.01013,-29.4337,-36.1845)">
+        <rect x="60.468" y="61.84" width="816.289" height="1068.29"/>
+    </g>
+    <g transform="matrix(0.970721,0,0,1,-24.059,-46.282)">
+        <rect x="134.676" y="1066.74" width="686.425" height="23.19" style="fill:white;"/>
+    </g>
+    <g transform="matrix(2.26349,0,0,2.26349,-266718,65501.9)">
+        <g transform="matrix(1.00114,0,0,1.00114,-134.936,33.9062)">
+            <path d="M118111,-28705.4C118103,-28727.2 118098,-28748.9 118090,-28773.7L118059,-28783.5L118158,-28513.8L118128,-28503.3L118049,-28663.5L118007,-28591L117999,-28500.4L117965,-28502.2L117971,-28608.9L118017,-28697L117991,-28758.9C117982,-28752.1 117973,-28742 117963,-28735.1L117904,-28703.2L117891,-28722.5L117953,-28767L118000,-28831.4L118023,-28841L118120,-28793L118135,-28705.4L118111,-28705.4Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(0.431353,0,0,0.431353,117823,-28951.3)">
+            <path d="M401.108,259.744C436.2,259.744 464.667,231.295 464.667,196.184C464.667,161.072 436.2,132.644 401.108,132.644C366.016,132.644 337.548,161.072 337.548,196.184C337.548,231.295 366.016,259.744 401.108,259.744Z" style="fill:white;"/>
+        </g>
+    </g>
+</svg>

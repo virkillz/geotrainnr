@@ -1,0 +1,28 @@
+<.header>
+  Listing Answers
+  <:actions>
+    <.link href={~p"/answers/new"}>
+      <.button>New Answer</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="answers" rows={@answers} row_click={&JS.navigate(~p"/answers/#{&1}")}>
+ <:col :let={answer} label="Country"><%= answer.id %></:col>
+  <:col :let={answer} label="Country">
+  <img src={"/images/flags/Flag_of_"<> answer.country <> ".svg.png"} alt="Flag" class="max-w-xs" />
+  </:col>
+  <:col :let={answer} label="Country"><%= answer.country %></:col>
+  <:col :let={answer} label="Clue Count"><%= answer.clue_count %></:col>
+  <:action :let={answer}>
+    <div class="sr-only">
+      <.link navigate={~p"/answers/#{answer}"}>Show</.link>
+    </div>
+    <.link navigate={~p"/answers/#{answer}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={answer}>
+    <.link href={~p"/answers/#{answer}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>

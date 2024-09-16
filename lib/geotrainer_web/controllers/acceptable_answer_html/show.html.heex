@@ -1,0 +1,16 @@
+<.back navigate={~p"/acceptable_answers"}>Back to acceptable_answers</.back>
+<.header>
+  Acceptable answer <%= @acceptable_answer.id %>
+  <:subtitle>This is a acceptable_answer record from your database.</:subtitle>
+  <:actions>
+    <.link href={~p"/acceptable_answers/#{@acceptable_answer}/edit"}>
+      <.button>Edit acceptable_answer</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="ID"><%= @acceptable_answer.id %></:item>
+  <:item title="Clue ID"><%= @acceptable_answer.clue_id %></:item>
+  <:item title="Answer ID"><%= @acceptable_answer.answer_id %></:item>
+</.list>

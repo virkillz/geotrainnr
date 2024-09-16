@@ -1,0 +1,24 @@
+<.header>
+  Listing Acceptable answers
+  <:actions>
+    <.link href={~p"/acceptable_answers/new"}>
+      <.button>New Acceptable answer</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table id="acceptable_answers" rows={@acceptable_answers} row_click={&JS.navigate(~p"/acceptable_answers/#{&1}")}>
+  <:col :let={acceptable_answer} label="Clue"><%= acceptable_answer.clue_id %></:col>
+  <:col :let={acceptable_answer} label="Answer"><%= acceptable_answer.answer_id %></:col>
+  <:action :let={acceptable_answer}>
+    <div class="sr-only">
+      <.link navigate={~p"/acceptable_answers/#{acceptable_answer}"}>Show</.link>
+    </div>
+    <.link navigate={~p"/acceptable_answers/#{acceptable_answer}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={acceptable_answer}>
+    <.link href={~p"/acceptable_answers/#{acceptable_answer}"} method="delete" data-confirm="Are you sure?">
+      Delete
+    </.link>
+  </:action>
+</.table>

@@ -1,0 +1,8 @@
+<.header>
+  Edit Clue <%= @clue.id %>
+  <:subtitle>Use this form to manage clue records in your database.</:subtitle>
+</.header>
+
+<.clue_form changeset={@changeset} action={~p"/clues/#{@clue}"} />
+
+<.back navigate={~p"/clues"}>Back to clues</.back>
