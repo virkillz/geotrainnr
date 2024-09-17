@@ -155,6 +155,11 @@ defmodule Geotrainer.Content do
     Repo.all(query)
   end
 
+  def get_clues_by_image(image_path) do
+    query = from(c in Clue, where: c.format == "image", where: c.image == ^image_path)
+    Repo.one(query)
+  end
+
   def list_clues_preload_answers do
     query = from(c in Clue, preload: [:answers])
     Repo.all(query)

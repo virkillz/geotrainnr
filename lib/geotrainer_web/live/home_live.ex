@@ -71,7 +71,7 @@ defmodule GeotrainerWeb.HomeLive do
                   <% end %>
 
                   <%= if clue.format == "text" do %>
-                    <p class="text-gray-900 font-semibold hover:text-gray-600 focus:outline-none focus:underline">
+                    <p class="text-gray-900 font-semibold hover:text-gray-600 focus:outline-none focus:underline text-3xl py-8 text-center">
                       <%= clue.description %>
                     </p>
                   <% end %>

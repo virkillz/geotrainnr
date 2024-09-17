@@ -4747,4 +4747,107 @@ defmodule Geotrainer do
       end)
     end)
   end
+
+  def compress_target() do
+    Geotrainer.Content.list_clues()
+    |> Enum.shuffle()
+    |> Enum.take(10)
+  end
+
+  def compress_all() do
+    target = "priv/static/images"
+
+    File.ls!(target)
+    |> Enum.filter(fn x -> not File.dir?(target <> "/" <> x) end)
+    |> Enum.each(fn x -> compress_clue(x) end)
+  end
+
+  def compress_clue(image_file) do
+    # get clue by image_file
+    case Geotrainer.Content.get_clues_by_image(image_file) do
+      nil ->
+        {:error, "clue not found"}
+
+      clue ->
+        IO.inspect(clue)
+        # check file exist
+        path = "./priv/static/images/" <> image_file
+
+        target_convert_ext = [".webp", ".png"]
+
+        case File.stat(path) do
+          {:ok, info} ->
+            # check file extention
+            ext = Path.extname(path)
+
+            if ext in target_convert_ext do
+              IO.inspect("File type is #{ext}, ok to compress")
+              # check if filesize above 100kb
+              if info.size > 100_000 do
+                IO.inspect("File size is #{info.size}, ok to compress")
+                target_path = "./priv/static/images/" <> clue.type
+
+                case File.mkdir(target_path) do
+                  :ok ->
+                    IO.inspect("Directory created")
+
+                    update_clue_compressed(clue)
+
+                  {:error, :eexist} ->
+                    IO.inspect("Directory already exist")
+
+                    update_clue_compressed(clue)
+
+                  other ->
+                    other
+                end
+
+                # compress file
+                # System.cmd("cwebp", ["-q", "80", path, "-o", "./priv/static/images/compressed/" <> image_file])
+              else
+                IO.inspect("File size is #{info.size}, not ok to compress")
+              end
+            else
+              IO.inspect("File type is #{ext}, not in target convert ext")
+            end
+
+          _ ->
+            {:error, "file not found"}
+        end
+    end
+  end
+
+  def update_clue_compressed(clue) do
+    path = "./priv/static/images/" <> clue.image
+    ext = Path.extname(path)
+
+    target_path = "./priv/static/images/" <> clue.type <> "/"
+    target_filename = Path.basename(path, ext) <> ".jpeg"
+
+    case System.cmd("sips", [
+           "-s",
+           "format",
+           "jpeg",
+           "-s",
+           "formatOptions",
+           "low",
+           path,
+           "--out",
+           target_path <> target_filename
+         ]) do
+      {_, 0} ->
+        File.rm(path)
+
+        attrs = %{
+          "image" => clue.type <> "/" <> target_filename
+        }
+
+        Geotrainer.Content.update_clue(clue, attrs)
+
+      # {:ok, "ok to update the clue"}
+
+      _ ->
+        {:error, "Failed to compress image"}
+    end
+  end
 end
