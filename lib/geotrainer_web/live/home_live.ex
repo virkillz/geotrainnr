@@ -59,15 +59,19 @@ defmodule GeotrainerWeb.HomeLive do
     </div>
 
     <div class="md:flex">
-      <div class="bg-white px-4 py-5 sm:px-6 md:w-1/2">
+      <div class="mt-8 md:w-1/2">
         <h2 class="text-lg font-semibold leading-6 text-gray-900">Clue: <%= @type %></h2>
-        <ul class="">
+        <ul class="mt-4 mr-4">
           <%= for clue <- @clues do %>
-            <li class="col-span-1 flex shadow-sm rounded-md my-2">
-              <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-r-md truncate">
-                <div class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+            <li class="col-span-1 flex">
+              <div class="flex-1 flex items-center justify-center bg-white truncate">
+                <div clasx="flex-1 items-center justify-center px-4 py-2 text-sm leading-5 truncate">
                   <%= if clue.format == "image" do %>
-                    <img src={"/images/"<> clue.image} alt="Clue image" />
+                    <img
+                      src={"/images/"<> clue.image}
+                      alt="Clue image"
+                      class="border border-gray-400"
+                    />
                   <% end %>
 
                   <%= if clue.format == "text" do %>
@@ -104,11 +108,25 @@ defmodule GeotrainerWeb.HomeLive do
                 </li>
               </a>
             <% end %>
+            <a
+              phx-click="skip"
+              href="#"
+              class="text-gray-900 font-semibold hover:text-gray-600 focus:outline-none focus:underline"
+            >
+              <li class="col-span-1 flex shadow-sm rounded-md">
+                <div class="flex-1 flex items-center justify-between border border-gray-100 hover:bg-gray-200 bg-gray-100 rounded-r-md truncate">
+                  <div class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+                    I don't know 🤷🏻‍♂️
+                    <p class="text-gray-500"></p>
+                  </div>
+                </div>
+              </li>
+            </a>
           <% end %>
         </ul>
 
         <div class="mt-8">
-          <%= if @correct_answer_status == "correct" do %>
+          <%= if @correct_answer_status == :correct do %>
             <div
               class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
               role="alert"
@@ -118,7 +136,7 @@ defmodule GeotrainerWeb.HomeLive do
             </div>
           <% end %>
 
-          <%= if @correct_answer_status == "incorrect" do %>
+          <%= if @correct_answer_status == :incorrect do %>
             <div
               class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
               role="alert"
@@ -165,9 +183,9 @@ defmodule GeotrainerWeb.HomeLive do
       end
 
     level = 1
-    pack = Enum.filter(game_data, fn x -> x.level <= level end)
 
-    card = pack |> Enum.random()
+    {card, pack} = draw_card([], game_data, level)
+
     clue = card.clue
     answer = card.answer
 
@@ -176,7 +194,7 @@ defmodule GeotrainerWeb.HomeLive do
       |> Enum.reject(fn x -> x.answer.id == answer.id end)
       |> Enum.map(fn x -> x.answer end)
       |> Enum.uniq()
-      |> Enum.take(9)
+      |> Enum.take(8)
 
     options = [answer | remaining_options] |> Enum.sort_by(& &1.country)
 
@@ -190,11 +208,12 @@ defmodule GeotrainerWeb.HomeLive do
       |> assign(:attempt, 0)
       |> assign(:total_variance, Enum.count(game_data))
       |> assign(:game_data, game_data)
-      |> assign(correct_answer_status: "unanswered")
+      |> assign(correct_answer_status: :unanswered)
       |> assign(answers: options, clues: [clue], answer: answer)
       |> assign(:explanation, clue.explanation)
       |> assign(:answer_show, false)
       |> assign(:next_show, false)
+      |> assign(:pack, pack)
 
     {:ok, new_socket}
   end
@@ -212,9 +231,9 @@ defmodule GeotrainerWeb.HomeLive do
 
     correct_answer_status =
       if is_correct do
-        "correct"
+        :correct
       else
-        "incorrect"
+        :incorrect
       end
 
     score =
@@ -240,16 +259,17 @@ defmodule GeotrainerWeb.HomeLive do
 
   def handle_event("next", _unsigned_params, socket) do
     game_data = socket.assigns.game_data
-    level = calculate_level(socket.assigns.score, socket.assigns.attempt, socket.assigns.level)
-    pack = Enum.filter(game_data, fn x -> x.level <= level end)
 
-    card =
-      pack
-      |> Enum.reject(fn x -> x.answer.id == socket.assigns.answer[:id] end)
-      |> Enum.shuffle()
-      |> Enum.sort_by(& &1.accuracy)
-      |> IO.inspect()
-      |> List.first()
+    current_level = socket.assigns.level
+
+    level = calculate_level(socket.assigns.score, socket.assigns.attempt, current_level)
+
+    {card, pack} =
+      if level > current_level do
+        draw_card([], game_data, level)
+      else
+        draw_card(socket.assigns.pack, game_data, level)
+      end
 
     clue = card.clue
     answer = card.answer
@@ -260,7 +280,7 @@ defmodule GeotrainerWeb.HomeLive do
       |> Enum.map(fn x -> x.answer end)
       |> Enum.uniq()
       |> Enum.shuffle()
-      |> Enum.take(9)
+      |> Enum.take(8)
 
     options = [answer | remaining_options] |> Enum.sort_by(& &1.country)
 
@@ -269,13 +289,58 @@ defmodule GeotrainerWeb.HomeLive do
       |> assign(:level, level)
       |> assign(:card_id, card.id)
       |> assign(:game_data, game_data)
-      |> assign(correct_answer_status: "unanswered")
+      |> assign(correct_answer_status: :unanswered)
       |> assign(answers: options, clues: [clue], answer: answer)
       |> assign(:explanation, clue.explanation)
       |> assign(:answer_show, false)
       |> assign(:next_show, false)
+      |> assign(:pack, pack)
 
     {:noreply, new_socket}
+  end
+
+  def handle_event("skip", _unsigned_params, socket) do
+    game_data = socket.assigns.game_data
+    level = socket.assigns.level
+
+    {card, pack} = draw_card(socket.assigns.pack, game_data, level)
+
+    clue = card.clue
+    answer = card.answer
+
+    remaining_options =
+      game_data
+      |> Enum.reject(fn x -> x.answer.id == answer.id end)
+      |> Enum.map(fn x -> x.answer end)
+      |> Enum.uniq()
+      |> Enum.shuffle()
+      |> Enum.take(8)
+
+    options = [answer | remaining_options] |> Enum.sort_by(& &1.country)
+
+    new_socket =
+      socket
+      |> assign(:level, level)
+      |> assign(:card_id, card.id)
+      |> assign(:game_data, game_data)
+      |> assign(correct_answer_status: :unanswered)
+      |> assign(answers: options, clues: [clue], answer: answer)
+      |> assign(:explanation, clue.explanation)
+      |> assign(:answer_show, false)
+      |> assign(:next_show, false)
+      |> assign(:pack, pack)
+
+    {:noreply, new_socket}
+  end
+
+  defp draw_card([], game_data, level) do
+    pack = Enum.filter(game_data, fn x -> x.level <= level end) |> Enum.shuffle()
+    [h | t] = pack
+    {h, t}
+  end
+
+  defp draw_card([h | t], _game_data, _level) do
+    {h, t}
   end
 
   defp calculate_level(score, attempt, level) do
@@ -304,8 +369,6 @@ defmodule GeotrainerWeb.HomeLive do
   defp update_game_data(game_data, card_id, is_correct) do
     Enum.map(game_data, fn x ->
       if x.id == card_id do
-        IO.inspect("updating #{card_id}")
-
         occurance = x.occurence + 1
         correct = x.correct + if(is_correct, do: 1, else: 0)
 
