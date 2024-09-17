@@ -173,9 +173,9 @@ defmodule GeotrainerWeb.HomeLive do
             <div class="mt-8">
               <.button
                 phx-click="next"
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 w-full rounded"
               >
-                Next
+                Next 👉🏻
               </.button>
             </div>
           <% end %>
