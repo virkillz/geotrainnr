@@ -300,35 +300,10 @@ defmodule GeotrainerWeb.HomeLive do
   end
 
   def handle_event("skip", _unsigned_params, socket) do
-    game_data = socket.assigns.game_data
-    level = socket.assigns.level
-
-    {card, pack} = draw_card(socket.assigns.pack, game_data, level)
-
-    clue = card.clue
-    answer = card.answer
-
-    remaining_options =
-      game_data
-      |> Enum.reject(fn x -> x.answer.id == answer.id end)
-      |> Enum.map(fn x -> x.answer end)
-      |> Enum.uniq()
-      |> Enum.shuffle()
-      |> Enum.take(8)
-
-    options = [answer | remaining_options] |> Enum.sort_by(& &1.country)
-
     new_socket =
       socket
-      |> assign(:level, level)
-      |> assign(:card_id, card.id)
-      |> assign(:game_data, game_data)
-      |> assign(correct_answer_status: :unanswered)
-      |> assign(answers: options, clues: [clue], answer: answer)
-      |> assign(:explanation, clue.explanation)
-      |> assign(:answer_show, false)
-      |> assign(:next_show, false)
-      |> assign(:pack, pack)
+      |> assign(:answer_show, true)
+      |> assign(:next_show, true)
 
     {:noreply, new_socket}
   end
@@ -342,6 +317,8 @@ defmodule GeotrainerWeb.HomeLive do
   defp draw_card([h | t], _game_data, _level) do
     {h, t}
   end
+
+  defp calculate_level(_score, 0, level), do: level
 
   defp calculate_level(score, attempt, level) do
     accuracy = score / attempt
