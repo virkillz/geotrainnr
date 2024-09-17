@@ -131,38 +131,29 @@ COPY public.answers (id, country, city, inserted_at, updated_at) FROM stdin;
 
 COPY public.clues (id, type, image, description, format, inserted_at, updated_at, is_spesific, explanation) FROM stdin;
 1256	region	\N	Slavic	text	2024-08-17 04:53:14	2024-08-17 04:53:14	t	\N
-1261	stop sign	tWngfT30l-odezaLWDiMl.svg	\N	image	2024-08-17 10:24:36	2024-08-17 10:24:36	f	\N
-55	licence plate	2WLKfTySZwrJN-vjXKr7d.png	Generic EU licence plate	image	2024-08-15 10:05:26	2024-09-12 11:55:25	t	\N
+48	walking_sign	walking_sign/_arHIs7HWceHWEfKeo2wl.jpeg	\N	image	2024-08-14 05:29:30	2024-09-17 08:21:25	t	\N
 2065	google_car	cars/car_238.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2075	google_car	cars/car_707.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2085	google_car	cars/car_761.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2105	google_car	cars/car_489.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2115	google_car	cars/car_305.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
+31	licence_plate	licence_plate/iU3yuYS_gDDZroLeg1-IH.jpeg	Another small blue on the other side	image	2024-08-13 23:43:45	2024-09-17 08:21:42	t	\N
 2125	google_car	cars/car_196.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2155	google_car	cars/car_319.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-19	road	kI6YUkAzR3U-psGvkkeDH.png	\N	image	2024-08-13 23:07:40	2024-08-13 23:07:40	t	\N
 2165	google_car	cars/car_39.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2175	google_car	cars/car_47.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2185	google_car	cars/car_55.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2195	google_car	cars/car_65.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2215	google_car	cars/car_767.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-31	licence plate	iU3yuYS_gDDZroLeg1-IH.png	Another small blue on the other side	image	2024-08-13 23:43:45	2024-08-13 23:43:45	t	\N
 2235	google_car	cars/car_91.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2245	google_car	cars/car_768.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-34	driving side	\N	Left	text	2024-08-13 23:51:07	2024-08-13 23:51:07	t	\N
-35	driving side	\N	Right	text	2024-08-13 23:57:59	2024-08-13 23:57:59	t	\N
 36	other	BMMKoksOkddFb0pz2HBTx.png	Follow car	image	2024-08-14 00:53:40	2024-08-14 00:53:40	t	\N
-37	sign	bRGOS4UBC5uKviiVyu0kO.png	\N	image	2024-08-14 01:22:31	2024-08-14 01:22:31	t	\N
-39	licence plate	Faia1VxoYidyFLEqImwbU.png	Yellow licence plate	image	2024-08-14 02:39:41	2024-08-14 02:39:41	f	\N
-41	pole	E3NN8BRpH2FqtliYmZQUE.png	\N	image	2024-08-14 02:43:31	2024-08-14 02:43:31	t	\N
-42	flag	z8N3tuyBJu-thEJi2Z1aK.png	\N	image	2024-08-14 02:46:04	2024-08-14 02:46:04	t	\N
 44	other	\N	Most street name sound german-ish	text	2024-08-14 02:50:16	2024-08-14 02:50:16	f	\N
 45	other	\N	Most sign in french	text	2024-08-14 03:00:56	2024-08-14 03:00:56	t	\N
 2265	google_car	cars/car_116.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2275	google_car	cars/car_508.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-40	walking sign	WWXyzmJOQgZrfMMh_anBo.png	\N	image	2024-08-14 02:42:25	2024-08-15 06:17:36	t	\N
-48	walking sign	_arHIs7HWceHWEfKeo2wl.png	\N	image	2024-08-14 05:29:30	2024-08-15 06:17:50	t	\N
-50	walking sign	CsaaI1H-fnk3OOt6FOhdB.png	\N	image	2024-08-14 14:12:57	2024-08-15 06:18:03	f	\N
+34	driving_side	\N	Left	text	2024-08-13 23:51:07	2024-09-17 06:31:24	t	\N
+19	road	road/kI6YUkAzR3U-psGvkkeDH.jpeg	\N	image	2024-08-13 23:07:40	2024-09-17 08:21:32	t	\N
 2315	google_car	cars/car_257.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 56	region	\N	Nordic	text	2024-08-15 16:02:46	2024-08-15 16:02:46	t	\N
 57	alphabet	6hkH0BG0rYcRNIgcCmLxa.png	Special Character	image	2024-08-15 16:10:22	2024-08-15 16:10:22	f	\N
@@ -180,15 +171,22 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 69	alphabet	cvDepFYVYF2SrckxM_745.png	Special Character	image	2024-08-15 16:35:33	2024-08-15 16:35:33	t	\N
 70	alphabet	gUa2ECyRDfO-lbTt38cK8.png	Special Character	image	2024-08-15 16:35:41	2024-08-15 16:35:41	t	\N
 71	alphabet	4yKaLHMengpUz8YEdmFkO.png	Special Character	image	2024-08-15 16:35:50	2024-08-15 16:35:50	t	\N
-73	sign	zNyX3EyjY9DZ1t5Xc0GP5.png	\N	image	2024-08-16 00:16:18	2024-08-16 00:16:18	f	\N
 2325	google_car	cars/car_246.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-75	sign	ZAaQfv2B2Lt8hlZMnRzTv.png	East Canada	image	2024-08-16 00:52:32	2024-08-16 00:52:32	t	\N
 2335	google_car	cars/car_155.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2345	google_car	cars/car_538.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-38	walking sign	Z8Ja6B4b-GoCtjAaezZUG.png	\N	image	2024-08-14 01:22:44	2024-08-24 10:32:27	t	\N
-29	pole	vSofI0NMZ4lxLv6Agxunr.png	\N	image	2024-08-13 23:39:26	2024-08-24 13:38:33	t	\N
-20	sign	kbjagX2FmSX2FiBeuaOQr.png	\N	image	2024-08-13 23:09:17	2024-08-24 13:39:03	t	\N
-1260	scenery	W2MixKpP9JrPpN7CojmGy.png	\N	image	2024-08-17 10:20:31	2024-08-17 10:20:31	t	\N
+41	pole	pole/E3NN8BRpH2FqtliYmZQUE.jpeg	\N	image	2024-08-14 02:43:31	2024-09-17 08:21:34	t	\N
+42	flag	flag/z8N3tuyBJu-thEJi2Z1aK.jpeg	\N	image	2024-08-14 02:46:04	2024-09-17 08:21:42	t	\N
+73	sign	sign/zNyX3EyjY9DZ1t5Xc0GP5.jpeg	\N	image	2024-08-16 00:16:18	2024-09-17 08:21:37	f	\N
+39	licence_plate	Faia1VxoYidyFLEqImwbU.png	Yellow licence plate	image	2024-08-14 02:39:41	2024-09-17 06:28:48	f	\N
+29	pole	pole/vSofI0NMZ4lxLv6Agxunr.jpeg	\N	image	2024-08-13 23:39:26	2024-09-17 08:21:41	t	\N
+38	walking_sign	walking_sign/Z8Ja6B4b-GoCtjAaezZUG.jpeg	\N	image	2024-08-14 01:22:44	2024-09-17 08:21:42	t	\N
+35	driving_side	\N	Right	text	2024-08-13 23:57:59	2024-09-17 06:31:24	t	\N
+20	sign	sign/kbjagX2FmSX2FiBeuaOQr.jpeg	\N	image	2024-08-13 23:09:17	2024-09-17 08:21:23	t	\N
+75	sign	sign/ZAaQfv2B2Lt8hlZMnRzTv.jpeg	East Canada	image	2024-08-16 00:52:32	2024-09-17 08:21:24	t	\N
+37	sign	sign/bRGOS4UBC5uKviiVyu0kO.jpeg	\N	image	2024-08-14 01:22:31	2024-09-17 08:21:24	t	\N
+50	walking_sign	walking_sign/CsaaI1H-fnk3OOt6FOhdB.jpeg	\N	image	2024-08-14 14:12:57	2024-09-17 08:21:24	f	\N
+55	licence_plate	licence_plate/2WLKfTySZwrJN-vjXKr7d.jpeg	Generic EU licence plate	image	2024-08-15 10:05:26	2024-09-17 08:21:41	t	\N
+40	walking_sign	walking_sign/WWXyzmJOQgZrfMMh_anBo.jpeg	\N	image	2024-08-14 02:42:25	2024-09-17 08:21:41	t	\N
 2046	google_car	cars/car_494.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2056	google_car	cars/car_691.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2076	google_car	cars/car_710.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -231,7 +229,8 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2526	google_car	cars/car_260.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2536	google_car	cars/car_214.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 1257	region	\N	Latin America	text	2024-08-17 05:07:13	2024-08-24 10:49:55	f	\N
-1265	licence plate	9xrsjNzZDVDmaVFT65nd8.png	\N	image	2024-08-17 14:21:13	2024-08-17 14:21:13	t	\N
+2678	licence_plate	licence_plate/KXcFiHnjPnw8vfD71o5Bw.jpeg	\N	image	2024-09-12 11:26:04	2024-09-17 08:21:41	t	Bolivia has short, white licence plates with blue text. The blue text can be hard to see through the blur, so plates might appear as plain white.
+1260	scenery	scenery/W2MixKpP9JrPpN7CojmGy.jpeg	\N	image	2024-08-17 10:20:31	2024-09-17 08:21:46	t	\N
 2047	google_car	cars/car_6.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2057	google_car	cars/car_700.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2067	google_car	cars/car_10.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -275,8 +274,8 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2517	google_car	cars/car_264.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2527	google_car	cars/car_265.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2537	google_car	cars/car_215.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1259	pole	Vu2NTqugC1lURGBWYO1Yo.png	\N	image	2024-08-17 06:01:21	2024-08-17 06:01:21	t	\N
-1266	licence plate	KJ24e59nAwmMk07dmJLyk.png	\N	image	2024-08-17 14:23:19	2024-08-17 14:23:19	t	\N
+1265	licence_plate	licence_plate/9xrsjNzZDVDmaVFT65nd8.jpeg	\N	image	2024-08-17 14:21:13	2024-09-17 08:21:34	t	\N
+2715	road	road/YyFV6fIRhPPtgNdh23vrg.jpeg	\N	image	2024-09-12 12:13:28	2024-09-17 08:21:42	t	Chilean road lines are either all white, or all yellow:\r\n\r\nAll white road lines are most common. Within the Americas, they are a good clue for Chile, though not completely unique.\r\n\r\nAll yellow road lines are seen in National Parks or areas of high snowfall. Within the Americas, these all yellow road lines are essentially unique to Chile.\r\n\r\nYou will almost never see a combination of the two colours, apart from a few rare exceptions.\r\n\r\nNOTE: It is important to note that Argentina has a decent amount of roads with all white road lines.
 2048	google_car	cars/car_7.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2058	google_car	cars/car_701.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2068	google_car	cars/car_647.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -322,7 +321,8 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2518	google_car	cars/car_422.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2528	google_car	cars/car_307.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2538	google_car	cars/car_216.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1262	scenery	IdX642bt6DZ9zxhGu3clD.png	\N	image	2024-08-17 10:30:11	2024-08-17 10:30:11	t	\N
+1259	pole	pole/Vu2NTqugC1lURGBWYO1Yo.jpeg	\N	image	2024-08-17 06:01:21	2024-09-17 08:21:34	t	\N
+1266	licence_plate	licence_plate/KJ24e59nAwmMk07dmJLyk.jpeg	\N	image	2024-08-17 14:23:19	2024-09-17 08:21:41	t	\N
 2049	google_car	cars/car_268.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2059	google_car	cars/car_702.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2069	google_car	cars/car_694.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -371,8 +371,7 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2519	google_car	cars/car_423.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2529	google_car	cars/car_320.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2539	google_car	cars/car_289.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1264	pole	dQQt14MFnA3MEG6of1aWb.png	\N	image	2024-08-17 13:06:29	2024-08-17 13:06:29	t	\N
-1267	pole	wIekeDwTcUVdV7IEQI_bX.png	\N	image	2024-08-17 14:42:07	2024-08-17 14:42:07	t	\N
+1262	scenery	scenery/IdX642bt6DZ9zxhGu3clD.jpeg	\N	image	2024-08-17 10:30:11	2024-09-17 08:21:37	t	\N
 2365	google_car	cars/car_174.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2375	google_car	cars/car_446.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2385	google_car	cars/car_242.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -388,37 +387,39 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2495	google_car	cars/car_326.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2525	google_car	cars/car_250.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2535	google_car	cars/car_213.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1268	road	tyzHd7JoPe-32FIGoEoYO.png	Regular White sideline + White middle	image	2024-08-18 01:13:52	2024-08-18 01:13:52	f	\N
-2560	licence plate	iXnTi7ifCm9T8Bb8vgBM0.png	Yellow	image	2024-08-24 10:24:27	2024-08-24 10:24:27	t	\N
-2600	language	Mt5ir01lbdflGVliW57eY.png	\N	image	2024-09-11 08:43:15	2024-09-11 08:43:15	t	The Ukrainian language uses the Cyrillic script. \r\n\r\nThese letters are unique to Ukrainian, compared to Russian: \r\n\r\nЄ є (not to be confused with Э э in Russian and Belarusian.)\r\n\r\nҐ ґ\r\n\r\nІ і\r\n\r\nЇ ї\r\n\r\nNOTE: Other European languages that use Cyrillic include Russian, Belarusian, Bulgarian, Serbian, and Macedonian.
-2606	language	WAsqjDE3i7uXL1JlrvS7m.png	\N	image	2024-09-11 09:04:54	2024-09-11 09:04:54	t	The Bulgarian word for street is улица (ulitsa), sometimes abbreviated ул. (ul.).\r\nNOTE: In older street signs seeing only Cyrillic is more common.\r\n\r\nRussia also uses улица/ulitsa.
-2614	language	eRP2j0epy8gyzo2iKYAHb.png	\N	image	2024-09-11 09:15:29	2024-09-11 09:15:29	t	The Albanian word for street is rruga. 
-1269	road	LROPlxu6QvD3cBOllE9-H.png	Middle white yellow combination	image	2024-08-18 01:16:08	2024-08-18 01:16:08	f	\N
-2599	road	14zCvmMmbuIYfj9_nGacc.png	\N	image	2024-09-09 01:23:29	2024-09-09 01:23:29	t	\N
-2601	language	zyPmayNQo_tFjoW8J-IIO.png	\N	image	2024-09-11 08:44:43	2024-09-11 08:44:43	t	The Ukrainian word for street is вулиця (vulytsya), abbreviated вул. (vul.).\r\n\r\nThe Russian word is улица, abbreviated ул., without a в at the beginning.
-2605	language	-iPK9p1GLS3I1PL22Ud0J.png	\N	image	2024-09-11 09:04:03	2024-09-11 09:04:03	t	Bulgaria mainly uses the Cyrillic alphabet. However, a lot of signs will also have the Latin alphabet.\r\n\r\nThe letter “Ъ” is only found in Bulgarian and Russian, although it is fairly uncommon in Russian.
-2616	language	ntFxndDLqTQyfuGLVCqf3.png	\N	image	2024-09-11 09:17:26	2024-09-11 09:17:26	t	The Spanish word for street is calle.
+1267	pole	pole/wIekeDwTcUVdV7IEQI_bX.jpeg	\N	image	2024-08-17 14:42:07	2024-09-17 08:21:32	t	\N
+1264	pole	pole/dQQt14MFnA3MEG6of1aWb.jpeg	\N	image	2024-08-17 13:06:29	2024-09-17 08:21:38	t	\N
+2560	licence_plate	iXnTi7ifCm9T8Bb8vgBM0.png	Yellow	image	2024-08-24 10:24:27	2024-09-17 06:28:48	t	\N
+2600	language	language/Mt5ir01lbdflGVliW57eY.jpeg	\N	image	2024-09-11 08:43:15	2024-09-17 08:21:24	t	The Ukrainian language uses the Cyrillic script. \r\n\r\nThese letters are unique to Ukrainian, compared to Russian: \r\n\r\nЄ є (not to be confused with Э э in Russian and Belarusian.)\r\n\r\nҐ ґ\r\n\r\nІ і\r\n\r\nЇ ї\r\n\r\nNOTE: Other European languages that use Cyrillic include Russian, Belarusian, Bulgarian, Serbian, and Macedonian.
+2606	language	language/WAsqjDE3i7uXL1JlrvS7m.jpeg	\N	image	2024-09-11 09:04:54	2024-09-17 08:21:32	t	The Bulgarian word for street is улица (ulitsa), sometimes abbreviated ул. (ul.).\r\nNOTE: In older street signs seeing only Cyrillic is more common.\r\n\r\nRussia also uses улица/ulitsa.
+2614	language	language/eRP2j0epy8gyzo2iKYAHb.jpeg	\N	image	2024-09-11 09:15:29	2024-09-17 08:21:37	t	The Albanian word for street is rruga. 
+1268	road	road/tyzHd7JoPe-32FIGoEoYO.jpeg	Regular White sideline + White middle	image	2024-08-18 01:13:52	2024-09-17 08:21:42	f	\N
 2631	pole	\N	\N	image	2024-09-11 16:28:15	2024-09-11 16:28:15	t	Other, more simple Albanian pole tops will often have horizontal bars.\r\n\r\nNOTE: If you are not sure between Montenegro or Albania and see these poles, guess Albania.
-2632	sign	ufXFVkvCqLzemy07j5nEP.png	\N	image	2024-09-11 16:31:26	2024-09-11 16:31:26	t	The “S” on Albanian stop signs feature a distinct shape; the ends of the S are quite short and have the same angle as the middle, rather than being vertical. This is also sometimes seen on directional signs.\r\n\r\nNOTE: Italian stops signs and directional signs have the same feature.
-2638	licence plate	4dmAz3LrEY8ArVdLhyCfy.png	\N	image	2024-09-11 16:40:51	2024-09-11 16:40:51	t	Argentina uses two types of licence plates: a black one, which will be visible on street view with a black dot in the middle, and a white one with a blue bar at the top.\r\n\r\nNOTE: The black dot can only be found on Argentinian licence plates, while the blue bar can be found in Brazil as well.
-1270	road	iZakmHmpWCLrisdtjDc0j.png	White - yellow side	image	2024-08-18 01:17:13	2024-08-18 01:17:13	f	\N
-1274	pole	ThuWeX4TEZ5C-jnTRaYI9.png	\N	image	2024-08-18 01:41:39	2024-08-18 01:41:39	f	\N
-2602	language	NH8MPglWRhisfoUQJ5zFb.png	\N	image	2024-09-11 08:45:22	2024-09-11 08:45:22	t	The Ukrainian word for city is місто (misto), abbreviated м. (m.). It can be used both to differentiate it from other cyrillic languages and to quickly find the city name in addresses.
-2604	language	bocc13uIlFIANWERFnizK.png	\N	image	2024-09-11 08:48:23	2024-09-11 08:48:23	t	Hungarian street names typically end with the word “utca”. The word “út” is also used for bigger roads. These two words are unique to Hungarian, and translate to “street.”
-2610	language	-MkZeXu03aty-IXhXDaiz.png	\N	image	2024-09-11 09:10:18	2024-09-11 09:10:18	t	\N
-2622	language	bm87kwwiRm5D-m0ARht5q.png	\N	image	2024-09-11 09:22:58	2024-09-11 09:22:58	t	The French word for street is “rue”.
-2635	language	hY0NAlzCXQNlC_ZyddL3r.png	\N	image	2024-09-11 16:37:17	2024-09-11 16:37:17	t	Catalan is the main language in Andorra. It is a Romance language that is closely related to Spanish and French.\r\n\r\nIf you are unfamiliar with Romance languages, it can be hard to distinguish between Catalan and Spanish. If you see i instead of y (“and” in English), it is Catalan. In addition, more Catalan words end with consonants.\r\n\r\nNOTE: The Catalan language is also used in eastern Spain: in Catalonia, the Valencian community and the Balearic islands.
+2632	sign	sign/ufXFVkvCqLzemy07j5nEP.jpeg	\N	image	2024-09-11 16:31:26	2024-09-17 08:21:24	t	The “S” on Albanian stop signs feature a distinct shape; the ends of the S are quite short and have the same angle as the middle, rather than being vertical. This is also sometimes seen on directional signs.\r\n\r\nNOTE: Italian stops signs and directional signs have the same feature.
+2605	language	language/-iPK9p1GLS3I1PL22Ud0J.jpeg	\N	image	2024-09-11 09:04:03	2024-09-17 08:21:24	t	Bulgaria mainly uses the Cyrillic alphabet. However, a lot of signs will also have the Latin alphabet.\r\n\r\nThe letter “Ъ” is only found in Bulgarian and Russian, although it is fairly uncommon in Russian.
+2638	licence_plate	licence_plate/4dmAz3LrEY8ArVdLhyCfy.jpeg	\N	image	2024-09-11 16:40:51	2024-09-17 08:21:24	t	Argentina uses two types of licence plates: a black one, which will be visible on street view with a black dot in the middle, and a white one with a blue bar at the top.\r\n\r\nNOTE: The black dot can only be found on Argentinian licence plates, while the blue bar can be found in Brazil as well.
+2616	language	language/ntFxndDLqTQyfuGLVCqf3.jpeg	\N	image	2024-09-11 09:17:26	2024-09-17 08:21:24	t	The Spanish word for street is calle.
+1269	road	road/LROPlxu6QvD3cBOllE9-H.jpeg	Middle white yellow combination	image	2024-08-18 01:16:08	2024-09-17 08:21:34	f	\N
+2599	road	road/14zCvmMmbuIYfj9_nGacc.jpeg	\N	image	2024-09-09 01:23:29	2024-09-17 08:21:41	t	\N
+2601	language	language/zyPmayNQo_tFjoW8J-IIO.jpeg	\N	image	2024-09-11 08:44:43	2024-09-17 08:21:43	t	The Ukrainian word for street is вулиця (vulytsya), abbreviated вул. (vul.).\r\n\r\nThe Russian word is улица, abbreviated ул., without a в at the beginning.
 2651	region	\N	North America	text	2024-09-12 08:34:24	2024-09-12 08:34:24	t	\N
+1270	road	road/iZakmHmpWCLrisdtjDc0j.jpeg	White - yellow side	image	2024-08-18 01:17:13	2024-09-17 08:21:32	f	\N
+1274	pole	pole/ThuWeX4TEZ5C-jnTRaYI9.jpeg	\N	image	2024-08-18 01:41:39	2024-09-17 08:21:33	f	\N
+2602	language	language/NH8MPglWRhisfoUQJ5zFb.jpeg	\N	image	2024-09-11 08:45:22	2024-09-17 08:21:34	t	The Ukrainian word for city is місто (misto), abbreviated м. (m.). It can be used both to differentiate it from other cyrillic languages and to quickly find the city name in addresses.
+2610	language	language/-MkZeXu03aty-IXhXDaiz.jpeg	\N	image	2024-09-11 09:10:18	2024-09-17 08:21:36	t	\N
+2635	language	language/hY0NAlzCXQNlC_ZyddL3r.jpeg	\N	image	2024-09-11 16:37:17	2024-09-17 08:21:40	t	Catalan is the main language in Andorra. It is a Romance language that is closely related to Spanish and French.\r\n\r\nIf you are unfamiliar with Romance languages, it can be hard to distinguish between Catalan and Spanish. If you see i instead of y (“and” in English), it is Catalan. In addition, more Catalan words end with consonants.\r\n\r\nNOTE: The Catalan language is also used in eastern Spain: in Catalonia, the Valencian community and the Balearic islands.
+2604	language	language/bocc13uIlFIANWERFnizK.jpeg	\N	image	2024-09-11 08:48:23	2024-09-17 08:21:41	t	Hungarian street names typically end with the word “utca”. The word “út” is also used for bigger roads. These two words are unique to Hungarian, and translate to “street.”
+2622	language	language/bm87kwwiRm5D-m0ARht5q.jpeg	\N	image	2024-09-11 09:22:58	2024-09-17 08:21:43	t	The French word for street is “rue”.
 1271	camera	\N	lowcam	text	2024-08-18 01:26:41	2024-08-18 01:26:41	f	\N
-2554	licence plate	bLHFY9-fTHIukmJ76arXR.png	\N	image	2024-08-24 10:17:52	2024-08-24 10:17:52	t	\N
-2555	road	OGXsbbJp097t8xGzjJXM0.png	Single long line in the middle	image	2024-08-24 10:18:16	2024-08-24 10:18:16	f	\N
-2603	language	P8_QMkVRUA_hBNu_FLhAx.png	\N	image	2024-09-11 08:47:54	2024-09-11 08:47:54	t	The Hungarian language has a unique look, with a very large number of acute accents, umlauts over o’s, and long words. The letters "Ő" and "Ű", with double acute accents, are unique to the language.\r\n\r\nNOTE: Hungarian is also spoken in some parts of neighbouring countries: notably there are large Hungarian-speaking communities in central Romania and southern Slovakia.
-2608	language	Jkuch9IDkJ7RF9V29N8tO.png	\N	image	2024-09-11 09:07:46	2024-09-11 09:07:46	t	\N
-2618	language	dr5IMPDe-D-waL6yfPB-O.png	\N	image	2024-09-11 09:19:24	2024-09-11 09:19:24	t	The Portuguese word for road is ‘Rua’.\r\n\r\nNOTE: In Galician, the word for road is ‘Rúa’, with an accent on the ‘u’.
-2620	language	r9AMLoM8elQYijKu9a42b.png	\N	image	2024-09-11 09:21:14	2024-09-11 09:21:14	t	Italian is the most spoken language in Italy. It uses many double consonants, and typically has a very large number of i’s. You can also find ì, é and à. Most words will end with a vowel.\r\n\r\nNOTE: The Italian word for street is ‘via’, and can be found on most street signs.
-2641	pole	kGn67LdlOAbwOQmvKRFem.png	\N	image	2024-09-12 02:26:00	2024-09-12 02:26:00	t	Wooden poles are somewhat common in Argentina, they can be found either with a crossbar or without.\r\n\r\nNOTE: Wooden A-frame poles in South America are only found in Argentina.
-2556	architecture	y6H0zKoBqiiUHrAk63BRD.png	Pastel color and almost always white roof	image	2024-08-24 10:19:08	2024-09-12 08:25:15	t	Most buildings on Bermuda are single family stone houses painted in pastel colours.  They will almost always have completely white roofs.
-2644	bollard	WQce4YtoIz8otm9_MZMUw.png	\N	image	2024-09-12 02:34:22	2024-09-12 09:04:07	t	Australian bollards are white, with a red reflector on the front, and a grey reflector on the back.\r\n\r\nNOTE: New Zealand uses a bollard where the red reflector wraps around the back, meaning the reflector goes from end to end while the Australian one stops in the middle.
+2554	licence_plate	bLHFY9-fTHIukmJ76arXR.png	\N	image	2024-08-24 10:17:52	2024-09-17 06:28:48	t	\N
+2620	language	language/r9AMLoM8elQYijKu9a42b.jpeg	\N	image	2024-09-11 09:21:14	2024-09-17 08:21:32	t	Italian is the most spoken language in Italy. It uses many double consonants, and typically has a very large number of i’s. You can also find ì, é and à. Most words will end with a vowel.\r\n\r\nNOTE: The Italian word for street is ‘via’, and can be found on most street signs.
+2603	language	language/P8_QMkVRUA_hBNu_FLhAx.jpeg	\N	image	2024-09-11 08:47:54	2024-09-17 08:21:32	t	The Hungarian language has a unique look, with a very large number of acute accents, umlauts over o’s, and long words. The letters "Ő" and "Ű", with double acute accents, are unique to the language.\r\n\r\nNOTE: Hungarian is also spoken in some parts of neighbouring countries: notably there are large Hungarian-speaking communities in central Romania and southern Slovakia.
+2618	language	language/dr5IMPDe-D-waL6yfPB-O.jpeg	\N	image	2024-09-11 09:19:24	2024-09-17 08:21:34	t	The Portuguese word for road is ‘Rua’.\r\n\r\nNOTE: In Galician, the word for road is ‘Rúa’, with an accent on the ‘u’.
+2556	architecture	architecture/y6H0zKoBqiiUHrAk63BRD.jpeg	Pastel color and almost always white roof	image	2024-08-24 10:19:08	2024-09-17 08:21:41	t	Most buildings on Bermuda are single family stone houses painted in pastel colours.  They will almost always have completely white roofs.
+2555	road	road/OGXsbbJp097t8xGzjJXM0.jpeg	Single long line in the middle	image	2024-08-24 10:18:16	2024-09-17 08:21:42	f	\N
+2608	language	language/Jkuch9IDkJ7RF9V29N8tO.jpeg	\N	image	2024-09-11 09:07:46	2024-09-17 08:21:43	t	\N
+2641	pole	pole/kGn67LdlOAbwOQmvKRFem.jpeg	\N	image	2024-09-12 02:26:00	2024-09-17 08:21:44	t	Wooden poles are somewhat common in Argentina, they can be found either with a crossbar or without.\r\n\r\nNOTE: Wooden A-frame poles in South America are only found in Argentina.
+2644	bollard	bollard/WQce4YtoIz8otm9_MZMUw.jpeg	\N	image	2024-09-12 02:34:22	2024-09-17 08:21:45	t	Australian bollards are white, with a red reflector on the front, and a grey reflector on the back.\r\n\r\nNOTE: New Zealand uses a bollard where the red reflector wraps around the back, meaning the reflector goes from end to end while the Australian one stops in the middle.
 168	road	scenery/eswatini_3.jpg	\N	image	2024-08-16 06:50:45	2024-09-16 09:50:01	t	Eswatini can have yellow outerline
 163	scenery	scenery/botswana_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 164	scenery	scenery/botswana_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -517,15 +518,15 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 429	scenery	scenery/northern_mariana_islands_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 439	scenery	scenery/chile_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 449	scenery	scenery/peru_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
-1272	pole	yFlpUlCAADlG5QQMgI5ZV.png	\N	image	2024-08-18 01:35:18	2024-08-18 01:35:18	f	\N
-2549	licence plate	1QsFtnFD1ZvSRg2hBJs8U.png	\N	image	2024-08-24 10:09:32	2024-08-24 10:09:32	t	\N
-2551	guardrail	EtelvEy8PN7x-_v0EexLf.png	Double Guardrails	image	2024-08-24 10:11:23	2024-08-24 10:11:23	f	\N
-2607	language	n1ZiwBPPiiylQSyPx5pDt.png	\N	image	2024-09-11 09:06:05	2024-09-11 09:06:05	t	Macedonian is a Slavic language which uses the Cyrillic script. Road signs have Latin on them too, although most other signs are fully in Cyrillic. \r\n\r\nThe letters ‘Ѓ’ and ‘Ќ’ are unique to Macedonian. ‘Љ’, ‘Њ’, and ‘Џ’ are only in Serbian and Macedonian.
-2613	language	n5bhoqmOXkSbQPAYEcoSL.png	\N	image	2024-09-11 09:14:46	2024-09-11 09:14:46	t	Albanian is not very closely related to any other European languages, and therefore has a fairly distinct look.\r\n\r\nWords often contain the letter Ë, ë, and sometimes Ç ç.
-2619	language	iwh0JHChEIYc-9tZfsfFm.png	\N	image	2024-09-11 09:20:11	2024-09-11 09:20:11	t	You will often find no parking signs in front of garage doors and gates. They will usually read “Vado permanente”.\r\n\r\nThese signs will very often have the name of the municipality after “Ayuntamiento de”.\r\n\r\nNOTE: Italy uses signs that read “Passo carrabile”.
-2643	floral	806WT2-ltkuSBgpOy0Gtg.png	\N	image	2024-09-12 02:33:46	2024-09-12 02:33:46	t	Gum trees (eucalyptus) are by far the most common type of tree in Australia. Their bark is typically light-coloured, with puffy puffy clusters of leaves. \r\n\r\nNOTE: Their look may vary significantly, depending on your location within the country. More details can be found in the region-guessing section.
-2646	road	_-dCNvAsSUZO8mzYuhm-v.png	\N	image	2024-09-12 02:36:33	2024-09-12 02:36:33	t	Outside lines in Australia sometimes feature rumble strips that look like small white stripes perpendicular to the road line.\r\n\r\nNOTE: Northern Territory roads very rarely have rumble strips. \r\n\r\nIn addition, you can find similar rumble strips in New Zealand.
-2559	language	0kLt7mIJgCCkz1vnBhT8D.png	\N	image	2024-08-24 10:21:36	2024-09-16 16:03:13	t	Dzongkha is an official language in Bhutan and has unique-looking letters.\r\n\r\nNOTE: On street view, these letters can only be found in Bhutan
+2607	language	language/n1ZiwBPPiiylQSyPx5pDt.jpeg	\N	image	2024-09-11 09:06:05	2024-09-17 08:21:32	t	Macedonian is a Slavic language which uses the Cyrillic script. Road signs have Latin on them too, although most other signs are fully in Cyrillic. \r\n\r\nThe letters ‘Ѓ’ and ‘Ќ’ are unique to Macedonian. ‘Љ’, ‘Њ’, and ‘Џ’ are only in Serbian and Macedonian.
+2643	floral	floral/806WT2-ltkuSBgpOy0Gtg.jpeg	\N	image	2024-09-12 02:33:46	2024-09-17 08:21:34	t	Gum trees (eucalyptus) are by far the most common type of tree in Australia. Their bark is typically light-coloured, with puffy puffy clusters of leaves. \r\n\r\nNOTE: Their look may vary significantly, depending on your location within the country. More details can be found in the region-guessing section.
+2551	guardrail	guardrail/EtelvEy8PN7x-_v0EexLf.jpeg	Double Guardrails	image	2024-08-24 10:11:23	2024-09-17 08:21:41	f	\N
+2619	language	language/iwh0JHChEIYc-9tZfsfFm.jpeg	\N	image	2024-09-11 09:20:11	2024-09-17 08:21:23	t	You will often find no parking signs in front of garage doors and gates. They will usually read “Vado permanente”.\r\n\r\nThese signs will very often have the name of the municipality after “Ayuntamiento de”.\r\n\r\nNOTE: Italy uses signs that read “Passo carrabile”.
+2549	licence_plate	licence_plate/1QsFtnFD1ZvSRg2hBJs8U.jpeg	\N	image	2024-08-24 10:09:32	2024-09-17 08:21:23	t	\N
+2613	language	language/n5bhoqmOXkSbQPAYEcoSL.jpeg	\N	image	2024-09-11 09:14:46	2024-09-17 08:21:24	t	Albanian is not very closely related to any other European languages, and therefore has a fairly distinct look.\r\n\r\nWords often contain the letter Ë, ë, and sometimes Ç ç.
+2559	language	language/0kLt7mIJgCCkz1vnBhT8D.jpeg	\N	image	2024-08-24 10:21:36	2024-09-17 08:21:24	t	Dzongkha is an official language in Bhutan and has unique-looking letters.\r\n\r\nNOTE: On street view, these letters can only be found in Bhutan
+1272	pole	pole/yFlpUlCAADlG5QQMgI5ZV.jpeg	\N	image	2024-08-18 01:35:18	2024-09-17 08:21:24	f	\N
+2646	road	road/_-dCNvAsSUZO8mzYuhm-v.jpeg	\N	image	2024-09-12 02:36:33	2024-09-17 08:21:31	t	Outside lines in Australia sometimes feature rumble strips that look like small white stripes perpendicular to the road line.\r\n\r\nNOTE: Northern Territory roads very rarely have rumble strips. \r\n\r\nIn addition, you can find similar rumble strips in New Zealand.
 240	scenery	scenery/russia_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 250	scenery	scenery/taiwan_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 260	scenery	scenery/albania_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -548,11 +549,11 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 430	scenery	scenery/argentina_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 440	scenery	scenery/chile_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 450	scenery	scenery/peru_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
-1275	road	yrj8h0xj0CotUik-E5UOS.png	\N	image	2024-08-18 01:49:36	2024-08-18 01:49:36	f	\N
-2550	pole	pB8-SZX7ywh7XrA5uZNkO.png	\N	image	2024-08-24 10:10:07	2024-08-24 10:10:07	t	\N
-2609	language	b4LS-tBz-TWvC3VdHKyuj.png	\N	image	2024-09-11 09:08:14	2024-09-11 09:08:14	t	Direction signs in North Macedonia are typically yellow with biscriptal text: town names are written in both Latin and Cyrillic script.\r\n\r\nNOTE: Serbia, Slovenia, Croatia, and Montenegro have similar signs. Serbia is the only one that will have biscriptal text though.
-2650	sign	Rfb-b6tRHMvs_eDijyLmP.png	\N	image	2024-09-12 02:39:48	2024-09-12 02:39:48	t	Australian speed limit signs have black text in a red circle on a large white rectangle.\r\n\r\nNOTE: New Zealand speed limit signs normally do not have the white rectangular background.
 2652	region	\N	Oceania	text	2024-09-12 08:36:36	2024-09-12 08:36:36	f	\N
+1275	road	road/yrj8h0xj0CotUik-E5UOS.jpeg	\N	image	2024-08-18 01:49:36	2024-09-17 08:21:24	f	\N
+2550	pole	pole/pB8-SZX7ywh7XrA5uZNkO.jpeg	\N	image	2024-08-24 10:10:07	2024-09-17 08:21:33	t	\N
+2650	sign	sign/Rfb-b6tRHMvs_eDijyLmP.jpeg	\N	image	2024-09-12 02:39:48	2024-09-17 08:21:37	t	Australian speed limit signs have black text in a red circle on a large white rectangle.\r\n\r\nNOTE: New Zealand speed limit signs normally do not have the white rectangular background.
+2609	language	language/b4LS-tBz-TWvC3VdHKyuj.jpeg	\N	image	2024-09-11 09:08:14	2024-09-17 08:21:43	t	Direction signs in North Macedonia are typically yellow with biscriptal text: town names are written in both Latin and Cyrillic script.\r\n\r\nNOTE: Serbia, Slovenia, Croatia, and Montenegro have similar signs. Serbia is the only one that will have biscriptal text though.
 241	scenery	scenery/singapore_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 251	scenery	scenery/taiwan_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 261	scenery	scenery/albania_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -575,15 +576,15 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 431	scenery	scenery/argentina_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 441	scenery	scenery/chile_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 451	scenery	scenery/uruguay_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
-1276	pole	SV-azM8S57AL9B0ySADuo.png	\N	image	2024-08-18 02:00:23	2024-08-18 02:00:23	t	\N
-2552	sign	MKM0s3oFeKT09ttXVQFjX.png	Sometimes have teal back 	image	2024-08-24 10:12:35	2024-08-24 10:12:35	t	\N
-2611	language	lW0ebCBAvNtBOhcNZGH0e.png	\N	image	2024-09-11 09:11:45	2024-09-11 09:11:45	t	The Greek language features a unique alphabet not used in any other language. It shares similarities with both the latin and cyrillic alphabet, however the lower case letters generally have softer shapes than the cyrillic letters.
-2626	language	nE2Wmoq0pwh1OEnsNvGHc.png	\N	image	2024-09-11 16:15:14	2024-09-11 16:15:14	t	Many Lithuanian place names end in -ai.
-2629	pole	GV8GUWJyugbtEetPMDyqS.png	\N	image	2024-09-11 16:18:42	2024-09-11 16:18:42	t	Lithuanian poles are usually square and concrete, and often feature a diagonal support beam.\r\n\r\nNOTE: While most common in Lithuania, these are also found from time to time in Estonia, and on rare occasions in Latvia.
-2639	road	rjZPzx1_tVVbS5oCwzI92.png	\N	image	2024-09-12 02:24:04	2024-09-12 02:24:04	t	Road lines in Argentina are mainly dashed white, double yellow or a mix in between.
-2640	pole	Vf1FDrROvMX_cEujJoR8M.png	\N	image	2024-09-12 02:24:59	2024-09-12 02:24:59	t	Round concrete poles sustaining three electricity lines in an alternating pattern are very common in Argentina.\r\n\r\nDoubled up poles like in the second image is also a good clue for Argentina.\r\n\r\nNOTE: Similar doubled concrete poles can occasionally be found throughout Bolivia.
-2647	sign	8DqJejByJHlLNnvscOCeC.png	\N	image	2024-09-12 02:37:44	2024-09-12 02:37:44	t	Give-way signs in Australia have a white border and black text.\r\n\r\nNOTE: New Zealand’s give-way signs use red, instead of black, text. Give-way signs are very rarely seen in South Africa.
-2558	licence plate	h0bT3ga2jpLpQkFyYl4db.png	Almost always red	image	2024-08-24 10:20:50	2024-09-12 11:22:06	t	Licence plates in Bhutan are almost always red and can easily be seen on vehicles.\r\n\r\nNOTE: Within Asia, Bhutan is the only country that uses full red licence plates.
+2611	language	language/lW0ebCBAvNtBOhcNZGH0e.jpeg	\N	image	2024-09-11 09:11:45	2024-09-17 08:21:24	t	The Greek language features a unique alphabet not used in any other language. It shares similarities with both the latin and cyrillic alphabet, however the lower case letters generally have softer shapes than the cyrillic letters.
+2552	sign	sign/MKM0s3oFeKT09ttXVQFjX.jpeg	Sometimes have teal back 	image	2024-08-24 10:12:35	2024-09-17 08:21:24	t	\N
+2640	pole	pole/Vf1FDrROvMX_cEujJoR8M.jpeg	\N	image	2024-09-12 02:24:59	2024-09-17 08:21:32	t	Round concrete poles sustaining three electricity lines in an alternating pattern are very common in Argentina.\r\n\r\nDoubled up poles like in the second image is also a good clue for Argentina.\r\n\r\nNOTE: Similar doubled concrete poles can occasionally be found throughout Bolivia.
+2626	language	language/nE2Wmoq0pwh1OEnsNvGHc.jpeg	\N	image	2024-09-11 16:15:14	2024-09-17 08:21:33	t	Many Lithuanian place names end in -ai.
+1276	pole	pole/SV-azM8S57AL9B0ySADuo.jpeg	\N	image	2024-08-18 02:00:23	2024-09-17 08:21:33	t	\N
+2558	licence_plate	licence_plate/h0bT3ga2jpLpQkFyYl4db.jpeg	Almost always red	image	2024-08-24 10:20:50	2024-09-17 08:21:40	t	Licence plates in Bhutan are almost always red and can easily be seen on vehicles.\r\n\r\nNOTE: Within Asia, Bhutan is the only country that uses full red licence plates.
+2647	sign	sign/8DqJejByJHlLNnvscOCeC.jpeg	\N	image	2024-09-12 02:37:44	2024-09-17 08:21:43	t	Give-way signs in Australia have a white border and black text.\r\n\r\nNOTE: New Zealand’s give-way signs use red, instead of black, text. Give-way signs are very rarely seen in South Africa.
+2639	road	road/rjZPzx1_tVVbS5oCwzI92.jpeg	\N	image	2024-09-12 02:24:04	2024-09-17 08:21:45	t	Road lines in Argentina are mainly dashed white, double yellow or a mix in between.
+2629	pole	pole/GV8GUWJyugbtEetPMDyqS.jpeg	\N	image	2024-09-11 16:18:42	2024-09-17 08:21:45	t	Lithuanian poles are usually square and concrete, and often feature a diagonal support beam.\r\n\r\nNOTE: While most common in Lithuania, these are also found from time to time in Estonia, and on rare occasions in Latvia.
 242	scenery	scenery/singapore_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 252	scenery	scenery/taiwan_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 262	scenery	scenery/andorra_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -626,13 +627,13 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1450	road_number	road_number/ukraine_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1460	road_number	road_number/brazil_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1470	road_number	road_number/colombia_2.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
-2553	architecture	alWNoQnL2S-VpLwy8hepU.png	Grey brick and metal roof	image	2024-08-24 10:13:28	2024-08-24 10:13:28	f	\N
-2612	language	c2g7JNVRNVVXEJypGpadB.png	\N	image	2024-09-11 09:13:31	2024-09-11 09:13:31	t	The Turkish language has a fairly unique look. It uses the following special characters:\r\n\r\nÇ ç and Ş ş with a cedilla (“hook” below the letter).\r\n\r\nÖ ö and Ü ü with an umlaut (two dots).\r\n\r\nĞ ğ with a breve.\r\n\r\nDotless I ı. This letter in particular is noteworthy, as it is essentially unique to Turkish. In case you are confused: this is similar to the letter i, but without a dot when written in lowercase.\r\n\r\nCapital İ with a dot.
-2615	language	MntfG2DTNVpDbcUGckjC7.png	\N	image	2024-09-11 09:16:53	2024-09-11 09:16:53	t	Spanish is the main language in most of the country. It is a Romance language that is closely related to Portuguese.\r\n\r\nSpanish and Portuguese can look very similar. Some key differences between the two:\r\n\r\nÑ is unique to Spanish. \r\n\r\nÇ and lh are unique to Portuguese (Ç is also present in Catalan). \r\n\r\nPortuguese uses the -ao word ending, and -nh- instead of ñ.\r\n\r\nPortuguese uses da and do, where Spanish uses de.\r\n\r\nNOTE: Spain also has several regional languages, some of which are more common than Spanish in their respective regions. These languages are discussed in more detail in the region-guessing section.
-2628	pole	oFx8FDagkCkx1iFbUDBVF.png	\N	image	2024-09-11 16:17:53	2024-09-11 16:17:53	t	Pictured here are some typical Lithuanian poletops.\r\n\r\nThey often have short horizontal rods, on which the insulators are placed.\r\n\r\nIn some poletops, the insulators are arranged in a trident-like shape, with one on top, and two on each side.\r\n\r\nNote that these poletops are not unique to Lithuania: they can also be found in the other post-Soviet countries.
-2633	licence plate	-e-3Rxes7WT3EzwpSuO70.png	\N	image	2024-09-11 16:36:00	2024-09-11 16:36:00	t	Andorran licence plates have an orange dot on the left side and can be regularly found throughout the country.\r\n\r\nNOTE: Within Europe, this plate is unique to Andorra.
-2634	architecture	VMaZukKAScYJ_kIkeqXhw.png	\N	image	2024-09-11 16:36:38	2024-09-11 16:36:38	t	Andorra has a lot of these stone buildings. They can be seen almost everywhere in the country.\r\n\r\nNOTE: These buildings can also be found close to Andorra, in the French and Spanish Pyrenees.
-2642	sign	8KGwf2TBp5AKw_YZ8ITFO.png	\N	image	2024-09-12 02:27:21	2024-09-12 02:27:21	t	These highway markers are unique to Argentina and indicate the highway number on top.\r\n\r\nNOTE: The markers on national highways are indicated with RN, while RP indicates a provincial highway. National highways will be labelled white on the map, while provincial highways will be labelled green. 
+2615	language	language/MntfG2DTNVpDbcUGckjC7.jpeg	\N	image	2024-09-11 09:16:53	2024-09-17 08:21:37	t	Spanish is the main language in most of the country. It is a Romance language that is closely related to Portuguese.\r\n\r\nSpanish and Portuguese can look very similar. Some key differences between the two:\r\n\r\nÑ is unique to Spanish. \r\n\r\nÇ and lh are unique to Portuguese (Ç is also present in Catalan). \r\n\r\nPortuguese uses the -ao word ending, and -nh- instead of ñ.\r\n\r\nPortuguese uses da and do, where Spanish uses de.\r\n\r\nNOTE: Spain also has several regional languages, some of which are more common than Spanish in their respective regions. These languages are discussed in more detail in the region-guessing section.
+2612	language	language/c2g7JNVRNVVXEJypGpadB.jpeg	\N	image	2024-09-11 09:13:31	2024-09-17 08:21:24	t	The Turkish language has a fairly unique look. It uses the following special characters:\r\n\r\nÇ ç and Ş ş with a cedilla (“hook” below the letter).\r\n\r\nÖ ö and Ü ü with an umlaut (two dots).\r\n\r\nĞ ğ with a breve.\r\n\r\nDotless I ı. This letter in particular is noteworthy, as it is essentially unique to Turkish. In case you are confused: this is similar to the letter i, but without a dot when written in lowercase.\r\n\r\nCapital İ with a dot.
+2553	architecture	architecture/alWNoQnL2S-VpLwy8hepU.jpeg	Grey brick and metal roof	image	2024-08-24 10:13:28	2024-09-17 08:21:34	f	\N
+2633	licence_plate	licence_plate/-e-3Rxes7WT3EzwpSuO70.jpeg	\N	image	2024-09-11 16:36:00	2024-09-17 08:21:36	t	Andorran licence plates have an orange dot on the left side and can be regularly found throughout the country.\r\n\r\nNOTE: Within Europe, this plate is unique to Andorra.
+2642	sign	sign/8KGwf2TBp5AKw_YZ8ITFO.jpeg	\N	image	2024-09-12 02:27:21	2024-09-17 08:21:37	t	These highway markers are unique to Argentina and indicate the highway number on top.\r\n\r\nNOTE: The markers on national highways are indicated with RN, while RP indicates a provincial highway. National highways will be labelled white on the map, while provincial highways will be labelled green. 
+2628	pole	pole/oFx8FDagkCkx1iFbUDBVF.jpeg	\N	image	2024-09-11 16:17:53	2024-09-17 08:21:43	t	Pictured here are some typical Lithuanian poletops.\r\n\r\nThey often have short horizontal rods, on which the insulators are placed.\r\n\r\nIn some poletops, the insulators are arranged in a trident-like shape, with one on top, and two on each side.\r\n\r\nNote that these poletops are not unique to Lithuania: they can also be found in the other post-Soviet countries.
+2634	architecture	architecture/VMaZukKAScYJ_kIkeqXhw.jpeg	\N	image	2024-09-11 16:36:38	2024-09-17 08:21:45	t	Andorra has a lot of these stone buildings. They can be seen almost everywhere in the country.\r\n\r\nNOTE: These buildings can also be found close to Andorra, in the French and Spanish Pyrenees.
 243	scenery	scenery/singapore_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 253	scenery	scenery/thailand_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 263	scenery	scenery/andorra_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -676,16 +677,16 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1459	road_number	road_number/brazil_2.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1469	road_number	road_number/colombia_1.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1479	road_number	road_number/uruguay_2.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
-2557	scenery	VgGBsPj7OjjjMh6FFkO-Y.png	Never far from the ocean. Color light blue. 	image	2024-08-24 10:19:50	2024-08-24 10:19:50	t	\N
-2617	language	WVlfZYVy6GDs5V4Ijtfpo.png	\N	image	2024-09-11 09:18:38	2024-09-11 09:18:38	t	Portuguese is a Romance language that is closely related to Spanish. Unlike Spanish, Portuguese includes the letters Ç, Ã, Õ, Â, and Ê, while it does not include the letter Ñ, which is very common in Spanish.\r\n\r\nNOTE: You can also find Ç in Catalan.
-2621	language	vQYNoc0Pk9zyUAmSWgTKt.png	\N	image	2024-09-11 09:22:16	2024-09-11 09:22:16	t	French is a Romance language that is closely related to languages like Catalan, Spanish and Italian. It uses these diacritics and special letters:\r\n\r\nAccent aigu: é\r\n\r\nAccent grave: à, è, ù\r\n\r\nAccent circonflexe: â, ê, î, ô, û\r\n\r\nTrema: ë, ï, ü, ÿ\r\n\r\nLigature: œ \r\n\r\nCédille: ç with a small hook\r\n\r\nIn addition, the -ux suffix is only found in French. \r\n\r\nNOTE: Other European countries with sizable francophone populations include Belgium, Luxembourg, Monaco and Switzerland.
-2623	language	bxv4KTUUkY2ZjSZco3fAf.png	\N	image	2024-09-11 09:24:57	2024-09-11 09:24:57	t	Dutch is a Germanic language. It features a lot of double vowels. Typical letter clusters are ij, ieu and oe. “IJ“ written as one capitalised letter is also unique to the language.\r\n\r\nNOTE: Dutch is also used in the region of Flanders, which comprises the northern half of Belgium.
-2627	architecture	zojYqjk5SP6k8NrK-SAZG.png	\N	image	2024-09-11 16:15:57	2024-09-11 16:15:57	t	Lithuanian architecture primarily consists of light coloured brick buildings, usually with somewhat steep corrugated metal roofs. Wooden buildings are also fairly common, however less so than in Estonia. Pastel painted stone buildings are somewhat common, especially in newer suburbs.
-2630	pole	MkUIJuhYhIy6OuC13qqsU.png	\N	image	2024-09-11 16:27:37	2024-09-11 16:27:37	t	These pole tops, with an upside down triangle shape, are a good clue for Albania.\r\n\r\nNOTE: Serbia, Czechia, Slovakia and Romania use similar pole tops.
-2636	language	VgZqB8cp1Al0S3nMOtyTa.png	\N	image	2024-09-11 16:38:00	2024-09-11 16:38:00	t	The Catalan word for street is “carrer”.
-2637	sign	OiMJhlRhFxtLYqdinDTXx.png	\N	image	2024-09-11 16:38:39	2024-09-11 16:38:39	t	These kilometre markers with CG and CS road numbers are found in Andorra.\r\n\r\nNOTE: Similar kilometre marker designs can be found in Spain.
-2648	sign	HmkGS0KuUK9QZJrpgmXG2.png	\N	image	2024-09-12 02:38:35	2024-09-12 02:38:35	t	Australia uses white on black and black on yellow chevrons.
 2655	region	\N	East Asia	text	2024-09-12 08:50:47	2024-09-12 08:50:47	f	\N
+2636	language	language/VgZqB8cp1Al0S3nMOtyTa.jpeg	\N	image	2024-09-11 16:38:00	2024-09-17 08:21:31	t	The Catalan word for street is “carrer”.
+2627	architecture	architecture/zojYqjk5SP6k8NrK-SAZG.jpeg	\N	image	2024-09-11 16:15:57	2024-09-17 08:21:32	t	Lithuanian architecture primarily consists of light coloured brick buildings, usually with somewhat steep corrugated metal roofs. Wooden buildings are also fairly common, however less so than in Estonia. Pastel painted stone buildings are somewhat common, especially in newer suburbs.
+2621	language	language/vQYNoc0Pk9zyUAmSWgTKt.jpeg	\N	image	2024-09-11 09:22:16	2024-09-17 08:21:32	t	French is a Romance language that is closely related to languages like Catalan, Spanish and Italian. It uses these diacritics and special letters:\r\n\r\nAccent aigu: é\r\n\r\nAccent grave: à, è, ù\r\n\r\nAccent circonflexe: â, ê, î, ô, û\r\n\r\nTrema: ë, ï, ü, ÿ\r\n\r\nLigature: œ \r\n\r\nCédille: ç with a small hook\r\n\r\nIn addition, the -ux suffix is only found in French. \r\n\r\nNOTE: Other European countries with sizable francophone populations include Belgium, Luxembourg, Monaco and Switzerland.
+2557	scenery	scenery/VgGBsPj7OjjjMh6FFkO-Y.jpeg	Never far from the ocean. Color light blue. 	image	2024-08-24 10:19:50	2024-09-17 08:21:35	t	\N
+2637	sign	sign/OiMJhlRhFxtLYqdinDTXx.jpeg	\N	image	2024-09-11 16:38:39	2024-09-17 08:21:37	t	These kilometre markers with CG and CS road numbers are found in Andorra.\r\n\r\nNOTE: Similar kilometre marker designs can be found in Spain.
+2630	pole	pole/MkUIJuhYhIy6OuC13qqsU.jpeg	\N	image	2024-09-11 16:27:37	2024-09-17 08:21:37	t	These pole tops, with an upside down triangle shape, are a good clue for Albania.\r\n\r\nNOTE: Serbia, Czechia, Slovakia and Romania use similar pole tops.
+2617	language	language/WVlfZYVy6GDs5V4Ijtfpo.jpeg	\N	image	2024-09-11 09:18:38	2024-09-17 08:21:38	t	Portuguese is a Romance language that is closely related to Spanish. Unlike Spanish, Portuguese includes the letters Ç, Ã, Õ, Â, and Ê, while it does not include the letter Ñ, which is very common in Spanish.\r\n\r\nNOTE: You can also find Ç in Catalan.
+2648	sign	sign/HmkGS0KuUK9QZJrpgmXG2.jpeg	\N	image	2024-09-12 02:38:35	2024-09-17 08:21:41	t	Australia uses white on black and black on yellow chevrons.
+2623	language	language/bxv4KTUUkY2ZjSZco3fAf.jpeg	\N	image	2024-09-11 09:24:57	2024-09-17 08:21:41	t	Dutch is a Germanic language. It features a lot of double vowels. Typical letter clusters are ij, ieu and oe. “IJ“ written as one capitalised letter is also unique to the language.\r\n\r\nNOTE: Dutch is also used in the region of Flanders, which comprises the northern half of Belgium.
 244	scenery	scenery/south_korea_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 254	scenery	scenery/thailand_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 264	scenery	scenery/andorra_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -727,15 +728,15 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1451	road_number	road_number/ukraine_4.svg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1461	road_number	road_number/chile_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1471	road_number	road_number/colombia_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
-2561	sign	lECa7T--yze3f82KY9BEB.png	Cross back sign	image	2024-08-24 10:25:15	2024-08-24 10:25:15	f	\N
-2562	licence plate	bN4BfZytIe_prutNCH56l.png	\N	image	2024-08-24 10:36:14	2024-08-24 10:36:14	t	\N
-2563	scenery	xf3KYr-o528w--w619yU3.png	\N	image	2024-08-24 10:37:14	2024-08-24 10:37:14	t	\N
-2624	language	B9dGG4lnZ8L2DiaB-S-Ro.png	\N	image	2024-09-11 16:13:52	2024-09-11 16:13:52	t	Lithuanian belongs to the Baltic language family. The other major member of this language family is Latvian, to which it is closely related.\r\n\r\nWithin the Baltic languages, the following letters are unique to Lithuanian:\r\n\r\nVowels with small hooks: Ą Ę Į Ų.\r\n\r\nĖ with a single dot.\r\n\r\nY (also in Estonian, but only in loan words).\r\n\r\nNOTE: Estonian is not a member of the Baltic language family (despite its name), and therefore looks significantly different.
-2625	language	kPK-C9IjzWTlAUIophXuJ.png	\N	image	2024-09-11 16:14:40	2024-09-11 16:14:40	t	The Lithuanian word for street is gatve, often abbreviated as g. on signs and Google Maps. \r\n\r\nThis word is almost entirely unique to Lithuanian. However, very rarely, you might see ‘gatve’ (abbreviated as gat.) in the Latvian capital of Riga.
-2645	road	qIC-mHA5cT3wVqmtdeoKt.png	\N	image	2024-09-12 02:35:43	2024-09-12 02:35:43	t	Australia uses almost exclusively white road lines, with a few rare exceptions in alpine regions such as Mount Kosciuszko and Mount Hotham.\r\n\r\nNOTE: If you are considering guessing in Australia, but see yellow outside lines or a yellow middle line, you will probably be in South Africa or New Zealand respectively. Note that New Zealand can have all white road lines as well.
-2649	sign	ixyKvgBVznJfczP20dZal.png	\N	image	2024-09-12 02:39:09	2024-09-12 02:39:09	t	Green signs with white arrows on either side can be seen at intersections which show nearby towns or cities. A number indicating the number of kilometres away the town can sometimes be seen.
 2653	region	\N	Central Asia	text	2024-09-12 08:40:04	2024-09-12 08:40:04	f	\N
 2654	region	\N	South Asia	text	2024-09-12 08:42:47	2024-09-12 08:48:17	f	\N
+2561	sign	sign/lECa7T--yze3f82KY9BEB.jpeg	Cross back sign	image	2024-08-24 10:25:15	2024-09-17 08:21:33	f	\N
+2645	road	road/qIC-mHA5cT3wVqmtdeoKt.jpeg	\N	image	2024-09-12 02:35:43	2024-09-17 08:21:33	t	Australia uses almost exclusively white road lines, with a few rare exceptions in alpine regions such as Mount Kosciuszko and Mount Hotham.\r\n\r\nNOTE: If you are considering guessing in Australia, but see yellow outside lines or a yellow middle line, you will probably be in South Africa or New Zealand respectively. Note that New Zealand can have all white road lines as well.
+2625	language	language/kPK-C9IjzWTlAUIophXuJ.jpeg	\N	image	2024-09-11 16:14:40	2024-09-17 08:21:33	t	The Lithuanian word for street is gatve, often abbreviated as g. on signs and Google Maps. \r\n\r\nThis word is almost entirely unique to Lithuanian. However, very rarely, you might see ‘gatve’ (abbreviated as gat.) in the Latvian capital of Riga.
+2624	language	language/B9dGG4lnZ8L2DiaB-S-Ro.jpeg	\N	image	2024-09-11 16:13:52	2024-09-17 08:21:34	t	Lithuanian belongs to the Baltic language family. The other major member of this language family is Latvian, to which it is closely related.\r\n\r\nWithin the Baltic languages, the following letters are unique to Lithuanian:\r\n\r\nVowels with small hooks: Ą Ę Į Ų.\r\n\r\nĖ with a single dot.\r\n\r\nY (also in Estonian, but only in loan words).\r\n\r\nNOTE: Estonian is not a member of the Baltic language family (despite its name), and therefore looks significantly different.
+2562	licence_plate	licence_plate/bN4BfZytIe_prutNCH56l.jpeg	\N	image	2024-08-24 10:36:14	2024-09-17 08:21:36	t	\N
+2563	scenery	scenery/xf3KYr-o528w--w619yU3.jpeg	\N	image	2024-08-24 10:37:14	2024-09-17 08:21:42	t	\N
+2649	sign	sign/ixyKvgBVznJfczP20dZal.jpeg	\N	image	2024-09-12 02:39:09	2024-09-17 08:21:43	t	Green signs with white arrows on either side can be seen at intersections which show nearby towns or cities. A number indicating the number of kilometres away the town can sometimes be seen.
 245	scenery	scenery/south_korea_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 255	scenery	scenery/thailand_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 265	scenery	scenery/austria_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -776,16 +777,16 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1452	road_number	road_number/uk_1.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1462	road_number	road_number/chile_4.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1472	road_number	road_number/ecuador_1.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
-2564	walking sign	zpXNcbe4qUAP9des5dVkn.png	\N	image	2024-08-24 10:37:42	2024-08-24 10:37:42	t	\N
-2656	licence plate	P6Y1n9HGoRl-URuxfosXf.png	\N	image	2024-09-12 10:12:15	2024-09-12 10:12:15	t	Bangladeshi licence plates are either white, black or turquoise.\r\n\r\nNOTE: The turquoise and black licence plate can only be found in Bangladesh.
-2658	architecture	_uSvbAA4MHNNN-0jYR5qU.png	\N	image	2024-09-12 10:14:18	2024-09-12 10:14:18	t	Tin roofs are commonly found in Bangladesh.\r\n\r\nNOTE: Due to the humid climate, many countries in South and Southeast Asia use tin roofs.
+2726	licence_plate	licence_plate/Ey83bLi7qk2jXtvBVvtYv.jpeg	Context: Latin America, Trekker Only	image	2024-09-12 12:26:05	2024-09-17 08:21:39	t	\N
+2564	walking_sign	walking_sign/zpXNcbe4qUAP9des5dVkn.jpeg	\N	image	2024-08-24 10:37:42	2024-09-17 08:21:24	t	\N
 1292	road_number	road_number/belgium_5.jpg	\N	image	2024-08-18 12:44:42	2024-09-12 10:59:40	t	Kilometre markers in Belgium are often green, but can have red text as well.
-2667	architecture	yHSsbHwrQIRXS0LYoMhWA.png	\N	image	2024-09-12 11:06:40	2024-09-12 11:06:40	t	Houses in the South of the country use a lot of stone, have gray tones and generally look more French.
-2670	sign	1V4QbFlFkVoTAfQ9ni6Jl.png	\N	image	2024-09-12 11:10:08	2024-09-12 11:10:08	t	Traffic lights are most often supported by black and yellow striped poles.
-2684	pole	bLxzDlIcraPhW76zlqp02.png	\N	image	2024-09-12 11:33:04	2024-09-12 11:33:04	t	Many wooden utility poles, particularly in the eastern parts of Bolivia’s Street View coverage, are noticeably curvy and look like they are made from locally sourced tree trunks.\r\n\r\nNOTE: While you may see slightly bent poles in other places, extremely curvy poles are a very good clue for Bolivia.
-2692	road	Z0mTO2UYI8WNTZKbWwlAC.png	Context: Africa	image	2024-09-12 11:43:22	2024-09-12 11:43:22	t	Curbs and guardrails are usually striped. Possible colour schemes are black-and-yellow, red-and-white, and black-and-white.
 2724	other	\N	Wooden fence\r\nContext: Latin America	image	2024-09-12 12:24:07	2024-09-12 12:24:07	t	Wooden fences are particularly common in Colombia.\r\n\r\nNOTE: In addition to the unpainted variants, some fence posts are painted and sharp at the top. These are almost exclusive to Colombia.
-2726	licence plate	Ey83bLi7qk2jXtvBVvtYv.png	Context: Latin America, Trekker Only	image	2024-09-12 12:26:05	2024-09-12 12:26:05	t	\N
+2692	road	road/Z0mTO2UYI8WNTZKbWwlAC.jpeg	Context: Africa	image	2024-09-12 11:43:22	2024-09-17 08:21:43	t	Curbs and guardrails are usually striped. Possible colour schemes are black-and-yellow, red-and-white, and black-and-white.
+2656	licence_plate	licence_plate/P6Y1n9HGoRl-URuxfosXf.jpeg	\N	image	2024-09-12 10:12:15	2024-09-17 08:21:32	t	Bangladeshi licence plates are either white, black or turquoise.\r\n\r\nNOTE: The turquoise and black licence plate can only be found in Bangladesh.
+2658	architecture	architecture/HJiQ8w2vy4IRMda46dqhe.jpeg	\N	image	2024-09-12 10:14:18	2024-09-17 08:03:38	t	Tin roofs are commonly found in Bangladesh.\r\n\r\nNOTE: Due to the humid climate, many countries in South and Southeast Asia use tin roofs.
+2670	sign	sign/1V4QbFlFkVoTAfQ9ni6Jl.jpeg	\N	image	2024-09-12 11:10:08	2024-09-17 08:21:37	t	Traffic lights are most often supported by black and yellow striped poles.
+2684	pole	pole/bLxzDlIcraPhW76zlqp02.jpeg	\N	image	2024-09-12 11:33:04	2024-09-17 08:21:37	t	Many wooden utility poles, particularly in the eastern parts of Bolivia’s Street View coverage, are noticeably curvy and look like they are made from locally sourced tree trunks.\r\n\r\nNOTE: While you may see slightly bent poles in other places, extremely curvy poles are a very good clue for Bolivia.
+2667	architecture	architecture/yHSsbHwrQIRXS0LYoMhWA.jpeg	\N	image	2024-09-12 11:06:40	2024-09-17 08:21:45	t	Houses in the South of the country use a lot of stone, have gray tones and generally look more French.
 246	scenery	scenery/south_korea_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 256	scenery	scenery/UAE_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 266	scenery	scenery/austria_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -828,17 +829,15 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1463	road_number	road_number/chile_6.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1473	road_number	road_number/ecuador_2.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 455	pole	poles/pole_1.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2657	language	b1HGJwYWrtvxXoC-YceiV.png	\N	image	2024-09-12 10:12:57	2024-09-12 10:12:57	t	The Bengali script features a continuous horizontal line at the top of each word. It has a similar look to Devanagari (Hindi), however it can usually be recognised by the many letters featuring triangular shapes.\r\n\r\nNOTE: Bengali is an official language in Bangladesh and parts of eastern India.
-2669	road	WR8F1k5DxJ4kz1dTOnTbz.png	\N	image	2024-09-12 11:09:18	2024-09-12 11:09:18	t	Almost all roads (big or small) in Belgium use gutters on both sides. This is much less common in neighbouring countries.
-2677	architecture	QgwOVuW3KTA_4l0D97psM.png	\N	image	2024-09-12 11:23:04	2024-09-12 11:23:04	t	The traditional Bhutanese architecture is very distinct. Most of the houses have tin roofs and wooden painted frames, which give them a unique look.\r\n\r\n
-2680	road	zg5E39Bb3wa6nmStDXm4R.png	Context: Latin America	image	2024-09-12 11:27:29	2024-09-12 11:27:29	t	Middle road lines can be all-yellow, yellow and white, or all-white, while outer road lines are always white.\r\n\r\nNOTE: Road lines in Chile are always all-white or all-yellow, never a combination of the two. In Peru, you can find roads having outer lines with no middle line. Such outer line-only roads are very rare in Bolivia.
-2681	road	7IqoUx7Y1sVYHoJs3Dxn0.png	\N	image	2024-09-12 11:30:44	2024-09-12 11:30:44	t	There are also a lot of cobblestone roads. These roads often have a specific pattern, with several neat lines of stones separating the more disorganised cobblestones in between.
-2678	licence plate	KXcFiHnjPnw8vfD71o5Bw.png	\N	image	2024-09-12 11:26:04	2024-09-12 11:33:48	t	Bolivia has short, white licence plates with blue text. The blue text can be hard to see through the blur, so plates might appear as plain white.
-2685	other	LVS_URPBugWikw0HVMt1f.png	\N	image	2024-09-12 11:35:13	2024-09-12 11:35:13	t	Many Bolivians wear traditional clothing, especially women. Folk dress for women typically consists of bowler hats, colourful shawls, and big pleated skirts (pollera).\r\n\r\nNOTE: Similar folk dress can sometimes be found in parts of Peru, especially those close to Bolivia.
-2688	other	WuSjZjcqiNZgzMJW6Gcqn.png	\N	image	2024-09-12 11:36:52	2024-09-12 11:36:52	t	In urban areas, you will often see ads for the telecom company Tigo, with its distinct blue logo. Crucially, this company does not operate in Peru, meaning it can help you solve urban 50-50s.\r\n\r\nNOTE: This company does operate in several other Latin American countries, so only use this tip to differentiate between Peru and Bolivia.
-2691	sign	mD9IXA9Zs8ETTQIJCEgO7.png	Context: Southern Africa	image	2024-09-12 11:42:44	2024-09-12 11:42:44	t	Botswana has a unique black-and-yellow striped signpost. More rarely, you can see red-and-white signposts.\r\n\r\nNOTE: In Southern Africa, these signposts are only found in Botswana.
-2701	architecture	UB1n_3pOx6EDYwwQgHGBs.png	Context: Europe	image	2024-09-12 11:56:57	2024-09-12 11:56:57	t	Most houses in Bulgaria have orange tiled roofs, with distinct patches of mortar along the corner tiles.\r\n\r\nFamously, Bulgarian roofs often seem poorly constructed: the roof tiles and mortar tend to be uneven, especially when compared to other European countries.
-2702	architecture	I75SMHSOwS_esEn2ziUgy.png	Context: Europe	image	2024-09-12 11:57:28	2024-09-12 11:57:28	t	Suburbs in Bulgaria are generally among the poorest areas in Europe, with small, densely built houses and generally an almost ghetto-like look.
+2702	architecture	architecture/I75SMHSOwS_esEn2ziUgy.jpeg	Context: Europe	image	2024-09-12 11:57:28	2024-09-17 08:21:25	t	Suburbs in Bulgaria are generally among the poorest areas in Europe, with small, densely built houses and generally an almost ghetto-like look.
+2701	architecture	architecture/UB1n_3pOx6EDYwwQgHGBs.jpeg	Context: Europe	image	2024-09-12 11:56:57	2024-09-17 08:21:31	t	Most houses in Bulgaria have orange tiled roofs, with distinct patches of mortar along the corner tiles.\r\n\r\nFamously, Bulgarian roofs often seem poorly constructed: the roof tiles and mortar tend to be uneven, especially when compared to other European countries.
+2688	other	other/WuSjZjcqiNZgzMJW6Gcqn.jpeg	\N	image	2024-09-12 11:36:52	2024-09-17 08:21:37	t	In urban areas, you will often see ads for the telecom company Tigo, with its distinct blue logo. Crucially, this company does not operate in Peru, meaning it can help you solve urban 50-50s.\r\n\r\nNOTE: This company does operate in several other Latin American countries, so only use this tip to differentiate between Peru and Bolivia.
+2685	other	other/LVS_URPBugWikw0HVMt1f.jpeg	\N	image	2024-09-12 11:35:13	2024-09-17 08:21:37	t	Many Bolivians wear traditional clothing, especially women. Folk dress for women typically consists of bowler hats, colourful shawls, and big pleated skirts (pollera).\r\n\r\nNOTE: Similar folk dress can sometimes be found in parts of Peru, especially those close to Bolivia.
+2677	architecture	architecture/QgwOVuW3KTA_4l0D97psM.jpeg	\N	image	2024-09-12 11:23:04	2024-09-17 08:21:43	t	The traditional Bhutanese architecture is very distinct. Most of the houses have tin roofs and wooden painted frames, which give them a unique look.\r\n\r\n
+2657	language	language/b1HGJwYWrtvxXoC-YceiV.jpeg	\N	image	2024-09-12 10:12:57	2024-09-17 08:21:44	t	The Bengali script features a continuous horizontal line at the top of each word. It has a similar look to Devanagari (Hindi), however it can usually be recognised by the many letters featuring triangular shapes.\r\n\r\nNOTE: Bengali is an official language in Bangladesh and parts of eastern India.
+2691	sign	sign/mD9IXA9Zs8ETTQIJCEgO7.jpeg	Context: Southern Africa	image	2024-09-12 11:42:44	2024-09-17 08:21:44	t	Botswana has a unique black-and-yellow striped signpost. More rarely, you can see red-and-white signposts.\r\n\r\nNOTE: In Southern Africa, these signposts are only found in Botswana.
+2681	road	road/7IqoUx7Y1sVYHoJs3Dxn0.jpeg	\N	image	2024-09-12 11:30:44	2024-09-17 08:21:44	t	There are also a lot of cobblestone roads. These roads often have a specific pattern, with several neat lines of stones separating the more disorganised cobblestones in between.
+2669	road	road/WR8F1k5DxJ4kz1dTOnTbz.jpeg	\N	image	2024-09-12 11:09:18	2024-09-17 08:21:45	t	Almost all roads (big or small) in Belgium use gutters on both sides. This is much less common in neighbouring countries.
 247	scenery	scenery/sri_lanka_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 257	scenery	scenery/UAE_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 267	scenery	scenery/austria_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -881,17 +880,16 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1464	road_number	road_number/chile_7.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1474	road_number	road_number/ecuador_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 524	pole	poles/pole_188.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2569	licence plate	i2jlaxhQ9qXB6pqVjiPvZ.png	Short	image	2024-08-25 15:21:11	2024-08-25 15:21:11	t	\N
-2571	pole	u6MYp5U-w6OEWmvsabVgj.png	\N	image	2024-08-26 02:32:45	2024-08-26 02:32:45	t	\N
-2659	licence plate	-Mhla3B0oV7pLw9zP6Ppg.png	\N	image	2024-09-12 10:41:19	2024-09-12 10:41:19	t	Licence plates in Belgium use red text. You can recognise this distinct colour even through the blur.
-2666	architecture	2zOig0V4oaCCk-ISta68J.png	\N	image	2024-09-12 11:06:08	2024-09-12 11:06:08	t	A lot of houses in Belgium are made of distinctive red bricks.\r\n\r\nNOTE: This is more common in the North and West of the country.
-2686	other	hyRNfLp3sraxvPIHRD2oW.png	\N	image	2024-09-12 11:35:48	2024-09-12 11:35:48	t	Bolivia’s ruling political party is called Movimiento al Socialismo (MAS). Political graffiti often features the words MAS and Evo, short for Evo Morales, who was president of Bolivia at the time the country was covered by Street View.\r\n\r\nAdditionally, many random objects are painted in the party’s colours: black, white, and a large blue field. This distinctive colour scheme is a good clue for Bolivia.
-2689	licence plate	BBHmRnE7XHUmlQAAU6FZM.png	Context: Southern Africa	image	2024-09-12 11:41:08	2024-09-12 11:41:08	t	Botswana has white front plates and yellow rear plates, similar to UK-style plates.\r\n\r\nNOTE: Botswana is the only country in southern Africa where yellow rear plates are predominantly found.
-2690	sign	agVUPdf_WXIqczULFY3yy.png	\N	image	2024-09-12 11:41:43	2024-09-12 11:41:43	t	Signs in Botswana are usually in English. Most town names, however, are derived from any of the indigenous languages spoken in the country.\r\n\r\nNOTE: The Afrikaans language, which is closely related to Dutch and common in South Africa, is very rare in Botswana. You will almost never find Afrikaans place names.
-2693	sign	oSM0_vIJvup8n1U39xuQB.png	Context: Southern Africa	image	2024-09-12 11:44:16	2024-09-12 11:44:16	t	Just like the other Southern African countries, direction signs have a green background.\r\n\r\nThe numbers of major roads start with A. These road numbers frequently appear on direction signs.\r\n\r\nNOTE: Road numbers in South Africa never start with A.
-2697	pole	j_9_oCh3aiVfq9Camxux4.png	\N	image	2024-09-12 11:50:49	2024-09-12 11:50:49	t	The most common poles in Brazil have some resemblance to a ladder in the bottom portion. They are rectangular, have long segments running through the bottom, and small holes near the top.
-2709	architecture	VlcgCrheU0UrT4zPCvfKq.png	\N	image	2024-09-12 12:04:29	2024-09-12 12:04:29	t	Many traditional homes have tiled orange or red roofs, sometimes with ornaments on the ridges and corners. Corrugated and plain metal roofs are also common.\r\n\r\nOn other, more modern buildings, you can see a wider variety of roof colours and materials.
-2713	sign	AwBUNUB0jZnCzlNdN2uI4.png	\N	image	2024-09-12 12:08:50	2024-09-12 12:08:50	t	Canada uses unique diamond-shaped T-Intersection signs. \r\n\r\nSome provinces use different designs. You can learn more about those in the region guessing section.\r\n\r\nNOTE: Canada is the only country in the world where you can find these signs. The US, for example, uses rectangular T-Intersection signs.
+2713	sign	sign/AwBUNUB0jZnCzlNdN2uI4.jpeg	\N	image	2024-09-12 12:08:50	2024-09-17 08:21:42	t	Canada uses unique diamond-shaped T-Intersection signs. \r\n\r\nSome provinces use different designs. You can learn more about those in the region guessing section.\r\n\r\nNOTE: Canada is the only country in the world where you can find these signs. The US, for example, uses rectangular T-Intersection signs.
+2697	pole	pole/j_9_oCh3aiVfq9Camxux4.jpeg	\N	image	2024-09-12 11:50:49	2024-09-17 08:21:32	t	The most common poles in Brazil have some resemblance to a ladder in the bottom portion. They are rectangular, have long segments running through the bottom, and small holes near the top.
+2569	licence_plate	licence_plate/i2jlaxhQ9qXB6pqVjiPvZ.jpeg	Short	image	2024-08-25 15:21:11	2024-09-17 08:21:42	t	\N
+2693	sign	sign/oSM0_vIJvup8n1U39xuQB.jpeg	Context: Southern Africa	image	2024-09-12 11:44:16	2024-09-17 08:21:24	t	Just like the other Southern African countries, direction signs have a green background.\r\n\r\nThe numbers of major roads start with A. These road numbers frequently appear on direction signs.\r\n\r\nNOTE: Road numbers in South Africa never start with A.
+2666	architecture	architecture/2zOig0V4oaCCk-ISta68J.jpeg	\N	image	2024-09-12 11:06:08	2024-09-17 08:21:25	t	A lot of houses in Belgium are made of distinctive red bricks.\r\n\r\nNOTE: This is more common in the North and West of the country.
+2690	sign	sign/agVUPdf_WXIqczULFY3yy.jpeg	\N	image	2024-09-12 11:41:43	2024-09-17 08:21:26	t	Signs in Botswana are usually in English. Most town names, however, are derived from any of the indigenous languages spoken in the country.\r\n\r\nNOTE: The Afrikaans language, which is closely related to Dutch and common in South Africa, is very rare in Botswana. You will almost never find Afrikaans place names.
+2571	pole	pole/u6MYp5U-w6OEWmvsabVgj.jpeg	\N	image	2024-08-26 02:32:45	2024-09-17 08:21:31	t	\N
+2659	licence_plate	licence_plate/-Mhla3B0oV7pLw9zP6Ppg.jpeg	\N	image	2024-09-12 10:41:19	2024-09-17 08:21:32	t	Licence plates in Belgium use red text. You can recognise this distinct colour even through the blur.
+2689	licence_plate	licence_plate/BBHmRnE7XHUmlQAAU6FZM.jpeg	Context: Southern Africa	image	2024-09-12 11:41:08	2024-09-17 08:21:40	t	Botswana has white front plates and yellow rear plates, similar to UK-style plates.\r\n\r\nNOTE: Botswana is the only country in southern Africa where yellow rear plates are predominantly found.
+2709	architecture	architecture/VlcgCrheU0UrT4zPCvfKq.jpeg	\N	image	2024-09-12 12:04:29	2024-09-17 08:21:43	t	Many traditional homes have tiled orange or red roofs, sometimes with ornaments on the ridges and corners. Corrugated and plain metal roofs are also common.\r\n\r\nOn other, more modern buildings, you can see a wider variety of roof colours and materials.
 248	scenery	scenery/sri_lanka_2.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 258	scenery	scenery/UAE_3.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
 268	scenery	scenery/belgium_1.jpg	\N	image	2024-08-16 06:50:45	2024-08-16 06:50:45	t	\N
@@ -1000,22 +998,19 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 605	pole	poles/pole_25.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 615	pole	poles/pole_207.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 625	pole	poles/pole_42.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2717	sign	igFbDz1Rxhd04Vf_rHQa6.png	\N	image	2024-09-12 12:14:57	2024-09-12 12:14:57	t	Slots can often be seen at the top of signposts.
-2711	other	ZwFJSG0Nw2aC4iOsp6-R9.png	\N	image	2024-09-12 12:05:28	2024-09-12 12:05:28	t	The majority of Cambodians are Buddhist. Temples are common throughout the country. Temple architecture is highly decorative, with ornamented roofs. You might also see Buddhist flags.\r\n\r\nNOTE: Thailand and Laos are also majority Buddhist. Temples in these countries can look similar.
 655	pole	poles/pole_63.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 665	pole	poles/pole_57.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2719	licence plate	AuqXj_Nlyk2umv4EV-dZK.png	Context: Island-ish	image	2024-09-12 12:19:23	2024-09-12 12:19:23	t	Christmas Island has yellow licence plates.
 685	pole	poles/pole_186.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 2566	pole	8XohBs6kONfBLD50ncGrF.png	\N	image	2024-08-25 04:04:17	2024-08-25 04:04:17	f	\N
-2660	bollard	kUVhGv85eG-CkrKeIUILh.png	\N	image	2024-09-12 10:42:16	2024-09-12 10:42:16	t	Belgium uses white bollards with a yellow rectangular reflector on the front and white on the back. A second type of bollard is dark brown with two red stripes at the top. Occasionally, other bollards can be seen.\r\n\r\nNOTE: Denmark uses similar white bollards, but they have a red stripe at the top and the reflector is not rectangular. The dark brown bollard with two red stripes can also be seen in the Netherlands.
-2661	pole	jL5BlwmWFOa0g78PxbRym.png	\N	image	2024-09-12 10:43:17	2024-09-12 10:43:17	t	Most poles in Belgium are concrete, square shaped, and have tiny holes running up them. They often have small metal wrappings around them. The second most common type of pole has oval-shaped holes. You can find many different types of concrete poles in Belgium.\r\n\r\nNOTE: The small metal wrappings can be found in France as well.
-2675	floral	9ewej1DfgRPnmoPalbMn_.png	\N	image	2024-09-12 11:19:32	2024-09-12 11:19:32	f	Palms are very commonly found on Bermuda.
-2682	road	g5Liv9DlgHU90dwIEzTuY.png	\N	image	2024-09-12 11:31:41	2024-09-12 11:31:41	t	Guardrails sometimes feature yellow and black markings. These markings always have the yellow stripes on the outside.\r\n\r\nNOTE: Peru has similar markings. However, in Peru, the markings have the inverse colour scheme: the black stripes are always on the outside.
-2687	other	XUhXpaMX9Ebrc6tD5_Qsv.png	\N	image	2024-09-12 11:36:13	2024-09-12 11:36:13	t	Bolivia has a second official flag, called the Wiphala. It is a square patchwork of seven diagonally arranged colours. It is sometimes seen on government buildings and project signs.
-2714	other	FdZ5fN9GOdMmcZU5omo_X.png	Comunal Mailbox	image	2024-09-12 12:10:27	2024-09-12 12:10:27	t	You can sometimes find communal mailboxes in Canada. Personal mailboxes are still very common, though. \r\n\r\nCanada Post has a red logo, which sometimes appears on mailboxes. \r\n\r\nHINT: These communal mailboxes are very rare in the US. In addition, the US Postal Service has a blue logo.
-2715	road	YyFV6fIRhPPtgNdh23vrg.png	\N	image	2024-09-12 12:13:28	2024-09-12 12:13:28	t	Chilean road lines are either all white, or all yellow:\r\n\r\nAll white road lines are most common. Within the Americas, they are a good clue for Chile, though not completely unique.\r\n\r\nAll yellow road lines are seen in National Parks or areas of high snowfall. Within the Americas, these all yellow road lines are essentially unique to Chile.\r\n\r\nYou will almost never see a combination of the two colours, apart from a few rare exceptions.\r\n\r\nNOTE: It is important to note that Argentina has a decent amount of roads with all white road lines.
-2716	licence plate	aFEenaGg2-ZYC6sxVhIpf.png	\N	image	2024-09-12 12:14:27	2024-09-12 12:14:27	t	Regular vehicles have white licence plates, while commercial and taxi vehicles have orange plates.\r\n\r\nNOTE: Orange plates can also be seen in Ecuador. Brazilian commercial plates are red, but can look similar in some lighting.
-2728	licence plate	XOj8Y-XYoj7JcWB56RoaU.png	HR sticker	image	2024-09-12 12:28:41	2024-09-12 12:28:41	t	Stickers with the letters HR can be found on Croatian cars. HR stands for Hrvatska, the Croatian name for Croatia.\r\n\r\nNOTE: These were mainly used before EU plates were introduced, meaning they will be less common in Generation 4.
+2714	other	other/FdZ5fN9GOdMmcZU5omo_X.jpeg	Comunal Mailbox	image	2024-09-12 12:10:27	2024-09-17 08:21:43	t	You can sometimes find communal mailboxes in Canada. Personal mailboxes are still very common, though. \r\n\r\nCanada Post has a red logo, which sometimes appears on mailboxes. \r\n\r\nHINT: These communal mailboxes are very rare in the US. In addition, the US Postal Service has a blue logo.
+2711	other	other/ZwFJSG0Nw2aC4iOsp6-R9.jpeg	\N	image	2024-09-12 12:05:28	2024-09-17 08:21:24	t	The majority of Cambodians are Buddhist. Temples are common throughout the country. Temple architecture is highly decorative, with ornamented roofs. You might also see Buddhist flags.\r\n\r\nNOTE: Thailand and Laos are also majority Buddhist. Temples in these countries can look similar.
+2661	pole	pole/jL5BlwmWFOa0g78PxbRym.jpeg	\N	image	2024-09-12 10:43:17	2024-09-17 08:21:32	t	Most poles in Belgium are concrete, square shaped, and have tiny holes running up them. They often have small metal wrappings around them. The second most common type of pole has oval-shaped holes. You can find many different types of concrete poles in Belgium.\r\n\r\nNOTE: The small metal wrappings can be found in France as well.
+2687	other	other/XUhXpaMX9Ebrc6tD5_Qsv.jpeg	\N	image	2024-09-12 11:36:13	2024-09-17 08:21:33	t	Bolivia has a second official flag, called the Wiphala. It is a square patchwork of seven diagonally arranged colours. It is sometimes seen on government buildings and project signs.
+2682	road	road/g5Liv9DlgHU90dwIEzTuY.jpeg	\N	image	2024-09-12 11:31:41	2024-09-17 08:21:34	t	Guardrails sometimes feature yellow and black markings. These markings always have the yellow stripes on the outside.\r\n\r\nNOTE: Peru has similar markings. However, in Peru, the markings have the inverse colour scheme: the black stripes are always on the outside.
+2717	sign	sign/igFbDz1Rxhd04Vf_rHQa6.jpeg	\N	image	2024-09-12 12:14:57	2024-09-17 08:21:37	t	Slots can often be seen at the top of signposts.
+2675	floral	floral/9ewej1DfgRPnmoPalbMn_.jpeg	\N	image	2024-09-12 11:19:32	2024-09-17 08:21:37	f	Palms are very commonly found on Bermuda.
+2716	licence_plate	licence_plate/aFEenaGg2-ZYC6sxVhIpf.jpeg	\N	image	2024-09-12 12:14:27	2024-09-17 08:21:42	t	Regular vehicles have white licence plates, while commercial and taxi vehicles have orange plates.\r\n\r\nNOTE: Orange plates can also be seen in Ecuador. Brazilian commercial plates are red, but can look similar in some lighting.
+2660	bollard	bollard/kUVhGv85eG-CkrKeIUILh.jpeg	\N	image	2024-09-12 10:42:16	2024-09-17 08:21:44	t	Belgium uses white bollards with a yellow rectangular reflector on the front and white on the back. A second type of bollard is dark brown with two red stripes at the top. Occasionally, other bollards can be seen.\r\n\r\nNOTE: Denmark uses similar white bollards, but they have a red stripe at the top and the reflector is not rectangular. The dark brown bollard with two red stripes can also be seen in the Netherlands.
 1286	road_number	road_number/belgium_2.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1296	road_number	road_number/croatia_1.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1306	road_number	road_number/estonia_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
@@ -1054,10 +1049,10 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 666	pole	poles/pole_147.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 676	pole	poles/pole_38.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 686	pole	poles/pole_40.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2662	sign	t3vV5HVLk7PHWX6-KnOBr.png	\N	image	2024-09-12 10:43:54	2024-09-12 10:43:54	t	Directional signs in Belgium are most often blue or white.
-2722	sign	imTs7Pnc8k0rMNXv4DSFy.png	\N	image	2024-09-12 12:22:58	2024-09-12 12:22:58	t	Signposts in Colombia are made of white metal, and join to form a distinct cross on the back of signs.\r\n\r\nNOTE: White metal signposts can also be found in Brazil, however these are usually wider.
-2723	other	I-w5j8zt4Pt9vIYRCp1kl.png	\N	image	2024-09-12 12:23:34	2024-09-12 12:23:34	t	Colombian taxis are always this pastel yellow colour. As opposed to private vehicles, they have white licence plates, which are often printed on the side and roof. If unblurred, you will often see the city name.\r\n\r\nNOTE: Ecuadorian taxis may look similar. However, they use a slightly more saturated yellow and typically have orange plates.
-2734	pole	7CwtJ6YSi0rrCjou4f8pf.png	\N	image	2024-09-12 15:45:48	2024-09-12 15:45:48	t	\N
+2734	pole	pole/7CwtJ6YSi0rrCjou4f8pf.jpeg	\N	image	2024-09-12 15:45:48	2024-09-17 08:21:24	t	\N
+2662	sign	sign/t3vV5HVLk7PHWX6-KnOBr.jpeg	\N	image	2024-09-12 10:43:54	2024-09-17 08:21:27	t	Directional signs in Belgium are most often blue or white.
+2722	sign	sign/imTs7Pnc8k0rMNXv4DSFy.jpeg	\N	image	2024-09-12 12:22:58	2024-09-17 08:21:43	t	Signposts in Colombia are made of white metal, and join to form a distinct cross on the back of signs.\r\n\r\nNOTE: White metal signposts can also be found in Brazil, however these are usually wider.
+2723	other	other/I-w5j8zt4Pt9vIYRCp1kl.jpeg	\N	image	2024-09-12 12:23:34	2024-09-17 08:21:43	t	Colombian taxis are always this pastel yellow colour. As opposed to private vehicles, they have white licence plates, which are often printed on the side and roof. If unblurred, you will often see the city name.\r\n\r\nNOTE: Ecuadorian taxis may look similar. However, they use a slightly more saturated yellow and typically have orange plates.
 1287	road_number	road_number/belgium_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1297	road_number	road_number/croatia_2.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1307	road_number	road_number/estonia_4.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
@@ -1092,15 +1087,15 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 647	pole	poles/pole_36.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 657	pole	poles/pole_113.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 667	pole	poles/pole_151.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2698	road	HSWZ84PuAS5mofXZAfRGm.png	Context: Latin America	image	2024-09-12 11:51:25	2024-09-12 11:51:25	t	Roads in Brazil will usually feature double yellow middle lines, with white outer lines. Roads can occasionally have a single dashed yellow line.
 687	pole	poles/pole_212.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2663	sign	fAIVSE91E6jLHwODZYO9K.png	\N	image	2024-09-12 10:44:38	2024-09-12 10:44:38	t	Road signs often have an additional small blue sign. In other European countries, these small signs are usually just white.
-2671	sign	Jsm8j9GyN5JO_2zu7NbX6.png	\N	image	2024-09-12 11:10:49	2024-09-12 11:10:49	t	Bus stops are always marked by yellow signposts. Bus shelters often have yellow roofs.
-2673	sign	KnM76MxsTrKvpydZ9UlkR.png	\N	image	2024-09-12 11:14:44	2024-09-12 11:14:44	t	Town entry signs in Belgium are white with a black border. They also mention the name of the city or municipality in bold, black text.
-2683	pole	5aBfBDUwmHvW-K_9PXe4X.png	\N	image	2024-09-12 11:32:27	2024-09-12 11:32:27	t	Two types of utility poles are common in Bolivia:\r\n- Round concrete poles, often with small pinholes near the top.\r\n- Wooden poles.\r\n\r\nPoles in Bolivia are very inconsistent and should not be relied on too much. Poles can have a variety of pole tops.
-2695	licence plate	DpC2Z-RXSjdiDwA76TXpr.png	\N	image	2024-09-12 11:49:30	2024-09-12 11:49:30	t	Licence plates in Brazil were white until 2018. Now, a white plate with a blue stripe on top is used. Red is still used for commercial vehicles.
-2696	other	NHlBxc7t3RLi6ofN0FmMS.png	Deep Red Soil	image	2024-09-12 11:50:16	2024-09-12 11:50:16	t	Soil in most of Brazil is distinctly red. It can range from a light pink around Mato Grosso to a deep maroon near the Paraná river. The soil is usually not red in the North East, or in the majority of Rio Grande do Sul, however.\r\n\r\nNOTE: The nearby Argentine province of Misiones has deep red soil, as well a handful of other countries and regions around the world.
-2705	language	RtbijnNeNVxn528lhOb2e.png	\N	image	2024-09-12 12:02:04	2024-09-12 12:02:04	t	Khmer is the official language of Cambodia. It has its own unique script, which is very distinct and recognizable. In most fonts, letters have an intricate, curvy look. \r\n\r\nKhmer can look fairly different depending on the font used. A compilation of what this script looks like in street view can be found here.\r\n\r\nNOTE: The Thai and Lao scripts look similar, but the letters tend to have a less intricate look. However, some simplified Khmer fonts can look a bit like Thai and Lao.
+2673	sign	sign/KnM76MxsTrKvpydZ9UlkR.jpeg	\N	image	2024-09-12 11:14:44	2024-09-17 08:21:45	t	Town entry signs in Belgium are white with a black border. They also mention the name of the city or municipality in bold, black text.
+2698	road	road/HSWZ84PuAS5mofXZAfRGm.jpeg	Context: Latin America	image	2024-09-12 11:51:25	2024-09-17 08:21:27	t	Roads in Brazil will usually feature double yellow middle lines, with white outer lines. Roads can occasionally have a single dashed yellow line.
+2683	pole	pole/5aBfBDUwmHvW-K_9PXe4X.jpeg	\N	image	2024-09-12 11:32:27	2024-09-17 08:21:31	t	Two types of utility poles are common in Bolivia:\r\n- Round concrete poles, often with small pinholes near the top.\r\n- Wooden poles.\r\n\r\nPoles in Bolivia are very inconsistent and should not be relied on too much. Poles can have a variety of pole tops.
+2705	language	language/RtbijnNeNVxn528lhOb2e.jpeg	\N	image	2024-09-12 12:02:04	2024-09-17 08:21:35	t	Khmer is the official language of Cambodia. It has its own unique script, which is very distinct and recognizable. In most fonts, letters have an intricate, curvy look. \r\n\r\nKhmer can look fairly different depending on the font used. A compilation of what this script looks like in street view can be found here.\r\n\r\nNOTE: The Thai and Lao scripts look similar, but the letters tend to have a less intricate look. However, some simplified Khmer fonts can look a bit like Thai and Lao.
+2663	sign	sign/fAIVSE91E6jLHwODZYO9K.jpeg	\N	image	2024-09-12 10:44:38	2024-09-17 08:21:37	t	Road signs often have an additional small blue sign. In other European countries, these small signs are usually just white.
+2671	sign	sign/Jsm8j9GyN5JO_2zu7NbX6.jpeg	\N	image	2024-09-12 11:10:49	2024-09-17 08:21:37	t	Bus stops are always marked by yellow signposts. Bus shelters often have yellow roofs.
+2695	licence_plate	licence_plate/DpC2Z-RXSjdiDwA76TXpr.jpeg	\N	image	2024-09-12 11:49:30	2024-09-17 08:21:43	t	Licence plates in Brazil were white until 2018. Now, a white plate with a blue stripe on top is used. Red is still used for commercial vehicles.
+2696	other	other/NHlBxc7t3RLi6ofN0FmMS.jpeg	Deep Red Soil	image	2024-09-12 11:50:16	2024-09-17 08:21:43	t	Soil in most of Brazil is distinctly red. It can range from a light pink around Mato Grosso to a deep maroon near the Paraná river. The soil is usually not red in the North East, or in the majority of Rio Grande do Sul, however.\r\n\r\nNOTE: The nearby Argentine province of Misiones has deep red soil, as well a handful of other countries and regions around the world.
 1288	road_number	road_number/belgium_6.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1298	road_number	road_number/croatia_3.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
 1308	road_number	road_number/estonia_5.jpg	\N	image	2024-08-18 12:44:42	2024-08-18 12:44:42	t	\N
@@ -1138,11 +1133,11 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 668	pole	poles/pole_72.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 678	pole	poles/pole_39.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 688	pole	poles/pole_218.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2570	pole	pCjwV7tUHV5R9Y3_vMaAx.png	Painted pink or green	image	2024-08-25 15:24:12	2024-08-25 15:24:12	t	\N
-1089	walking sign	walking_signs/belgium.svg	\N	image	2024-08-17 03:22:48	2024-09-12 10:56:20	t	Belgium uses pedestrian crossing signs without any stripes, but with two horizontal dotted lines. The man on the sign has a square head.\r\n\r\nNOTE: France and the Netherlands use a pedestrian sign with a regular zebra crossing with five vertical stripes.
-2674	sign	yT7i7GhJ8MlPtRi1Ayxjr.png	\N	image	2024-09-12 11:16:37	2024-09-12 11:16:37	t	Street name signs in Belgium are very diverse, and often unique to a city. Most common colours are white and dark blue. They often have the town or city name written on them.\r\n\r\nNOTE: These signs often have variable designs, but most of them are fairly short and tall. In comparison, Dutch street signs are almost always much longer than they are tall.
-2700	other	MYWNL6VCrPAl6YPMgtT7h.png	Blue Fortlev water tanks	image	2024-09-12 11:52:32	2024-09-12 11:52:32	t	Blue Fortlev water tanks are often seen on Brazilian roofs.
-2735	language	xcBG1esra-vRciJfQjgzm.png	\N	image	2024-09-12 16:43:19	2024-09-12 16:43:19	t	Latvian belongs to the Baltic language family. The other major member of this language family is Lithuanian, to which it is closely related.\r\n\r\nWithin the Baltic languages, the following letters are unique to Latvian:\r\n\r\nVowels with a macron (horizontal stripe): Ā Ē Ī.\r\n\r\nConsonants with a small hook: Ģ Ķ Ļ Ņ.
+1089	walking_sign	walking_signs/belgium.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	Belgium uses pedestrian crossing signs without any stripes, but with two horizontal dotted lines. The man on the sign has a square head.\r\n\r\nNOTE: France and the Netherlands use a pedestrian sign with a regular zebra crossing with five vertical stripes.
+2700	other	other/MYWNL6VCrPAl6YPMgtT7h.jpeg	Blue Fortlev water tanks	image	2024-09-12 11:52:32	2024-09-17 08:21:31	t	Blue Fortlev water tanks are often seen on Brazilian roofs.
+2570	pole	pole/pCjwV7tUHV5R9Y3_vMaAx.jpeg	Painted pink or green	image	2024-08-25 15:24:12	2024-09-17 08:21:33	t	\N
+2735	language	language/xcBG1esra-vRciJfQjgzm.jpeg	\N	image	2024-09-12 16:43:19	2024-09-17 08:21:42	t	Latvian belongs to the Baltic language family. The other major member of this language family is Lithuanian, to which it is closely related.\r\n\r\nWithin the Baltic languages, the following letters are unique to Latvian:\r\n\r\nVowels with a macron (horizontal stripe): Ā Ē Ī.\r\n\r\nConsonants with a small hook: Ģ Ķ Ļ Ņ.
+2674	sign	sign/yT7i7GhJ8MlPtRi1Ayxjr.jpeg	\N	image	2024-09-12 11:16:37	2024-09-17 08:21:46	t	Street name signs in Belgium are very diverse, and often unique to a city. Most common colours are white and dark blue. They often have the town or city name written on them.\r\n\r\nNOTE: These signs often have variable designs, but most of them are fairly short and tall. In comparison, Dutch street signs are almost always much longer than they are tall.
 519	pole	poles/pole_12.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 529	pole	poles/pole_217.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 539	pole	poles/pole_81.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
@@ -1161,12 +1156,12 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 669	pole	poles/pole_111.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 679	pole	poles/pole_165.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 689	pole	poles/pole_123.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2572	pole	RyR7BPNN8h8HzKQOzNdSQ.png	\N	image	2024-08-26 02:34:41	2024-08-26 02:34:41	t	\N
-2664	road	Hsp29BG2MzpB62qoz7yG-.png	\N	image	2024-09-12 11:00:57	2024-09-12 11:00:57	t	A lot of rural roads in Belgium are made out of concrete slabs, almost like you would see in the Philippines or Thailand.\r\n\r\nNOTE: The Netherlands almost never uses concrete slabs for roads.
-2679	architecture	Mte2czkD62Va2AgCtMq6T.png	\N	image	2024-09-12 11:26:45	2024-09-12 11:26:45	t	Many buildings in Bolivia consist of large red bricks. Buildings often have an ‘unfinished' look. \r\n\r\nNOTE: This style of architecture is also common in parts of Peru.
-2712	sign	TT-UAIQ4OJK7MoWgkecwN.png	\N	image	2024-09-12 12:08:35	2024-09-12 12:08:35	t	Canada uses unique diamond-shaped T-Intersection signs. \r\n\r\nSome provinces use different designs. You can learn more about those in the region guessing section.\r\n\r\nNOTE: Canada is the only country in the world where you can find these signs. The US, for example, uses rectangular T-Intersection signs.
-2720	licence plate	sxyIMvOhe3O8K17SBiG0F.png	Context: Latin America	image	2024-09-12 12:20:42	2024-09-12 12:20:42	t	Colombian licence plates are typically yellow.\r\n\r\nNOTE: Within South America, yellow licence plates are almost exclusively found in Colombia.
-2727	language	AwmoU8vTVNq3ztMe8givn.png	\N	image	2024-09-12 12:27:55	2024-09-12 12:27:55	t	Croatian is a Slavic language. It is always written in the Latin alphabet. ‘IJE’ is common in Croatian whereas Serbian uses only ‘E’ instead.\r\n\r\nNOTE: The Slovene language also features a lot of ‘J’s. Serbian and Montenegrin are also very similar, but Serbia and Montenegro use both Latin and Cyrillic script.
+2720	licence_plate	sxyIMvOhe3O8K17SBiG0F.png	Context: Latin America	image	2024-09-12 12:20:42	2024-09-17 06:28:48	t	Colombian licence plates are typically yellow.\r\n\r\nNOTE: Within South America, yellow licence plates are almost exclusively found in Colombia.
+2712	sign	sign/TT-UAIQ4OJK7MoWgkecwN.jpeg	\N	image	2024-09-12 12:08:35	2024-09-17 08:21:25	t	Canada uses unique diamond-shaped T-Intersection signs. \r\n\r\nSome provinces use different designs. You can learn more about those in the region guessing section.\r\n\r\nNOTE: Canada is the only country in the world where you can find these signs. The US, for example, uses rectangular T-Intersection signs.
+2664	road	road/Hsp29BG2MzpB62qoz7yG-.jpeg	\N	image	2024-09-12 11:00:57	2024-09-17 08:21:25	t	A lot of rural roads in Belgium are made out of concrete slabs, almost like you would see in the Philippines or Thailand.\r\n\r\nNOTE: The Netherlands almost never uses concrete slabs for roads.
+2727	language	language/AwmoU8vTVNq3ztMe8givn.jpeg	\N	image	2024-09-12 12:27:55	2024-09-17 08:21:31	t	Croatian is a Slavic language. It is always written in the Latin alphabet. ‘IJE’ is common in Croatian whereas Serbian uses only ‘E’ instead.\r\n\r\nNOTE: The Slovene language also features a lot of ‘J’s. Serbian and Montenegrin are also very similar, but Serbia and Montenegro use both Latin and Cyrillic script.
+2572	pole	pole/RyR7BPNN8h8HzKQOzNdSQ.jpeg	\N	image	2024-08-26 02:34:41	2024-09-17 08:21:37	t	\N
+2679	architecture	architecture/Mte2czkD62Va2AgCtMq6T.jpeg	\N	image	2024-09-12 11:26:45	2024-09-17 08:21:39	t	Many buildings in Bolivia consist of large red bricks. Buildings often have an ‘unfinished' look. \r\n\r\nNOTE: This style of architecture is also common in parts of Peru.
 1481	region	\N	Africa	text	2024-08-20 05:00:57	2024-08-20 05:00:57	f	\N
 520	pole	poles/pole_13.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 530	pole	poles/pole_164.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
@@ -1183,18 +1178,19 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 640	pole	poles/pole_33.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 650	pole	poles/pole_106.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 660	pole	poles/pole_171.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
+2738	language	language/oosd9_vJX6F84tRDsQqwA.jpeg	\N	image	2024-09-13 00:22:42	2024-09-17 08:21:25	t	Slovak and Czech are mutually intelligible Slavic languages with several similarities such as acute accents above vowels (á, é, í, ó, ú, ý). However, they both have some distinct letters:\r\n\r\nSlovak uses the letters Ľ, Ô, Ä, Ŕ and Ĺ;\r\n\r\nCzech uses the letters Ř, Ě and Ů.\r\n\r\nNOTE: Acute accents on vowels are not found in South Slavic languages.
 680	pole	poles/pole_215.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 690	pole	poles/pole_156.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 2575	pole	\N	A shaped	text	2024-08-27 01:45:39	2024-08-27 01:45:39	t	\N
-2665	road	uNAJuFUHxej8YA68mJchM.png	\N	image	2024-09-12 11:01:49	2024-09-12 11:01:49	t	Belgium uses all white road lines. These can be continuous or broken. Roads are often accompanied by bike lanes on both sides.\r\n\r\nNOTE: Bikes and cycling lanes are most common in the Netherlands, but they can be often seen in Belgium as well.
-2672	sign	D90XZ8mUL9GE8NmumcuvF.png	\N	image	2024-09-12 11:12:11	2024-09-12 11:12:11	t	Priority signs in Belgium have an orange diamond and are much smaller than in other countries.
-2676	road	2G_VDsC1DcLYr76sdrxT7.png	\N	image	2024-09-12 11:20:01	2024-09-12 11:20:01	t	You will occasionally see these white zig zag road lines on Bermuda.
-2704	google_car	bsnVZpCRBdR2WMOR0rBz0.png	Context: South Asia	image	2024-09-12 12:01:12	2024-09-12 12:01:12	t	On the Generation 3 coverage you can find two different Google cars: \r\n\r\nA car with a short, stubby antenna. The antenna has three ridges. It can sometimes be hard to tell if the antenna has ridges.\r\n\r\nA white car with stripes and no antenna. There is a white stripe on the left, and a yellow stripe on the right. The stripes are sometimes poorly visible.\r\n\r\nThe car is not always as visible as shown in the example images.\r\n\r\nNOTE: This specific striped white car is unique to Cambodia. Make sure not to mix it up with the Bangladeshi striped car, which looks slightly different.\r\n\r\nThe Latin American countries of Mexico, Colombia, Ecuador and Brazil also have cars with similar short antennas. However, these have a diagonally coiled ridge, instead of Cambodia’s three ridges.\r\n\r\n
-2708	architecture	kgKxq1WJPEJSxkRfuOCCl.png	\N	image	2024-09-12 12:04:03	2024-09-12 12:04:03	t	In addition, traditional Cambodian wooden stilt houses tend to have very recognizable colour schemes.\r\n\r\nWalls are commonly painted dark red-brown, light blue or an ochre orange.\r\n\r\nDoors, windows and other architectural details are often painted bright blue.\r\n\r\nNOTE: More modern houses tend to have a wider variety of colour schemes.
-2710	architecture	cbDUGsGSMbv6DmXuop8Qj.png	\N	image	2024-09-12 12:04:56	2024-09-12 12:04:56	t	The majority of Cambodians are Buddhist. Temples are common throughout the country. Temple architecture is highly decorative, with ornamented roofs. You might also see Buddhist flags.\r\n\r\nNOTE: Thailand and Laos are also majority Buddhist. Temples in these countries can look similar.
-2721	sign	6YuU-PoQaen9MqfYkO4ca.png	\N	image	2024-09-12 12:22:24	2024-09-12 12:22:24	t	Signposts in Colombia are made of white metal, and join to form a distinct cross on the back of signs.\r\n\r\nNOTE: White metal signposts can also be found in Brazil, however these are usually wider.
-2731	other	ypjpTFL2387xgq3S1wb0e.png	\N	image	2024-09-12 12:30:37	2024-09-12 12:30:37	t	Croatia features blue fire hydrants with two diagonal protrusions on either side. Newer fire hydrants seen in Generation 4 have a smaller top but are still recognisable due to the blue paint.\r\n\r\nNOTE: Similar fire hydrants can be found in bordering countries, most commonly in Hungary.
-2738	language	oosd9_vJX6F84tRDsQqwA.png	\N	image	2024-09-13 00:22:42	2024-09-13 00:22:42	t	Slovak and Czech are mutually intelligible Slavic languages with several similarities such as acute accents above vowels (á, é, í, ó, ú, ý). However, they both have some distinct letters:\r\n\r\nSlovak uses the letters Ľ, Ô, Ä, Ŕ and Ĺ;\r\n\r\nCzech uses the letters Ř, Ě and Ů.\r\n\r\nNOTE: Acute accents on vowels are not found in South Slavic languages.
+2672	sign	sign/D90XZ8mUL9GE8NmumcuvF.jpeg	\N	image	2024-09-12 11:12:11	2024-09-17 08:21:31	t	Priority signs in Belgium have an orange diamond and are much smaller than in other countries.
+2721	sign	sign/6YuU-PoQaen9MqfYkO4ca.jpeg	\N	image	2024-09-12 12:22:24	2024-09-17 08:21:32	t	Signposts in Colombia are made of white metal, and join to form a distinct cross on the back of signs.\r\n\r\nNOTE: White metal signposts can also be found in Brazil, however these are usually wider.
+2704	google_car	google_car/bsnVZpCRBdR2WMOR0rBz0.jpeg	Context: South Asia	image	2024-09-12 12:01:12	2024-09-17 08:21:33	t	On the Generation 3 coverage you can find two different Google cars: \r\n\r\nA car with a short, stubby antenna. The antenna has three ridges. It can sometimes be hard to tell if the antenna has ridges.\r\n\r\nA white car with stripes and no antenna. There is a white stripe on the left, and a yellow stripe on the right. The stripes are sometimes poorly visible.\r\n\r\nThe car is not always as visible as shown in the example images.\r\n\r\nNOTE: This specific striped white car is unique to Cambodia. Make sure not to mix it up with the Bangladeshi striped car, which looks slightly different.\r\n\r\nThe Latin American countries of Mexico, Colombia, Ecuador and Brazil also have cars with similar short antennas. However, these have a diagonally coiled ridge, instead of Cambodia’s three ridges.\r\n\r\n
+2710	architecture	architecture/cbDUGsGSMbv6DmXuop8Qj.jpeg	\N	image	2024-09-12 12:04:56	2024-09-17 08:21:38	t	The majority of Cambodians are Buddhist. Temples are common throughout the country. Temple architecture is highly decorative, with ornamented roofs. You might also see Buddhist flags.\r\n\r\nNOTE: Thailand and Laos are also majority Buddhist. Temples in these countries can look similar.
+2676	road	road/2G_VDsC1DcLYr76sdrxT7.jpeg	\N	image	2024-09-12 11:20:01	2024-09-17 08:21:41	t	You will occasionally see these white zig zag road lines on Bermuda.
+2731	other	other/ypjpTFL2387xgq3S1wb0e.jpeg	\N	image	2024-09-12 12:30:37	2024-09-17 08:21:41	t	Croatia features blue fire hydrants with two diagonal protrusions on either side. Newer fire hydrants seen in Generation 4 have a smaller top but are still recognisable due to the blue paint.\r\n\r\nNOTE: Similar fire hydrants can be found in bordering countries, most commonly in Hungary.
+2708	architecture	architecture/kgKxq1WJPEJSxkRfuOCCl.jpeg	\N	image	2024-09-12 12:04:03	2024-09-17 08:21:42	t	In addition, traditional Cambodian wooden stilt houses tend to have very recognizable colour schemes.\r\n\r\nWalls are commonly painted dark red-brown, light blue or an ochre orange.\r\n\r\nDoors, windows and other architectural details are often painted bright blue.\r\n\r\nNOTE: More modern houses tend to have a wider variety of colour schemes.
+2665	road	road/uNAJuFUHxej8YA68mJchM.jpeg	\N	image	2024-09-12 11:01:49	2024-09-17 08:21:46	t	Belgium uses all white road lines. These can be continuous or broken. Roads are often accompanied by bike lanes on both sides.\r\n\r\nNOTE: Bikes and cycling lanes are most common in the Netherlands, but they can be often seen in Belgium as well.
+2699	other	other/gu__leVDjwpNzFQ2RMNk-.jpeg	Context: Latin America	image	2024-09-12 11:52:00	2024-09-17 08:21:46	t	It is fairly common to see transparent satellite dishes, which within Latin America is generally unique to Brazil.
 758	flag	flags/Flag_of_United Kingdom.svg.png	\N	image	2024-08-16 15:54:55	2024-08-20 05:57:34	t	\N
 521	pole	poles/pole_104.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 531	pole	poles/pole_166.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
@@ -1214,13 +1210,11 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 671	pole	poles/pole_210.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 681	pole	poles/pole_64.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 691	pole	poles/pole_168.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2668	road	0hNeG4vu-QS4VeR0YTlKq.png	\N	image	2024-09-12 11:08:40	2024-09-12 11:08:40	t	Belgian bicycle paths have short dashed outer lines.
-2694	architecture	I7h6LAuiEIGxvIErxbsD4.png	\N	image	2024-09-12 11:44:44	2024-09-12 11:44:44	t	Typical Botswana houses range from small impoverished shacks to comfortable middle-class bungalows. Some buildings have exposed grey bricks. On occasion, you might find traditional round huts.\r\n\r\nNOTE: All of these house styles are also found in the other southern African countries.
-2699	other	gu__leVDjwpNzFQ2RMNk-.png	Context: Latin America	image	2024-09-12 11:52:00	2024-09-12 11:52:00	t	It is fairly common to see transparent satellite dishes, which within Latin America is generally unique to Brazil.
-2718	google_car	WR8ZEMPGKeLR8SrgK-n7C.png	Context: Island-ish	image	2024-09-12 12:17:51	2024-09-12 12:17:51	t	Christmas Island has two types of coverage: car coverage and a couple of trekkers.\r\n\r\nThe car coverage was done with a unique Google car: a silver pickup truck, with the bed of the truck visible. Usually, this is all you need to identify Christmas Island.
-2730	other	DEoyS-k1_Sj5zDq9paaPp.png	\N	image	2024-09-12 12:30:10	2024-09-12 12:30:10	t	Karlovačko and Ožujsko are common Croatian beer companies, with advertisements seen around the country.\r\n\r\nKonzum and Plodine are supermarket chains exclusive to Croatia, mostly found in big cities.
-2732	language	ab0ltw8P8lpgmpYO_Gqrw.png	\N	image	2024-09-12 15:40:34	2024-09-12 15:40:34	t	When written in the latin script, Serbian uses the special letters Č, Ć, Đ, Š and Ž. Note that all of these letters may also be found in Croatian and Montenegrin.
-1483	licence plate	HZ6BxMXx659DTs45TzX2a.png	White Front, Yellow Back	image	2024-08-20 05:51:20	2024-08-20 05:51:20	f	\N
+2730	other	other/DEoyS-k1_Sj5zDq9paaPp.jpeg	\N	image	2024-09-12 12:30:10	2024-09-17 08:21:24	t	Karlovačko and Ožujsko are common Croatian beer companies, with advertisements seen around the country.\r\n\r\nKonzum and Plodine are supermarket chains exclusive to Croatia, mostly found in big cities.
+2668	road	road/0hNeG4vu-QS4VeR0YTlKq.jpeg	\N	image	2024-09-12 11:08:40	2024-09-17 08:21:31	t	Belgian bicycle paths have short dashed outer lines.
+2718	google_car	google_car/WR8ZEMPGKeLR8SrgK-n7C.jpeg	Context: Island-ish	image	2024-09-12 12:17:51	2024-09-17 08:21:37	t	Christmas Island has two types of coverage: car coverage and a couple of trekkers.\r\n\r\nThe car coverage was done with a unique Google car: a silver pickup truck, with the bed of the truck visible. Usually, this is all you need to identify Christmas Island.
+2732	language	language/ab0ltw8P8lpgmpYO_Gqrw.jpeg	\N	image	2024-09-12 15:40:34	2024-09-17 08:21:41	t	When written in the latin script, Serbian uses the special letters Č, Ć, Đ, Š and Ž. Note that all of these letters may also be found in Croatian and Montenegrin.
+2694	architecture	architecture/I7h6LAuiEIGxvIErxbsD4.jpeg	\N	image	2024-09-12 11:44:44	2024-09-17 08:21:41	t	Typical Botswana houses range from small impoverished shacks to comfortable middle-class bungalows. Some buildings have exposed grey bricks. On occasion, you might find traditional round huts.\r\n\r\nNOTE: All of these house styles are also found in the other southern African countries.
 522	pole	poles/pole_133.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 532	pole	poles/pole_144.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 542	pole	poles/pole_84.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
@@ -1240,10 +1234,11 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 692	pole	poles/pole_169.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 2584	camera_generation	\N	Gen 2	text	2024-08-28 00:18:46	2024-08-28 00:18:56	f	\N
 2593	chevron	lKmBsSas2QgkioWE4Ka63.png	\N	image	2024-08-28 22:18:23	2024-08-28 22:18:23	f	\N
-2703	licence plate	darFbpdbB_to1sj1LBegg.png	White: Normal\r\nGreen: Goverment\r\nContext: South Asia	image	2024-09-12 12:00:20	2024-09-12 12:00:20	t	Licence plates are white with blue letters. The blue sheen of the letters can be hard to see through the blur, and the plates might appear as plain white.\r\n\r\nPlates on government vehicles are green.
-2706	pole	uA4BQfKi3IDFw3KdELh5a.png	Context: Asia	image	2024-09-12 12:02:45	2024-09-12 12:02:45	t	Two types of poles are common: \r\n\r\nConcrete ladder poles (so named because the indents and ridges resemble a ladder).\r\n\r\nRound concrete poles with small holes. \r\n\r\nRarely, you might see simple wooden poles.\r\n\r\nNOTE: You can easily distinguish between Thailand and Cambodia based on the poles. Thailand uses square concrete poles with rows of small pinholes on the sides. Such poles are very uncommon in Cambodia (but not completely absent).
-2707	architecture	BVzSJ_MqMXm0XvlQ3Y0zD.png	\N	image	2024-09-12 12:03:29	2024-09-12 12:03:29	t	Wooden houses on stilts are common. Walls are often made of vertical planks. Many homes have double or triple roofs.
-2733	language	bcEpbsfWSoAMPOmGlG8Jc.png	\N	image	2024-09-12 15:41:17	2024-09-12 15:41:17	t	Serbian is a Slavic language which uses both the cyrillic and latin script. These letters are unique to Serbian:\r\n\r\nЂ ђ\r\n\r\nЋ ћ\r\n\r\nThese letters are found in Serbian and Macedonian:\r\n\r\nЉ љ\r\n\r\nЊ њ\r\n\r\nЏ џ
+2703	licence_plate	licence_plate/darFbpdbB_to1sj1LBegg.jpeg	White: Normal\r\nGreen: Goverment\r\nContext: South Asia	image	2024-09-12 12:00:20	2024-09-17 08:21:24	t	Licence plates are white with blue letters. The blue sheen of the letters can be hard to see through the blur, and the plates might appear as plain white.\r\n\r\nPlates on government vehicles are green.
+2707	architecture	architecture/BVzSJ_MqMXm0XvlQ3Y0zD.jpeg	\N	image	2024-09-12 12:03:29	2024-09-17 08:21:37	t	Wooden houses on stilts are common. Walls are often made of vertical planks. Many homes have double or triple roofs.
+1483	licence_plate	licence_plate/HZ6BxMXx659DTs45TzX2a.jpeg	White Front, Yellow Back	image	2024-08-20 05:51:20	2024-09-17 08:21:41	f	\N
+2733	language	language/bcEpbsfWSoAMPOmGlG8Jc.jpeg	\N	image	2024-09-12 15:41:17	2024-09-17 08:21:42	t	Serbian is a Slavic language which uses both the cyrillic and latin script. These letters are unique to Serbian:\r\n\r\nЂ ђ\r\n\r\nЋ ћ\r\n\r\nThese letters are found in Serbian and Macedonian:\r\n\r\nЉ љ\r\n\r\nЊ њ\r\n\r\nЏ џ
+2706	pole	pole/uA4BQfKi3IDFw3KdELh5a.jpeg	Context: Asia	image	2024-09-12 12:02:45	2024-09-17 08:21:43	t	Two types of poles are common: \r\n\r\nConcrete ladder poles (so named because the indents and ridges resemble a ladder).\r\n\r\nRound concrete poles with small holes. \r\n\r\nRarely, you might see simple wooden poles.\r\n\r\nNOTE: You can easily distinguish between Thailand and Cambodia based on the poles. Thailand uses square concrete poles with rows of small pinholes on the sides. Such poles are very uncommon in Cambodia (but not completely absent).
 523	pole	poles/pole_141.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 533	pole	poles/pole_150.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 543	pole	poles/pole_85.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
@@ -1261,10 +1256,10 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 673	pole	poles/pole_129.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 683	pole	poles/pole_75.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
 693	pole	poles/pole_191.jpg	\N	image	2024-08-16 08:04:17	2024-08-24 13:38:33	t	\N
-2577	licence plate	tv3fFNB6oeKlMAdS_-JO7.png	\N	image	2024-08-27 03:19:16	2024-08-27 03:19:16	t	\N
-2725	sign	1Pi_-LtCNvoJ56g7Bp89y.png	\N	image	2024-09-12 12:24:43	2024-09-12 12:24:43	t	Colombia uses two types of kilometre markers: a tall green version with the letters “Pr” at the top, and the traditional stone marker with black lettering. Both designs are unique to the country.\r\n\r\nNOTE: The first two digits at the bottom indicate the road number. In this case, the road number is 90. The last two digits indicate the section of the road, which increase west to east on even numbered highways, and south to north on odd numbered highways.
-2729	architecture	IRfpllUdrHtzxS6hfEFU3.png	\N	image	2024-09-12 12:29:30	2024-09-12 12:29:30	t	Buildings in Croatia sometimes feature exposed red brick walls. This architecture is more common in inland areas.\r\n\r\nNOTE: This type of architecture can also be found in Slovenia and Serbia.
-2737	language	eh0NsCKzOIJIdVEFqMcF9.png	\N	image	2024-09-13 00:20:16	2024-09-13 00:20:16	t	Czech and Slovak are mutually intelligible Slavic languages with several similarities such as acute accents above vowels (á, é, í, ó, ú, ý). However, they both have some distinct letters:\r\n\r\nCzech uses the letters Ř, Ě and Ů;\r\n\r\nSlovak uses the letters Ľ, Ô, Ä, Ŕ and Ĺ.\r\n\r\nNOTE: Acute accents on vowels are not found in South Slavic languages.
+2729	architecture	architecture/IRfpllUdrHtzxS6hfEFU3.jpeg	\N	image	2024-09-12 12:29:30	2024-09-17 08:21:33	t	Buildings in Croatia sometimes feature exposed red brick walls. This architecture is more common in inland areas.\r\n\r\nNOTE: This type of architecture can also be found in Slovenia and Serbia.
+2725	sign	sign/1Pi_-LtCNvoJ56g7Bp89y.jpeg	\N	image	2024-09-12 12:24:43	2024-09-17 08:21:33	t	Colombia uses two types of kilometre markers: a tall green version with the letters “Pr” at the top, and the traditional stone marker with black lettering. Both designs are unique to the country.\r\n\r\nNOTE: The first two digits at the bottom indicate the road number. In this case, the road number is 90. The last two digits indicate the section of the road, which increase west to east on even numbered highways, and south to north on odd numbered highways.
+2577	licence_plate	licence_plate/tv3fFNB6oeKlMAdS_-JO7.jpeg	\N	image	2024-08-27 03:19:16	2024-09-17 08:21:37	t	\N
+2737	language	language/eh0NsCKzOIJIdVEFqMcF9.jpeg	\N	image	2024-09-13 00:20:16	2024-09-17 08:21:43	t	Czech and Slovak are mutually intelligible Slavic languages with several similarities such as acute accents above vowels (á, é, í, ó, ú, ý). However, they both have some distinct letters:\r\n\r\nCzech uses the letters Ř, Ě and Ů;\r\n\r\nSlovak uses the letters Ľ, Ô, Ä, Ŕ and Ĺ.\r\n\r\nNOTE: Acute accents on vowels are not found in South Slavic languages.
 694	floral	floral/tree_1.jpg	Adansonia grandidieri or Grandidier's baobab	image	2024-08-16 08:20:33	2024-08-16 08:20:33	t	\N
 695	floral	floral/tree_16.jpg	Cryptomeria japonica or Japanese cedar	image	2024-08-16 08:20:33	2024-08-16 08:20:33	t	\N
 696	floral	floral/tree_33.jpg	Petasites japonicus or butterbur	image	2024-08-16 08:20:33	2024-08-16 08:20:33	t	\N
@@ -1394,8 +1389,7 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 845	flag	flags/Flag_of_Curaçao.svg.png	\N	image	2024-08-16 15:54:55	2024-08-16 15:54:55	t	\N
 846	flag	flags/Flag_of_Mali.svg.png	\N	image	2024-08-16 15:54:55	2024-08-16 15:54:55	t	\N
 849	flag	flags/Flag_of_Christmas Island.svg.png	\N	image	2024-08-16 15:54:55	2024-08-16 15:54:55	t	\N
-850	flag	flags/Flag_of_Isle of Mann.svg.png	\N	image	2024-08-16 15:54:55	2024-08-16 15:54:55	t	\N
-2736	language	qhKkwkm4GsLKEEYrJPnjr.png	\N	image	2024-09-12 16:44:21	2024-09-12 16:44:21	t	Estonian belongs to the Finnic language family. It is closely related to Finnish.\r\n\r\nWithin the Baltic languages, the following letters are unique to Estonian:\r\n\r\nVowels with umlauts (two dots): Ä Ö Ü.\r\n\r\nÕ with a tilde.
+2736	language	language/qhKkwkm4GsLKEEYrJPnjr.jpeg	\N	image	2024-09-12 16:44:21	2024-09-17 08:21:24	t	Estonian belongs to the Finnic language family. It is closely related to Finnish.\r\n\r\nWithin the Baltic languages, the following letters are unique to Estonian:\r\n\r\nVowels with umlauts (two dots): Ä Ö Ü.\r\n\r\nÕ with a tilde.
 747	flag	flags/Flag_of_Chile.svg.png	\N	image	2024-08-16 15:54:55	2024-08-16 15:54:55	t	\N
 748	flag	flags/Flag_of_Ecuador.svg.png	\N	image	2024-08-16 15:54:55	2024-08-16 15:54:55	t	\N
 752	flag	flags/Flag_of_Guatemala.svg.png	\N	image	2024-08-16 15:54:55	2024-08-16 15:54:55	t	\N
@@ -1492,31 +1486,28 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 931	domain	\N	.cw	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 941	domain	\N	.gu	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 951	domain	\N	.uy	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-962	pole	RiAq9TrmUDtp78KOpGcCg.png	\N	image	2024-08-17 01:39:12	2024-08-17 01:39:12	t	\N
-964	scenery	dQy4ithHQj49QMCj7qzG_.png	\N	image	2024-08-17 01:59:29	2024-08-17 01:59:29	t	\N
 2586	camera_generation	\N	Gen 4	text	2024-08-28 00:32:50	2024-08-28 00:32:50	f	\N
-2588	pole	SqjSfeH_wcOQRJOuzYCI9.png	\N	image	2024-08-28 01:23:55	2024-08-28 01:23:55	f	\N
-2739	sign	2qe5Bxnd76QigJ63FIdk3.png	\N	image	2024-09-16 06:55:18	2024-09-16 06:55:18	t	Latvia direction signs have arrows that look slightly more stylzed than the straight arrows in Lithuania and Estonia.
+2588	pole	pole/SqjSfeH_wcOQRJOuzYCI9.jpeg	\N	image	2024-08-28 01:23:55	2024-09-17 08:21:24	f	\N
+2739	sign	sign/2qe5Bxnd76QigJ63FIdk3.jpeg	\N	image	2024-09-16 06:55:18	2024-09-17 08:21:37	t	Latvia direction signs have arrows that look slightly more stylzed than the straight arrows in Lithuania and Estonia.
+964	scenery	scenery/dQy4ithHQj49QMCj7qzG_.jpeg	\N	image	2024-08-17 01:59:29	2024-09-17 08:21:41	t	\N
+962	pole	pole/RiAq9TrmUDtp78KOpGcCg.jpeg	\N	image	2024-08-17 01:39:12	2024-09-17 08:21:42	t	\N
 902	domain	\N	.is	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 912	domain	\N	.me	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 922	domain	\N	.si	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 932	domain	\N	.do	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 942	domain	\N	.nz	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-959	walking sign	A2-zOzhDYHCFVt-7iqor7.png	\N	image	2024-08-17 01:06:12	2024-08-17 01:06:12	t	\N
-965	scenery	4ZHBUX406vqch0rW-H4yf.png	\N	image	2024-08-17 02:01:02	2024-08-17 02:01:02	t	\N
 1737	bollard	bollards/bollard_158.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
-969	stop sign	alto.png	\N	image	2024-08-17 02:15:00	2024-08-20 05:47:16	t	\N
-2007	snow pole	bollards/bollard_494.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1997	snow pole	bollards/bollard_405.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1987	snow pole	bollards/bollard_388.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1977	snow pole	bollards/bollard_309.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1967	snow pole	bollards/bollard_278.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1957	snow pole	bollards/bollard_247.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
+2740	sign	sign/TiimEJFdAhDmUvcthqBVg.jpeg	\N	image	2024-09-16 06:55:48	2024-09-17 08:21:43	t	Latvia bus stop signs have 5 windows.
+1987	snow_pole	bollards/bollard_388.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1977	snow_pole	bollards/bollard_309.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+965	scenery	scenery/4ZHBUX406vqch0rW-H4yf.jpeg	\N	image	2024-08-17 02:01:02	2024-09-17 08:05:16	t	\N
+959	walking_sign	walking_sign/A2-zOzhDYHCFVt-7iqor7.jpeg	\N	image	2024-08-17 01:06:12	2024-09-17 08:21:32	t	\N
+2580	road	road/ynb8agirzM_6INPPd8UDb.jpeg	\N	image	2024-08-27 03:52:12	2024-09-17 08:21:39	t	\N
+2762	pole	pole/g4dwUkxDzwNIt2w2ShFdm.jpeg	\N	image	2024-09-16 16:13:39	2024-09-17 08:21:46	t	In Spain, you can find a variety of electricity poles and pole tops. In small towns and sparsely populated rural areas concrete ladder poles and wooden poles are the most common.\r\n\r\n“Ladder” poles have indents that resemble a ladder, hence the name.
 1587	bollard2	bollards/bollard_108.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
 1807	bollard	bollards/bollard_527.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
-2740	sign	TiimEJFdAhDmUvcthqBVg.png	\N	image	2024-09-16 06:55:48	2024-09-16 06:55:48	t	Latvia bus stop signs have 5 windows.
-2762	pole	g4dwUkxDzwNIt2w2ShFdm.png	\N	image	2024-09-16 16:13:39	2024-09-16 16:13:39	t	In Spain, you can find a variety of electricity poles and pole tops. In small towns and sparsely populated rural areas concrete ladder poles and wooden poles are the most common.\r\n\r\n“Ladder” poles have indents that resemble a ladder, hence the name.
-2580	road	ynb8agirzM_6INPPd8UDb.png	\N	image	2024-08-27 03:52:12	2024-08-27 03:52:12	t	\N
+1967	snow_pole	bollards/bollard_278.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1957	snow_pole	bollards/bollard_247.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1497	bollard2	bollards/bollard_59.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1507	bollard2	bollards/bollard_183.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1517	bollard2	bollards/bollard_227.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
@@ -1557,17 +1548,17 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1647	bollard	bollards/bollard_152.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1657	bollard	bollards/bollard_179.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1667	bollard	bollards/bollard_313.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
+2007	snow_pole	bollards/bollard_494.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1997	snow_pole	bollards/bollard_405.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 903	domain	\N	.ie	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 913	domain	\N	.nl	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 923	domain	\N	.es	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 933	domain	\N	.gl	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 943	domain	\N	.mp	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-2008	snow pole	bollards/bollard_497.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1978	snow pole	bollards/bollard_314.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1968	snow pole	bollards/bollard_279.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1958	snow pole	bollards/bollard_255.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
 1538	bollard2	bollards/bollard_363.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
-1988	snow bollard	bollards/bollard_390.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
+2008	snow_pole	bollards/bollard_497.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1978	snow_pole	bollards/bollard_314.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1968	snow_pole	bollards/bollard_279.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1488	bollard2	bollards/bollard_7.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1498	bollard2	bollards/bollard_63.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1508	bollard2	bollards/bollard_214.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
@@ -1590,6 +1581,7 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1708	bollard2	bollards/bollard_45.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
 1718	bollard2	bollards/bollard_53.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
 1728	bollard2	bollards/bollard_91.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
+1958	snow_pole	bollards/bollard_255.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1758	bollard2	bollards/bollard_491.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
 1768	bollard2	bollards/bollard_644.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
 1778	bollard2	bollards/bollard_89.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:33	t	\N
@@ -1611,29 +1603,28 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1648	bollard	bollards/bollard_157.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1738	bollard	bollards/bollard_171.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1748	bollard	bollards/bollard_264.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 11:48:00	t	\N
-2741	sign	ks1eRqBo1RFcRoqjRzNpB.png	\N	image	2024-09-16 06:56:55	2024-09-16 06:56:55	t	Estonia signposts are sometimes wrapped in blue/white wrappers on the base.
-2742	pole	vu-P_aS9XqGHAsf7y7_vK.png	\N	image	2024-09-16 08:28:05	2024-09-16 08:28:05	t	Poland usually has thin concrete utility poles with see-through holes. They are commonly known as “holey poles”. The holes often do not extend all the way to the bottom of the pole. \r\n\r\nSometimes, two poles are joined together, or put in an A-frame shape. You can also find round concrete poles.\r\n\r\nNOTE: Hungary and Romania also have holey poles, but these are wider and more bulky. In addition, the holes extend all the way to the bottom.
+1988	snow_bollard	bollards/bollard_390.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+2741	sign	sign/ks1eRqBo1RFcRoqjRzNpB.jpeg	\N	image	2024-09-16 06:56:55	2024-09-17 08:21:31	t	Estonia signposts are sometimes wrapped in blue/white wrappers on the base.
+2742	pole	pole/vu-P_aS9XqGHAsf7y7_vK.jpeg	\N	image	2024-09-16 08:28:05	2024-09-17 08:21:34	t	Poland usually has thin concrete utility poles with see-through holes. They are commonly known as “holey poles”. The holes often do not extend all the way to the bottom of the pole. \r\n\r\nSometimes, two poles are joined together, or put in an A-frame shape. You can also find round concrete poles.\r\n\r\nNOTE: Hungary and Romania also have holey poles, but these are wider and more bulky. In addition, the holes extend all the way to the bottom.
 904	domain	\N	.im	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 914	domain	\N	.mk	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 924	domain	\N	.se	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 934	domain	\N	.gt	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 944	domain	\N	.ar	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-968	stop sign	oWvL1TxkxxvjIOh7_5U9f.svg	\N	image	2024-08-17 02:11:33	2024-08-17 02:11:33	t	\N
-2009	snow pole	bollards/bollard_498.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1999	snow pole	bollards/bollard_424.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1979	snow pole	bollards/bollard_315.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1969	snow pole	bollards/bollard_288.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1959	snow pole	bollards/bollard_257.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2019	snow bollard	bollards/bollard_595.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-1989	snow bollard	bollards/bollard_391.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
+1999	snow_pole	bollards/bollard_424.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1979	snow_pole	bollards/bollard_315.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1969	snow_pole	bollards/bollard_288.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1959	snow_pole	bollards/bollard_257.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+2743	sign	sign/4zqAjo6L4HLs3Hq7ggntO.jpeg	\N	image	2024-09-16 08:30:03	2024-09-17 08:21:33	t	Warning signs are triangular and have a yellow background and a distinct thin red border.\r\n\r\nNOTE: In Europe, this combination of a yellow background with a thin red border is unique to Poland.
+1989	snow_bollard	bollards/bollard_391.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+2009	snow_pole	bollards/bollard_498.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1689	bollard	bollards/bollard_568.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1739	bollard	bollards/bollard_172.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1759	bollard	bollards/bollard_492.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
-2743	sign	4zqAjo6L4HLs3Hq7ggntO.png	\N	image	2024-09-16 08:30:03	2024-09-16 08:30:03	t	Warning signs are triangular and have a yellow background and a distinct thin red border.\r\n\r\nNOTE: In Europe, this combination of a yellow background with a thin red border is unique to Poland.
 2751	year	\N	2013	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
 2757	year	\N	2019	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
 2759	year	\N	2021	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
-2582	pole	pQux1HiWdIHyMuVLWMR3f.png	\N	image	2024-08-27 16:14:29	2024-08-27 16:14:29	t	\N
+2019	snow_bollard	bollards/bollard_595.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
 2583	camera_generation	\N	Gen 1	text	2024-08-28 00:15:02	2024-08-28 00:15:02	f	\N
 2589	chevron	fDuCcpM6qhb2JDCoBbj8R.png	\N	image	2024-08-28 21:57:07	2024-08-28 21:57:07	f	\N
 2596	chevron	0Ka2y7JElaW61joaGWyph.png	\N	image	2024-08-28 22:27:39	2024-08-28 22:27:39	f	\N
@@ -1680,24 +1671,24 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1589	bollard	bollards/bollard_129.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1629	bollard	bollards/bollard_112.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1639	bollard	bollards/bollard_140.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
+2582	pole	pole/pQux1HiWdIHyMuVLWMR3f.jpeg	\N	image	2024-08-27 16:14:29	2024-09-17 08:21:33	t	\N
 905	domain	\N	.it	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 915	domain	\N	.no	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 925	domain	\N	.ch	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 935	domain	\N	.mx	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 945	domain	\N	.bo	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-958	scenery	_XGev6yC-xVIFkm7d2OiD.png	\N	image	2024-08-16 17:06:21	2024-08-16 17:06:21	t	\N
-966	scenery	s7A8a0dvq95qRFgK1UnOW.png	\N	image	2024-08-17 02:02:58	2024-08-17 02:02:58	t	\N
-2020	snow pole	bollards/bollard_599.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2010	snow pole	bollards/bollard_499.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2000	snow pole	bollards/bollard_426.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1990	snow pole	bollards/bollard_392.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1960	snow pole	bollards/bollard_263.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
+2000	snow_pole	bollards/bollard_426.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1990	snow_pole	bollards/bollard_392.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+966	scenery	scenery/s7A8a0dvq95qRFgK1UnOW.jpeg	\N	image	2024-08-17 02:02:58	2024-09-17 08:21:42	t	\N
+2587	pole	pole/qWjzZWSWqnrtzz03MMibq.jpeg	Green color	image	2024-08-28 01:17:08	2024-09-17 08:21:43	f	\N
 1710	bollard	bollards/bollard_553.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1730	bollard	bollards/bollard_116.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1740	bollard	bollards/bollard_173.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1750	bollard	bollards/bollard_276.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
+1960	snow_pole	bollards/bollard_263.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+958	scenery	scenery/_XGev6yC-xVIFkm7d2OiD.jpeg	\N	image	2024-08-16 17:06:21	2024-09-17 08:21:24	t	\N
+2744	sign	sign/spTZ9k5UD69VnYjxJEgAg.jpeg	\N	image	2024-09-16 08:33:13	2024-09-17 08:21:39	t	Poland has two town entry signs: a green one with the locality’s name, and a white-and-black one with a stylized urban area. \r\n\r\nNOTE: Like direction signs, town entry signs use a distinct font.
 2585	camera_generation	\N	Gen 3	text	2024-08-28 00:30:34	2024-08-28 00:30:34	f	\N
-2587	pole	qWjzZWSWqnrtzz03MMibq.png	Green color	image	2024-08-28 01:17:08	2024-08-28 01:17:08	f	\N
 1490	bollard2	bollards/bollard_13.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1500	bollard2	bollards/bollard_125.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1510	bollard2	bollards/bollard_217.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
@@ -1737,21 +1728,22 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1690	bollard	bollards/bollard_578.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1700	bollard	bollards/bollard_670.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1810	bollard	bollards/bollard_627.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
-2744	sign	spTZ9k5UD69VnYjxJEgAg.png	\N	image	2024-09-16 08:33:13	2024-09-16 08:33:13	t	Poland has two town entry signs: a green one with the locality’s name, and a white-and-black one with a stylized urban area. \r\n\r\nNOTE: Like direction signs, town entry signs use a distinct font.
 2761	year	\N	2023	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
+2020	snow_pole	bollards/bollard_599.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+2010	snow_pole	bollards/bollard_499.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 906	domain	\N	.je	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 916	domain	\N	.pl	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 926	domain	\N	.swiss	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 936	domain	\N	.pr	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 946	domain	\N	.br	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-2001	snow pole	bollards/bollard_428.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1991	snow pole	bollards/bollard_393.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1981	snow pole	bollards/bollard_364.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1961	snow pole	bollards/bollard_268.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2021	snow bollard	bollards/bollard_601.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-2745	language	iU7PhT_HgUSgDrly-3mwm.png	\N	image	2024-09-16 08:33:57	2024-09-16 08:33:57	t	Polish is a Slavic language. In contrast to other slavic languages, the Polish alphabet includes:\r\n\r\nŁ with a stroke through it (unique to Polish)\r\n\r\nĄ and Ę with a small hook (also found in Lithuanian)\r\n\r\nĆ, Ń, Ó, Ś, Ź with an acute accent. Of these, Ń is unique to Polish. In addition, the only other language with Ś and Ź is Montenegrin.\r\n\r\nŻ with a small dot (unique to Polish)\r\n\r\nPolish is very consonant-heavy, with lots of consonant clusters. Polish does not use V. Instead, it uses W a lot, the only Slavic language to do so. Other unusually common consonants are the Z, K, and C.
+1991	snow_pole	bollards/bollard_393.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1961	snow_pole	bollards/bollard_268.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+2745	language	language/iU7PhT_HgUSgDrly-3mwm.jpeg	\N	image	2024-09-16 08:33:57	2024-09-17 08:21:32	t	Polish is a Slavic language. In contrast to other slavic languages, the Polish alphabet includes:\r\n\r\nŁ with a stroke through it (unique to Polish)\r\n\r\nĄ and Ę with a small hook (also found in Lithuanian)\r\n\r\nĆ, Ń, Ó, Ś, Ź with an acute accent. Of these, Ń is unique to Polish. In addition, the only other language with Ś and Ź is Montenegrin.\r\n\r\nŻ with a small dot (unique to Polish)\r\n\r\nPolish is very consonant-heavy, with lots of consonant clusters. Polish does not use V. Instead, it uses W a lot, the only Slavic language to do so. Other unusually common consonants are the Z, K, and C.
+1981	snow_pole	bollards/bollard_364.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 2747	year	\N	2009	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
 2755	year	\N	2017	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
+2021	snow_bollard	bollards/bollard_601.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+2001	snow_pole	bollards/bollard_428.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 2590	chevron	ugc03cjm9ce2_rS46LRlh.png	\N	image	2024-08-28 22:04:31	2024-08-28 22:04:31	f	\N
 2594	chevron	IEoh1mHvqeeXlt3zhvZPF.png	\N	image	2024-08-28 22:20:28	2024-08-28 22:20:28	f	\N
 1491	bollard2	bollards/bollard_15.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
@@ -1804,14 +1796,12 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 927	domain	\N	.tr	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 937	domain	\N	.us	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 947	domain	\N	.cl	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-960	pole	__8DZdzoMR48WZP-IDG8i.png	\N	image	2024-08-17 01:09:56	2024-08-17 01:09:56	t	\N
-967	scenery	3phjbsUxYRQqjJ3ZHIVpR.png	\N	image	2024-08-17 02:05:03	2024-08-17 02:05:03	t	\N
-2002	snow pole	bollards/bollard_440.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1982	snow pole	bollards/bollard_366.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1972	snow pole	bollards/bollard_296.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1962	snow pole	bollards/bollard_270.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2022	snow bollard	bollards/bollard_602.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-2012	snow bollard	bollards/bollard_523.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
+1982	snow_pole	bollards/bollard_366.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1972	snow_pole	bollards/bollard_296.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1962	snow_pole	bollards/bollard_270.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+967	scenery	scenery/3phjbsUxYRQqjJ3ZHIVpR.jpeg	\N	image	2024-08-17 02:05:03	2024-09-17 08:21:24	t	\N
+2012	snow_bollard	bollards/bollard_523.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+2002	snow_pole	bollards/bollard_440.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1562	bollard	bollards/bollard_610.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1532	bollard	bollards/bollard_335.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1642	bollard	bollards/bollard_145.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
@@ -1820,9 +1810,10 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1742	bollard	bollards/bollard_180.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1752	bollard	bollards/bollard_302.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1802	bollard	bollards/bollard_298.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
-2746	architecture	1h3vJqnrA-iL0eOTkTrnd.png	\N	image	2024-09-16 08:35:16	2024-09-16 08:35:16	t	Polish architecture is fairly similar to other Central European countries. Buildings usually have plain stone walls covered in light or pastel stucco. Frequent roofing colours are orange or red, black, and brown. Roof tiles and panes often have a tidy, almost plastic-like look. Some rural houses have corrugated sheet roofs similar to those often found in the Baltics.\r\n\r\nDetached single family homes are common throughout Poland. They sometimes have a blocky look. \r\n\r\nIn bigger towns, apartment buildings are common. Many date from communist times, and some of them still have a somewhat austere look. However, many have been renovated and look nice and well-kept.\r\n\r\nDowntown areas are usually dense and often have historic buildings.
 2749	year	\N	2011	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
 2753	year	\N	2015	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
+2022	snow_bollard	bollards/bollard_602.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+960	pole	pole/__8DZdzoMR48WZP-IDG8i.jpeg	\N	image	2024-08-17 01:09:56	2024-09-17 08:21:31	t	\N
 2591	chevron	e38-LJ_XnIEJA_UxXDTeJ.png	\N	image	2024-08-28 22:09:32	2024-08-28 22:09:32	f	\N
 2595	chevron	n-nvq3RQrsH6FBiie7hDB.png	\N	image	2024-08-28 22:25:12	2024-08-28 22:25:12	f	\N
 1492	bollard2	bollards/bollard_19.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
@@ -1869,19 +1860,19 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 928	domain	\N	.ua	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 938	domain	\N	.vi	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 948	domain	\N	.co	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-957	scenery	pDsmSnCyd0tdMFigXwb0F.png	\N	image	2024-08-16 17:04:36	2024-08-16 17:04:36	t	\N
-2033	snow pole	bollards/bollard_661.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2003	snow pole	bollards/bollard_485.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1973	snow pole	bollards/bollard_297.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1963	snow pole	bollards/bollard_271.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1953	snow pole	bollards/bollard_195.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2023	snow bollard	bollards/bollard_613.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-1983	snow bollard	bollards/bollard_372.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
+2003	snow_pole	bollards/bollard_485.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1953	snow_pole	bollards/bollard_195.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+957	scenery	scenery/pDsmSnCyd0tdMFigXwb0F.jpeg	\N	image	2024-08-16 17:04:36	2024-09-17 08:21:34	t	\N
+2597	road	road/t7faVprDDA0R48s8BQjee.jpeg	Outer short dash	image	2024-08-30 08:15:11	2024-09-17 08:21:41	f	\N
+1973	snow_pole	bollards/bollard_297.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1963	snow_pole	bollards/bollard_271.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1653	bollard	bollards/bollard_166.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1693	bollard	bollards/bollard_628.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1793	bollard	bollards/bollard_117.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 2760	year	\N	2022	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
-2597	road	t7faVprDDA0R48s8BQjee.png	Outer short dash	image	2024-08-30 08:15:11	2024-08-30 08:15:11	f	\N
+2023	snow_bollard	bollards/bollard_613.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+1983	snow_bollard	bollards/bollard_372.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+2033	snow_pole	bollards/bollard_661.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1493	bollard2	bollards/bollard_20.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1513	bollard2	bollards/bollard_222.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1523	bollard2	bollards/bollard_267.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
@@ -1934,16 +1925,16 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 929	domain	\N	.uk	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 939	domain	\N	.as	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 949	domain	\N	.ec	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-953	pole	gHwrsqhsBAXaS2PYdyoZ9.png	\N	image	2024-08-16 16:51:23	2024-08-16 16:51:23	t	\N
-963	pole	5ypWkPSTfJEwlhlMEcpT_.png	\N	image	2024-08-17 01:48:44	2024-08-17 01:48:44	t	\N
-2024	snow pole	bollards/bollard_618.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1974	snow pole	bollards/bollard_300.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1964	snow pole	bollards/bollard_272.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2004	snow bollard	bollards/bollard_486.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
+963	pole	pole/5ypWkPSTfJEwlhlMEcpT_.jpeg	\N	image	2024-08-17 01:48:44	2024-09-17 08:21:32	t	\N
+953	pole	pole/gHwrsqhsBAXaS2PYdyoZ9.jpeg	\N	image	2024-08-16 16:51:23	2024-09-17 08:21:37	t	\N
 1504	bollard	bollards/bollard_154.jpg	\N	image	2024-08-20 08:29:50	2024-09-16 08:27:04	t	Polish bollards have a red strip that wraps all the way around the bollard. This strip has a red reflector on the front (sometimes hard to see), and a white reflector on the back. Bollards sometimes have numbers on them.\r\n\r\nNOTE: The same design can be found in Zakarpattia Oblast in Ukraine.
 2750	year	\N	2012	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
 2754	year	\N	2016	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
 2758	year	\N	2020	text	2024-09-16 15:51:37	2024-09-16 15:51:37	t	\N
+2004	snow_bollard	bollards/bollard_486.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+2024	snow_pole	bollards/bollard_618.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1974	snow_pole	bollards/bollard_300.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1964	snow_pole	bollards/bollard_272.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
 1494	bollard2	bollards/bollard_27.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1514	bollard2	bollards/bollard_223.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
 1524	bollard2	bollards/bollard_253.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:33	t	\N
@@ -1995,92 +1986,89 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 930	domain	\N	.ca	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 940	domain	\N	.au	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
 950	domain	\N	.pe	text	2024-08-16 16:21:57	2024-08-16 16:21:57	t	\N
-972	walking sign	walking_signs/botswana.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-973	walking sign	walking_signs/botswana_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-974	walking sign	walking_signs/botswana_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-975	walking sign	walking_signs/eswatini.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-976	walking sign	walking_signs/eswatini_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-977	walking sign	walking_signs/ghana.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-978	walking sign	walking_signs/ghana_2.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-979	walking sign	walking_signs/ghana_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-980	walking sign	walking_signs/ghana_4.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-981	walking sign	walking_signs/kenya.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-982	walking sign	walking_signs/kenya_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-983	walking sign	walking_signs/kenya_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-984	walking sign	walking_signs/lesotho.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-985	walking sign	walking_signs/lesotho_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-987	walking sign	aijnudd4Q-FTG47vphNrp.png	\N	image	2024-08-17 03:22:48	2024-08-27 13:35:47	t	\N
-988	walking sign	walking_signs/nigeria_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-989	walking sign	walking_signs/nigeria_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-990	walking sign	walking_signs/rwanda.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-991	walking sign	walking_signs/rwanda_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-992	walking sign	walking_signs/rwanda_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-993	walking sign	walking_signs/senegal.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-994	walking sign	walking_signs/senegal_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-995	walking sign	walking_signs/south_africa.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-996	walking sign	walking_signs/south_africa_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-997	walking sign	walking_signs/tunisia.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-998	walking sign	walking_signs/uganda.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1000	walking sign	walking_signs/uganda_3.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1001	walking sign	walking_signs/uganda_4.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1002	walking sign	walking_signs/uganda_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1003	walking sign	walking_signs/bangladesh.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1004	walking sign	walking_signs/bhutan.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1005	walking sign	walking_signs/cambodia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1006	walking sign	walking_signs/christmas_island.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1008	walking sign	walking_signs/india.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1009	walking sign	walking_signs/india_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1010	walking sign	walking_signs/india_3.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1011	walking sign	walking_signs/india_4.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1012	walking sign	walking_signs/india_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1013	walking sign	walking_signs/indonesia.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1014	walking sign	walking_signs/indonesia_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1015	walking sign	walking_signs/indonesia_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1016	walking sign	walking_signs/indonesia_4.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1017	walking sign	walking_signs/indonesia_5.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1018	walking sign	walking_signs/indonesia_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1019	walking sign	walking_signs/indonesia_7.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1020	walking sign	walking_signs/indonesia_8.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1021	walking sign	walking_signs/indonesia_9.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1022	walking sign	walking_signs/indonesia_10.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1023	walking sign	walking_signs/indonesia_11.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1024	walking sign	walking_signs/indonesia_12.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1025	walking sign	walking_signs/israel.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1026	walking sign	walking_signs/israel_2.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1027	walking sign	walking_signs/israel_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1028	walking sign	walking_signs/israel_4.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1029	walking sign	walking_signs/israel_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1030	walking sign	walking_signs/israel_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1031	walking sign	walking_signs/israel_7.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1032	walking sign	walking_signs/israel_8.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1033	walking sign	walking_signs/japan.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1036	walking sign	walking_signs/jordan_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1037	walking sign	walking_signs/jordan_4.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1038	walking sign	walking_signs/jordan_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-986	walking sign	RI8FBBQR6t-Z1kj2dbkkl.png	\N	image	2024-08-17 03:22:48	2024-08-27 13:34:36	t	\N
-2035	snow pole	bollards/bollard_673.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2025	snow pole	bollards/bollard_621.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1965	snow pole	bollards/bollard_273.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2005	snow bollard	bollards/bollard_487.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-1985	snow bollard	bollards/bollard_383.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-1039	walking sign	walking_signs/jordan_6.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1049	walking sign	walking_signs/malaysia_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1059	walking sign	walking_signs/philippines.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1069	walking sign	walking_signs/south_korea_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1079	walking sign	walking_signs/thailand_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1099	walking sign	walking_signs/faroe_islands_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1109	walking sign	walking_signs/greece.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1119	walking sign	walking_signs/isle_of_man_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1139	walking sign	walking_signs/montenegro_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1149	walking sign	walking_signs/poland.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1169	walking sign	walking_signs/spain.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1179	walking sign	walking_signs/switzerland_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1189	walking sign	walking_signs/canada_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1209	walking sign	walking_signs/american_samoa.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1219	walking sign	walking_signs/australia_10.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1229	walking sign	walking_signs/argentina_2.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1239	walking sign	walking_signs/brazil_6.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1249	walking sign	walking_signs/ecuador_6.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
+973	walking_sign	walking_signs/botswana_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+974	walking_sign	walking_signs/botswana_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+975	walking_sign	walking_signs/eswatini.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+976	walking_sign	walking_signs/eswatini_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+977	walking_sign	walking_signs/ghana.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+978	walking_sign	walking_signs/ghana_2.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+979	walking_sign	walking_signs/ghana_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+980	walking_sign	walking_signs/ghana_4.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+981	walking_sign	walking_signs/kenya.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+982	walking_sign	walking_signs/kenya_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+983	walking_sign	walking_signs/kenya_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+984	walking_sign	walking_signs/lesotho.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+985	walking_sign	walking_signs/lesotho_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+987	walking_sign	aijnudd4Q-FTG47vphNrp.png	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+988	walking_sign	walking_signs/nigeria_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+972	walking_sign	walking_signs/botswana.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+989	walking_sign	walking_signs/nigeria_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+990	walking_sign	walking_signs/rwanda.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+991	walking_sign	walking_signs/rwanda_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+992	walking_sign	walking_signs/rwanda_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+993	walking_sign	walking_signs/senegal.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+994	walking_sign	walking_signs/senegal_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+995	walking_sign	walking_signs/south_africa.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+996	walking_sign	walking_signs/south_africa_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+997	walking_sign	walking_signs/tunisia.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+998	walking_sign	walking_signs/uganda.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1000	walking_sign	walking_signs/uganda_3.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1001	walking_sign	walking_signs/uganda_4.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1002	walking_sign	walking_signs/uganda_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1003	walking_sign	walking_signs/bangladesh.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1004	walking_sign	walking_signs/bhutan.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1005	walking_sign	walking_signs/cambodia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1006	walking_sign	walking_signs/christmas_island.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1008	walking_sign	walking_signs/india.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1009	walking_sign	walking_signs/india_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1010	walking_sign	walking_signs/india_3.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1011	walking_sign	walking_signs/india_4.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1012	walking_sign	walking_signs/india_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1013	walking_sign	walking_signs/indonesia.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1014	walking_sign	walking_signs/indonesia_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1015	walking_sign	walking_signs/indonesia_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1016	walking_sign	walking_signs/indonesia_4.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1017	walking_sign	walking_signs/indonesia_5.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1018	walking_sign	walking_signs/indonesia_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1019	walking_sign	walking_signs/indonesia_7.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1020	walking_sign	walking_signs/indonesia_8.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1021	walking_sign	walking_signs/indonesia_9.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1022	walking_sign	walking_signs/indonesia_10.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1023	walking_sign	walking_signs/indonesia_11.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1024	walking_sign	walking_signs/indonesia_12.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1025	walking_sign	walking_signs/israel.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1026	walking_sign	walking_signs/israel_2.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1027	walking_sign	walking_signs/israel_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1028	walking_sign	walking_signs/israel_4.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1029	walking_sign	walking_signs/israel_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1030	walking_sign	walking_signs/israel_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1031	walking_sign	walking_signs/israel_7.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1032	walking_sign	walking_signs/israel_8.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1033	walking_sign	walking_signs/japan.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1036	walking_sign	walking_signs/jordan_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1037	walking_sign	walking_signs/jordan_4.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+986	walking_sign	RI8FBBQR6t-Z1kj2dbkkl.png	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+2025	snow_pole	bollards/bollard_621.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1965	snow_pole	bollards/bollard_273.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1039	walking_sign	walking_signs/jordan_6.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1985	snow_bollard	bollards/bollard_383.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+2035	snow_pole	bollards/bollard_673.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1049	walking_sign	walking_signs/malaysia_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1069	walking_sign	walking_signs/south_korea_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1079	walking_sign	walking_signs/thailand_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1099	walking_sign	walking_signs/faroe_islands_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1109	walking_sign	walking_signs/greece.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1119	walking_sign	walking_signs/isle_of_man_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1139	walking_sign	walking_signs/montenegro_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1149	walking_sign	walking_signs/poland.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1169	walking_sign	walking_signs/spain.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1179	walking_sign	walking_signs/switzerland_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1189	walking_sign	walking_signs/canada_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1209	walking_sign	walking_signs/american_samoa.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1219	walking_sign	walking_signs/australia_10.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1229	walking_sign	walking_signs/argentina_2.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1239	walking_sign	walking_signs/brazil_6.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1249	walking_sign	walking_signs/ecuador_6.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
 1565	bollard	bollards/bollard_633.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1625	bollard	bollards/bollard_103.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1635	bollard	bollards/bollard_134.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
@@ -2127,36 +2115,34 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1995	bollard2	bollards/bollard_400.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:34	t	\N
 2015	bollard2	bollards/bollard_530.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:34	t	\N
 1505	bollard	bollards/bollard_160.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:04:07	t	\N
-2026	snow pole	bollards/bollard_622.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:37	t	\N
-2006	snow pole	bollards/bollard_488.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1986	snow pole	bollards/bollard_384.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1976	snow pole	bollards/bollard_307.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-1766	snow pole	bollards/bollard_577.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:40:47	t	\N
-2036	snow bollard	bollards/bollard_682.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-1040	walking sign	walking_signs/kyrgyzstan.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1050	walking sign	walking_signs/malaysia_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1060	walking sign	walking_signs/philippines_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1070	walking sign	walking_signs/south_korea_7.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1080	walking sign	walking_signs/uae.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1090	walking sign	walking_signs/bulgaria.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1100	walking sign	walking_signs/faroe_islands_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1110	walking sign	walking_signs/greece_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1130	walking sign	walking_signs/malta_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1140	walking sign	walking_signs/montenegro_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1150	walking sign	walking_signs/poland_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1160	walking sign	walking_signs/serbia_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1170	walking sign	walking_signs/spain_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1190	walking sign	walking_signs/canada_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1200	walking sign	walking_signs/guatemala.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1210	walking sign	walking_signs/australia.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1220	walking sign	walking_signs/australia_11.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1230	walking sign	walking_signs/argentina_3.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1240	walking sign	walking_signs/chile.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1250	walking sign	walking_signs/peru.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
+2006	snow_pole	bollards/bollard_488.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1986	snow_pole	bollards/bollard_384.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1976	snow_pole	bollards/bollard_307.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1766	snow_pole	bollards/bollard_577.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1040	walking_sign	walking_signs/kyrgyzstan.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+2026	snow_pole	bollards/bollard_622.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:59	t	\N
+1050	walking_sign	walking_signs/malaysia_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1070	walking_sign	walking_signs/south_korea_7.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1080	walking_sign	walking_signs/uae.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1090	walking_sign	walking_signs/bulgaria.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1100	walking_sign	walking_signs/faroe_islands_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1110	walking_sign	walking_signs/greece_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1130	walking_sign	walking_signs/malta_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1140	walking_sign	walking_signs/montenegro_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1150	walking_sign	walking_signs/poland_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1160	walking_sign	walking_signs/serbia_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1170	walking_sign	walking_signs/spain_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1190	walking_sign	walking_signs/canada_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1200	walking_sign	walking_signs/guatemala.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1210	walking_sign	walking_signs/australia.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1230	walking_sign	walking_signs/argentina_3.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1240	walking_sign	walking_signs/chile.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1250	walking_sign	walking_signs/peru.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
 1736	bollard	bollards/bollard_155.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1646	bollard	bollards/bollard_150.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1626	bollard	bollards/bollard_104.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
 1656	bollard	bollards/bollard_178.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
+2719	licence_plate	AuqXj_Nlyk2umv4EV-dZK.png	Context: Island-ish	image	2024-09-12 12:19:23	2024-09-17 06:28:48	t	Christmas Island has yellow licence plates.
 1496	bollard2	bollards/bollard_31.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:34	t	\N
 1506	bollard2	bollards/bollard_176.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:34	t	\N
 1516	bollard2	bollards/bollard_225.jpg	\N	image	2024-08-20 08:29:50	2024-09-12 09:03:34	t	\N
@@ -2196,67 +2182,72 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 1966	bollard2	bollards/bollard_275.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:34	t	\N
 2016	bollard2	bollards/bollard_531.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:03:34	t	\N
 1756	bollard	bollards/bollard_387.jpg	\N	image	2024-08-20 08:29:51	2024-09-12 09:04:07	t	\N
-1996	snow bollard	bollards/bollard_404.jpg	\N	image	2024-08-20 08:29:51	2024-08-20 12:46:42	t	\N
-1041	walking sign	walking_signs/kyrgyzstan_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1051	walking sign	walking_signs/malaysia_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1061	walking sign	walking_signs/russia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1071	walking sign	walking_signs/sri_lanka.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1091	walking sign	walking_signs/croatia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1101	walking sign	walking_signs/finland.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1111	walking sign	walking_signs/hungary.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1121	walking sign	walking_signs/italy_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1131	walking sign	walking_signs/malta_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1141	walking sign	walking_signs/netherlands.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1151	walking sign	walking_signs/portugal.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1161	walking sign	walking_signs/slovakia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1171	walking sign	walking_signs/spain_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1191	walking sign	walking_signs/canada_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1201	walking sign	walking_signs/mexico.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1211	walking sign	walking_signs/australia_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1221	walking sign	walking_signs/australia_12.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1231	walking sign	walking_signs/argentina_4.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1241	walking sign	walking_signs/chile_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1251	walking sign	walking_signs/uruguay.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1042	walking sign	walking_signs/laos.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1052	walking sign	walking_signs/malaysia_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1062	walking sign	walking_signs/singapore.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1072	walking sign	walking_signs/sri_lanka_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1092	walking sign	walking_signs/croatia_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1102	walking sign	walking_signs/finland_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1112	walking sign	walking_signs/hungary_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1132	walking sign	walking_signs/malta_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1142	walking sign	walking_signs/north_macedonia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1152	walking sign	walking_signs/portugal_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1162	walking sign	walking_signs/slovakia_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1172	walking sign	walking_signs/spain_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1182	walking sign	walking_signs/turkey_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1192	walking sign	walking_signs/canada_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1202	walking sign	walking_signs/puerto_rico.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1212	walking sign	walking_signs/australia_3.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1222	walking sign	walking_signs/guam.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1232	walking sign	walking_signs/bolivia.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1242	walking sign	walking_signs/colombia.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1252	walking sign	walking_signs/uruguay_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-2037	language	hZP8mXWfiOOw1y6hyHC5D.png	\N	image	2024-08-23 11:25:20	2024-09-16 16:03:30	f	\N
-1193	walking sign	walking_signs/costa_rica.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:30:24	t	\N
-1043	walking sign	walking_signs/laos_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1053	walking sign	walking_signs/malaysia_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1073	walking sign	walking_signs/sri_lanka_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1093	walking sign	walking_signs/czech_republic.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1103	walking sign	walking_signs/france.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1113	walking sign	walking_signs/hungary_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1123	walking sign	walking_signs/latvia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1133	walking sign	walking_signs/monaco.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1153	walking sign	walking_signs/portugal_3.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1163	walking sign	walking_signs/slovakia_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1173	walking sign	walking_signs/spain_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1183	walking sign	walking_signs/turkey_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1203	walking sign	walking_signs/puerto_rico_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1213	walking sign	walking_signs/australia_4.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1223	walking sign	walking_signs/guam_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1233	walking sign	walking_signs/bolivia_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1243	walking sign	walking_signs/colombia_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1253	walking sign	walking_signs/uruguay_3.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
+2036	snow_bollard	bollards/bollard_682.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+1221	walking_sign	walking_signs/australia_12.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1231	walking_sign	walking_signs/argentina_4.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1241	walking_sign	walking_signs/chile_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1251	walking_sign	walking_signs/uruguay.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+2728	licence_plate	licence_plate/XOj8Y-XYoj7JcWB56RoaU.jpeg	HR sticker	image	2024-09-12 12:28:41	2024-09-17 08:21:24	t	Stickers with the letters HR can be found on Croatian cars. HR stands for Hrvatska, the Croatian name for Croatia.\r\n\r\nNOTE: These were mainly used before EU plates were introduced, meaning they will be less common in Generation 4.
+1996	snow_bollard	bollards/bollard_404.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+1059	walking_sign	walking_signs/philippines.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1041	walking_sign	walking_signs/kyrgyzstan_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1051	walking_sign	walking_signs/malaysia_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1061	walking_sign	walking_signs/russia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1071	walking_sign	walking_signs/sri_lanka.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1091	walking_sign	walking_signs/croatia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1101	walking_sign	walking_signs/finland.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1111	walking_sign	walking_signs/hungary.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1121	walking_sign	walking_signs/italy_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1131	walking_sign	walking_signs/malta_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1141	walking_sign	walking_signs/netherlands.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1151	walking_sign	walking_signs/portugal.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1161	walking_sign	walking_signs/slovakia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1171	walking_sign	walking_signs/spain_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1191	walking_sign	walking_signs/canada_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1201	walking_sign	walking_signs/mexico.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1211	walking_sign	walking_signs/australia_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1242	walking_sign	walking_signs/colombia.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1252	walking_sign	walking_signs/uruguay_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+2037	language	language/hZP8mXWfiOOw1y6hyHC5D.jpeg	\N	image	2024-08-23 11:25:20	2024-09-17 08:21:45	f	\N
+2005	snow_bollard	bollards/bollard_487.jpg	\N	image	2024-08-20 08:29:51	2024-09-17 06:29:34	t	\N
+1042	walking_sign	walking_signs/laos.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1052	walking_sign	walking_signs/malaysia_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1062	walking_sign	walking_signs/singapore.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1072	walking_sign	walking_signs/sri_lanka_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1092	walking_sign	walking_signs/croatia_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1102	walking_sign	walking_signs/finland_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1112	walking_sign	walking_signs/hungary_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1132	walking_sign	walking_signs/malta_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1142	walking_sign	walking_signs/north_macedonia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1152	walking_sign	walking_signs/portugal_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1162	walking_sign	walking_signs/slovakia_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1172	walking_sign	walking_signs/spain_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1182	walking_sign	walking_signs/turkey_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1192	walking_sign	walking_signs/canada_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1202	walking_sign	walking_signs/puerto_rico.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1212	walking_sign	walking_signs/australia_3.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1222	walking_sign	walking_signs/guam.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1232	walking_sign	walking_signs/bolivia.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1038	walking_sign	walking_signs/jordan_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1193	walking_sign	walking_signs/costa_rica.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1043	walking_sign	walking_signs/laos_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1053	walking_sign	walking_signs/malaysia_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1073	walking_sign	walking_signs/sri_lanka_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1093	walking_sign	walking_signs/czech_republic.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1103	walking_sign	walking_signs/france.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1113	walking_sign	walking_signs/hungary_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1123	walking_sign	walking_signs/latvia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1133	walking_sign	walking_signs/monaco.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1153	walking_sign	walking_signs/portugal_3.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1163	walking_sign	walking_signs/slovakia_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1173	walking_sign	walking_signs/spain_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1183	walking_sign	walking_signs/turkey_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1203	walking_sign	walking_signs/puerto_rico_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1213	walking_sign	walking_signs/australia_4.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1223	walking_sign	walking_signs/guam_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1233	walking_sign	walking_signs/bolivia_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1243	walking_sign	walking_signs/colombia_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1253	walking_sign	walking_signs/uruguay_3.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
 2050	google_car	cars/car_275.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2060	google_car	cars/car_717.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2070	google_car	cars/car_695.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -2302,26 +2293,27 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2500	google_car	cars/car_763.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2530	google_car	cars/car_364.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2540	google_car	cars/car_299.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1044	walking sign	walking_signs/laos_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1054	walking sign	walking_signs/malaysia_7.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1064	walking sign	walking_signs/south_korea.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1074	walking sign	walking_signs/sri_lanka_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1084	walking sign	walking_signs/andorra.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1094	walking sign	walking_signs/czech_republic_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1104	walking sign	walking_signs/france_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1114	walking sign	walking_signs/iceland.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1134	walking sign	walking_signs/monaco_2.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1144	walking sign	walking_signs/north_macedonia_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1164	walking sign	walking_signs/slovakia_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1174	walking sign	walking_signs/spain_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1184	walking sign	walking_signs/turkey_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1194	walking sign	walking_signs/curacao.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1204	walking sign	walking_signs/united_states.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1214	walking sign	walking_signs/australia_5.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1224	walking sign	walking_signs/new_zealand.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1234	walking sign	walking_signs/brazil.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1244	walking sign	walking_signs/ecuador.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1254	walking sign	walking_signs/uruguay_4.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
+1084	walking_sign	walking_signs/andorra.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1094	walking_sign	walking_signs/czech_republic_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1104	walking_sign	walking_signs/france_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1114	walking_sign	walking_signs/iceland.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1134	walking_sign	walking_signs/monaco_2.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1144	walking_sign	walking_signs/north_macedonia_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1164	walking_sign	walking_signs/slovakia_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1174	walking_sign	walking_signs/spain_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1184	walking_sign	walking_signs/turkey_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1194	walking_sign	walking_signs/curacao.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1204	walking_sign	walking_signs/united_states.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1214	walking_sign	walking_signs/australia_5.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1224	walking_sign	walking_signs/new_zealand.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1234	walking_sign	walking_signs/brazil.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1244	walking_sign	walking_signs/ecuador.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1254	walking_sign	walking_signs/uruguay_4.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1060	walking_sign	walking_signs/philippines_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1044	walking_sign	walking_signs/laos_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1054	walking_sign	walking_signs/malaysia_7.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1064	walking_sign	walking_signs/south_korea.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1074	walking_sign	walking_signs/sri_lanka_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
 2051	google_car	cars/car_312.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2061	google_car	cars/car_736.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2071	google_car	cars/car_696.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -2365,25 +2357,26 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2511	google_car	cars/car_642.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2531	google_car	cars/car_386.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2541	google_car	cars/car_589.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1045	walking sign	walking_signs/laos_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1055	walking sign	walking_signs/malaysia_8.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1065	walking sign	walking_signs/south_korea_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1075	walking sign	walking_signs/sri_lanka_5.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1085	walking sign	walking_signs/andorra_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1095	walking sign	walking_signs/denmark.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1105	walking sign	walking_signs/france_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1125	walking sign	walking_signs/lithuania_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1135	walking sign	walking_signs/monaco_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1145	walking sign	walking_signs/north_macedonia_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1165	walking sign	walking_signs/slovakia_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1175	walking sign	walking_signs/sweden.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1195	walking sign	walking_signs/curacao_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1205	walking sign	walking_signs/united_states_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1215	walking sign	walking_signs/australia_6.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1225	walking sign	walking_signs/new_zealand_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1235	walking sign	walking_signs/brazil_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1245	walking sign	walking_signs/ecuador_2.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1255	walking sign	walking_signs/uruguay_5.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
+1105	walking_sign	walking_signs/france_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1125	walking_sign	walking_signs/lithuania_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1135	walking_sign	walking_signs/monaco_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1145	walking_sign	walking_signs/north_macedonia_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1165	walking_sign	walking_signs/slovakia_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1175	walking_sign	walking_signs/sweden.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1195	walking_sign	walking_signs/curacao_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1205	walking_sign	walking_signs/united_states_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1215	walking_sign	walking_signs/australia_6.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1225	walking_sign	walking_signs/new_zealand_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1235	walking_sign	walking_signs/brazil_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1245	walking_sign	walking_signs/ecuador_2.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1255	walking_sign	walking_signs/uruguay_5.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1220	walking_sign	walking_signs/australia_11.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1045	walking_sign	walking_signs/laos_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1055	walking_sign	walking_signs/malaysia_8.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1065	walking_sign	walking_signs/south_korea_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1075	walking_sign	walking_signs/sri_lanka_5.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1085	walking_sign	walking_signs/andorra_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1095	walking_sign	walking_signs/denmark.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
 2042	google_car	cars/car_3.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2052	google_car	cars/car_313.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2072	google_car	cars/car_697.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -2429,23 +2422,24 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2492	google_car	cars/car_203.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2532	google_car	cars/car_507.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2542	google_car	cars/car_217.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1046	walking sign	walking_signs/laos_5.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1056	walking sign	walking_signs/malaysia_9.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1066	walking sign	walking_signs/south_korea_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1076	walking sign	walking_signs/sri_lanka_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1086	walking sign	walking_signs/andorra_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1096	walking sign	walking_signs/denmark_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1116	walking sign	walking_signs/ireland_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1146	walking sign	walking_signs/norway.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1176	walking sign	walking_signs/sweden_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1186	walking sign	walking_signs/ukraine.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1196	walking sign	walking_signs/dominican_republic.jpg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1206	walking sign	walking_signs/united_states_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1216	walking sign	walking_signs/australia_7.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1226	walking sign	walking_signs/northern_mariana_islands.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1236	walking sign	walking_signs/brazil_3.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1246	walking sign	walking_signs/ecuador_3.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1106	walking sign	XTFmsgd4nifrlHVnKAlD9.png	\N	image	2024-08-17 03:22:48	2024-08-27 13:33:09	t	\N
+1066	walking_sign	walking_signs/south_korea_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1076	walking_sign	walking_signs/sri_lanka_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1196	walking_sign	walking_signs/dominican_republic.jpg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1206	walking_sign	walking_signs/united_states_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1216	walking_sign	walking_signs/australia_7.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1226	walking_sign	walking_signs/northern_mariana_islands.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1086	walking_sign	walking_signs/andorra_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1236	walking_sign	walking_signs/brazil_3.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1246	walking_sign	walking_signs/ecuador_3.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1106	walking_sign	walking_sign/XTFmsgd4nifrlHVnKAlD9.jpeg	\N	image	2024-08-17 03:22:48	2024-09-17 08:21:23	t	\N
+2686	other	other/hyRNfLp3sraxvPIHRD2oW.jpeg	\N	image	2024-09-12 11:35:48	2024-09-17 08:21:23	t	Bolivia’s ruling political party is called Movimiento al Socialismo (MAS). Political graffiti often features the words MAS and Evo, short for Evo Morales, who was president of Bolivia at the time the country was covered by Street View.\r\n\r\nAdditionally, many random objects are painted in the party’s colours: black, white, and a large blue field. This distinctive colour scheme is a good clue for Bolivia.
+1046	walking_sign	walking_signs/laos_5.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1056	walking_sign	walking_signs/malaysia_9.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1096	walking_sign	walking_signs/denmark_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1116	walking_sign	walking_signs/ireland_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1146	walking_sign	walking_signs/norway.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1176	walking_sign	walking_signs/sweden_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1186	walking_sign	walking_signs/ukraine.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
 2043	google_car	cars/car_4.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2053	google_car	cars/car_314.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2063	google_car	cars/car_8.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -2491,23 +2485,24 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2503	google_car	cars/car_309.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2513	google_car	cars/car_733.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2533	google_car	cars/car_679.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1047	walking sign	walking_signs/laos_6.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1057	walking sign	walking_signs/mongolia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1087	walking sign	walking_signs/austria.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1097	walking sign	walking_signs/estonia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1107	walking sign	walking_signs/germany_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1117	walking sign	walking_signs/ireland_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1137	walking sign	walking_signs/montenegro_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1147	walking sign	walking_signs/norway_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1167	walking sign	walking_signs/slovenia_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1177	walking sign	walking_signs/sweden_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1197	walking sign	walking_signs/dominican_republic_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1207	walking sign	walking_signs/united_states_4.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1217	walking sign	walking_signs/australia_8.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1227	walking sign	walking_signs/northern_mariana_islands_2.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1237	walking sign	walking_signs/brazil_4.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1247	walking sign	walking_signs/ecuador_4.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
+1107	walking_sign	walking_signs/germany_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1117	walking_sign	walking_signs/ireland_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1047	walking_sign	walking_signs/laos_6.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1057	walking_sign	walking_signs/mongolia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1137	walking_sign	walking_signs/montenegro_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1147	walking_sign	walking_signs/norway_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1207	walking_sign	walking_signs/united_states_4.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1217	walking_sign	walking_signs/australia_8.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1087	walking_sign	walking_signs/austria.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1227	walking_sign	walking_signs/northern_mariana_islands_2.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1237	walking_sign	walking_signs/brazil_4.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1247	walking_sign	walking_signs/ecuador_4.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+2680	road	road/zg5E39Bb3wa6nmStDXm4R.jpeg	Context: Latin America	image	2024-09-12 11:27:29	2024-09-17 08:21:26	t	Middle road lines can be all-yellow, yellow and white, or all-white, while outer road lines are always white.\r\n\r\nNOTE: Road lines in Chile are always all-white or all-yellow, never a combination of the two. In Peru, you can find roads having outer lines with no middle line. Such outer line-only roads are very rare in Bolivia.
 2543	google_car	cars/car_236.jpg	Visible, Silver	image	2024-08-24 04:09:20	2024-08-26 10:17:41	t	\N
+1097	walking_sign	walking_signs/estonia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1167	walking_sign	walking_signs/slovenia_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1177	walking_sign	walking_signs/sweden_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1197	walking_sign	walking_signs/dominican_republic_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
 2054	google_car	cars/car_367.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2074	google_car	cars/car_703.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2104	google_car	cars/car_255.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
@@ -2546,27 +2541,28 @@ COPY public.clues (id, type, image, description, format, inserted_at, updated_at
 2474	google_car	cars/car_519.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2484	google_car	cars/car_200.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
 2494	google_car	cars/car_254.jpg	\N	image	2024-08-24 04:09:20	2024-08-24 04:09:20	t	\N
-1048	walking sign	walking_signs/malaysia.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1058	walking sign	walking_signs/mongolia_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
+1088	walking_sign	walking_signs/austria_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1098	walking_sign	walking_signs/faroe_islands.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
 2534	google_car	cars/car_782.jpg	Visible, Red	image	2024-08-24 04:09:20	2024-08-26 10:15:13	t	\N
-1078	walking sign	walking_signs/thailand.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1088	walking sign	walking_signs/austria_2.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1098	walking sign	walking_signs/faroe_islands.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1128	walking sign	walking_signs/luxembourg_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1148	walking sign	walking_signs/norway_3.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
+1128	walking_sign	walking_signs/luxembourg_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1238	walking_sign	walking_signs/brazil_5.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1248	walking_sign	walking_signs/ecuador_5.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+2746	architecture	architecture/1h3vJqnrA-iL0eOTkTrnd.jpeg	\N	image	2024-09-16 08:35:16	2024-09-17 08:21:34	t	Polish architecture is fairly similar to other Central European countries. Buildings usually have plain stone walls covered in light or pastel stucco. Frequent roofing colours are orange or red, black, and brown. Roof tiles and panes often have a tidy, almost plastic-like look. Some rural houses have corrugated sheet roofs similar to those often found in the Baltics.\r\n\r\nDetached single family homes are common throughout Poland. They sometimes have a blocky look. \r\n\r\nIn bigger towns, apartment buildings are common. Many date from communist times, and some of them still have a somewhat austere look. However, many have been renovated and look nice and well-kept.\r\n\r\nDowntown areas are usually dense and often have historic buildings.
 2154	google_car	cars/car_280.jpg	Visible, Blue	image	2024-08-24 04:09:20	2024-08-26 10:15:49	t	\N
 2094	google_car	cars/car_699.jpg	Visible, Silver	image	2024-08-24 04:09:20	2024-08-26 10:16:16	t	\N
-1178	walking sign	walking_signs/switzerland.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1188	walking sign	walking_signs/bermuda.svg	\N	image	2024-08-17 03:22:48	2024-08-24 10:32:27	t	\N
-1208	walking sign	walking_signs/us_virgin_islands.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1218	walking sign	walking_signs/australia_9.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1228	walking sign	walking_signs/argentina.jpg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1238	walking sign	walking_signs/brazil_5.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
-1248	walking sign	walking_signs/ecuador_5.svg	\N	image	2024-08-17 03:22:49	2024-08-24 10:32:27	t	\N
+1148	walking_sign	walking_signs/norway_3.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
 2544	google_car	cars/car_315.jpg	Visible, White	image	2024-08-24 04:09:20	2024-08-26 10:14:48	t	\N
 2084	google_car	cars/car_756.jpg	Visible, Black	image	2024-08-24 04:09:20	2024-08-26 10:16:39	t	\N
 2064	google_car	cars/car_223.jpg	Visible	image	2024-08-24 04:09:20	2024-08-26 10:17:09	t	\N
 2044	google_car	cars/car_5.jpg	Visible	image	2024-08-24 04:09:20	2024-08-26 10:17:28	t	\N
+1048	walking_sign	walking_signs/malaysia.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1058	walking_sign	walking_signs/mongolia_2.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1078	walking_sign	walking_signs/thailand.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1178	walking_sign	walking_signs/switzerland.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1188	walking_sign	walking_signs/bermuda.svg	\N	image	2024-08-17 03:22:48	2024-09-17 06:30:40	t	\N
+1208	walking_sign	walking_signs/us_virgin_islands.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1218	walking_sign	walking_signs/australia_9.svg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
+1228	walking_sign	walking_signs/argentina.jpg	\N	image	2024-08-17 03:22:49	2024-09-17 06:30:40	t	\N
 \.
 
 
@@ -2925,7 +2921,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 155	59	55	2024-08-15 16:14:44	2024-08-15 16:14:44
 159	61	13	2024-08-15 16:22:53	2024-08-15 16:22:53
 1424	1256	30	2024-08-17 04:55:50	2024-08-17 04:55:50
-1438	1261	12	2024-08-17 10:24:36	2024-08-17 10:24:36
 1717	1493	47	2024-08-20 08:29:50	2024-08-20 08:29:50
 1727	1503	105	2024-08-20 08:29:50	2024-08-20 08:29:50
 1737	1513	5	2024-08-20 08:29:50	2024-08-20 08:29:50
@@ -4621,7 +4616,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 2795	2549	5	2024-08-24 10:09:32	2024-08-24 10:09:32
 2800	34	113	2024-08-24 10:16:47	2024-08-24 10:16:47
 2803	2556	113	2024-08-24 10:19:08	2024-08-24 10:19:08
-2807	968	89	2024-08-24 10:23:08	2024-08-24 10:23:08
 3174	2589	85	2024-08-28 21:57:31	2024-08-28 21:57:31
 3175	2589	78	2024-08-28 21:57:40	2024-08-28 21:57:40
 3237	2593	94	2024-08-28 22:18:23	2024-08-28 22:18:23
@@ -5018,7 +5012,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 992	835	98	2024-08-16 15:54:55	2024-08-16 15:54:55
 997	840	104	2024-08-16 15:54:55	2024-08-16 15:54:55
 1002	845	110	2024-08-16 15:54:55	2024-08-16 15:54:55
-1007	850	107	2024-08-16 15:54:55	2024-08-16 15:54:55
 1666	987	29	2024-08-18 13:46:35	2024-08-18 13:46:35
 1667	987	84	2024-08-18 13:46:58	2024-08-18 13:46:58
 1669	987	81	2024-08-18 13:47:31	2024-08-18 13:47:31
@@ -5168,10 +5161,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 3389	2687	88	2024-09-12 11:36:13	2024-09-12 11:36:13
 3411	2709	90	2024-09-12 12:04:29	2024-09-12 12:04:29
 1113	957	55	2024-08-16 17:04:36	2024-08-16 17:04:36
-1124	968	1	2024-08-17 02:11:33	2024-08-17 02:11:33
-1131	968	72	2024-08-17 02:13:17	2024-08-17 02:13:17
-1133	969	7	2024-08-17 02:15:00	2024-08-17 02:15:00
-1134	969	9	2024-08-17 02:15:49	2024-08-17 02:15:49
 1671	986	77	2024-08-18 14:02:57	2024-08-18 14:02:57
 1674	986	28	2024-08-18 14:03:29	2024-08-18 14:03:29
 1679	1061	70	2024-08-18 14:20:58	2024-08-18 14:20:58
@@ -5188,8 +5177,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 3415	2713	12	2024-09-12 12:08:50	2024-09-12 12:08:50
 1114	958	55	2024-08-16 17:06:21	2024-08-16 17:06:21
 1123	967	30	2024-08-17 02:05:03	2024-08-17 02:05:03
-1132	968	2	2024-08-17 02:13:25	2024-08-17 02:13:25
-1135	969	10	2024-08-17 02:16:00	2024-08-17 02:16:00
 1677	986	84	2024-08-18 14:03:57	2024-08-18 14:03:57
 2805	2558	95	2024-08-24 10:20:50	2024-08-24 10:20:50
 3417	2715	4	2024-09-12 12:13:28	2024-09-12 12:13:28
@@ -5217,9 +5204,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 1683	1481	79	2024-08-20 05:01:11	2024-08-20 05:01:11
 2824	2563	52	2024-08-24 10:37:14	2024-08-24 10:37:14
 3424	2722	89	2024-09-12 12:22:58	2024-09-12 12:22:58
-1125	968	104	2024-08-17 02:12:17	2024-08-17 02:12:17
-1127	968	3	2024-08-17 02:12:37	2024-08-17 02:12:37
-1130	968	5	2024-08-17 02:12:58	2024-08-17 02:12:58
 1684	1481	50	2024-08-20 05:01:35	2024-08-20 05:01:35
 1689	1481	94	2024-08-20 05:02:57	2024-08-20 05:02:57
 1698	1483	85	2024-08-20 05:51:20	2024-08-20 05:51:20
@@ -5228,7 +5212,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 2896	2575	69	2024-08-27 01:48:18	2024-08-27 01:48:18
 3425	2723	89	2024-09-12 12:23:34	2024-09-12 12:23:34
 3428	2726	7	2024-09-12 12:26:05	2024-09-12 12:26:05
-1126	968	88	2024-08-17 02:12:32	2024-08-17 02:12:32
 3426	2724	89	2024-09-12 12:24:07	2024-09-12 12:24:07
 1685	1481	39	2024-08-20 05:01:41	2024-08-20 05:01:41
 1699	1483	112	2024-08-20 05:51:42	2024-08-20 05:51:42
@@ -5236,7 +5219,6 @@ COPY public.acceptable_answers (id, clue_id, answer_id, inserted_at, updated_at)
 2867	60	34	2024-08-26 02:46:46	2024-08-26 02:46:46
 2897	2575	70	2024-08-27 01:48:53	2024-08-27 01:48:53
 2913	2577	28	2024-08-27 03:19:16	2024-08-27 03:19:16
-1128	968	4	2024-08-17 02:12:49	2024-08-17 02:12:49
 1686	1481	78	2024-08-20 05:01:52	2024-08-20 05:01:52
 1137	972	85	2024-08-17 03:22:48	2024-08-17 03:22:48
 1138	973	85	2024-08-17 03:22:48	2024-08-17 03:22:48
