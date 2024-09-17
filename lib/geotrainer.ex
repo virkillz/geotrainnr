@@ -17,15 +17,71 @@ defmodule Geotrainer do
     ]
   end
 
-  def list_region(available_regions) do
-    world = [
-      %{
-        "name" => "World",
-        "icon" => "world",
-        "description" => "Description"
-      }
-    ]
+  def get_type_description(type) do
+    case type do
+      "alphabet" ->
+        "Learn some of the alphabet unique to the country. Mostly useful to distinguish european languages"
 
+      "architecture" ->
+        "Guess the country from the architecture"
+
+      "bollard" ->
+        "Bollards are often unique to the country. Mostly useful to distinguish european countries, Oceanian countries and some African countries"
+
+      "bollard_thin" ->
+        "Guess the country from the thin bollard"
+
+      "camera_generation" ->
+        "Guess the country from the camera generation"
+
+      "floral" ->
+        "Learning vegetation can be very useful to distinguish countries and region."
+
+      "sign" ->
+        "Guess the country from the various sign."
+
+      "stop sign" ->
+        "Guess the country from the stop sign"
+
+      "google_car" ->
+        "Guess the country from the unique Google car"
+
+      "guardrail" ->
+        "Guess the country from the guardrail"
+
+      "building" ->
+        "Guess the country from the building"
+
+      "road" ->
+        "Learn to recognize the road unique to the country"
+
+      "flag" ->
+        "Not memorizing the flag of the country will cause embarassment when it apprears on the map"
+
+      "pole" ->
+        "Learning variety of pole is one of the most powerful tool in geoguessr"
+
+      "road_number" ->
+        "Guess the country from the road number"
+
+      "domain" ->
+        "Most of domain name are intuitive since it is similar with country abreviation. However, some countries have unique domain name"
+
+      "walking_sign" ->
+        "Guess the country from the walking sign"
+
+      "road_number" ->
+        "Guess the country from the road number"
+
+      "other" ->
+        "Various clues spesific to the country"
+
+      _ ->
+        ""
+    end
+  end
+
+  def list_region(available_regions) do
     allowed_region = [
       %{
         "name" => "Africa",
