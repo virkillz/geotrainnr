@@ -101,7 +101,7 @@ defmodule GeotrainerWeb.HomeLive do
               >
                 <li class="col-span-1 flex shadow-sm rounded-md">
                   <div class="flex-1 flex items-center justify-between border border-gray-200 bg-white rounded-r-md truncate">
-                    <div class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+                    <div class="flex-1 px-6 py-4 text-sm leading-5 truncate">
                       <%= answer.country %>
 
                       <p class="text-gray-500"></p>
@@ -117,7 +117,7 @@ defmodule GeotrainerWeb.HomeLive do
             >
               <li class="col-span-1 flex shadow-sm rounded-md">
                 <div class="flex-1 flex items-center justify-between border border-gray-100 hover:bg-gray-200 bg-gray-100 rounded-r-md truncate">
-                  <div class="flex-1 px-4 py-2 text-sm leading-5 truncate">
+                  <div class="flex-1 px-6 py-4 text-sm leading-5 truncate">
                     I don't know 🤷🏻‍♂️
                     <p class="text-gray-500"></p>
                   </div>
@@ -173,7 +173,7 @@ defmodule GeotrainerWeb.HomeLive do
             <div class="mt-8">
               <.button
                 phx-click="next"
-                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-12 rounded"
               >
                 Next
               </.button>
