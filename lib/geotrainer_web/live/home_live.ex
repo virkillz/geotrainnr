@@ -7,7 +7,7 @@ defmodule GeotrainerWeb.HomeLive do
     ~H"""
     <div class="">
       <div class="mx-auto max-w-7xl">
-        <div class="py-6 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="py-4 md:py-6 px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-2xl font-semibold leading-6">
             Training
             <a class="text-indigo-700 text-underscore" href="/">
@@ -24,7 +24,7 @@ defmodule GeotrainerWeb.HomeLive do
 
     <div class="bg-gray-900 mb-8">
       <div class="mx-auto max-w-7xl">
-        <div class="grid grid-cols-1 gap-px bg-white/5 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-cols-1 gap-px bg-white/5 grid-cols-2 lg:grid-cols-4">
           <div class="bg-gray-900 px-4 py-6 sm:px-6 lg:px-8">
             <p class="text-sm font-medium leading-6 text-gray-400">Score</p>
             <p class="mt-2 flex items-baseline gap-x-2">
@@ -58,8 +58,8 @@ defmodule GeotrainerWeb.HomeLive do
       </div>
     </div>
 
-    <div class="flex">
-      <div class="bg-white px-4 py-5 sm:px-6 w-1/2">
+    <div class="md:flex">
+      <div class="bg-white px-4 py-5 sm:px-6 md:w-1/2">
         <h2 class="text-lg font-semibold leading-6 text-gray-900">Clue: <%= @type %></h2>
         <ul class="">
           <%= for clue <- @clues do %>
@@ -82,7 +82,7 @@ defmodule GeotrainerWeb.HomeLive do
         </ul>
       </div>
 
-      <div class="mt-8 w-1/2">
+      <div class="mt-8 md:w-1/2">
         <h2 class="text-lg font-semibold leading-6 text-gray-900">Guess the Country</h2>
         <ul class="mt-4 grid grid-cols-1 gap-5 sm:gap-3 sm:grid-cols-2">
           <%= if not @answer_show do %>
