@@ -1,20 +1,20 @@
 <div class="">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <img class="max-h-12 w-full object-contain" src={"/images/icon/#{@type}.webp"} alt="Reform" width="158" height="48">
-    <div class="text-center text-gray-700 text-3xl font-bold mb-8"><%= @type |> String.capitalize %></div>
+    <div class="text-center text-gray-700 text-3xl font-bold mb-8"><%= @type |> Strin.replace("_", " ") |> String.capitalize %></div>
     <div class="text-center text-gray-700 font-bold mb-8">Total Clues in this category: <%= @total_clues %></div>
     <div class="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
       <a href={"/train/#{@type}/world"}>
         <div class="bg-black p-8 sm:p-10">
           <img class="max-h-12 w-full object-contain" src="/images/icon/world.webp" alt="Reform" width="158" height="48">
-          <div class="text-center text-white max-h-12 w-full object-contain text-3xl">World</div>
+          <div class="text-center text-white max-h-12 w-full object-contain md:text-3xl sm:text-2xl text-xl">World</div>
         </div>
       </a>
       <%= for region <- @regions do %>
       <a href={"/train/#{@type}/#{region["name"]}"}>
         <div class="bg-black p-8 sm:p-10">
           <img class="max-h-12 w-full object-contain" src={"/images/icon/#{region["icon"]}.webp"} alt="Reform" width="158" height="48">
-          <div class="text-center text-white max-h-12 w-full object-contain text-3xl"><%= region["name"] %></div>
+          <div class="text-center text-white max-h-12 w-full object-contain md:text-3xl sm:text-2xl text-xl"><%= region["name"] %></div>
         </div>
       </a>
       <% end %>

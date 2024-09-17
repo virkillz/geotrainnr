@@ -11,7 +11,7 @@ defmodule GeotrainerWeb.HomeLive do
           <h1 class="text-2xl font-semibold leading-6">
             Training
             <a class="text-indigo-700 text-underscore" href="/">
-              <%= @type |> String.capitalize() %>
+              <%= @type |> String.replace("_", " ") |> String.capitalize() %>
             </a>
             of the
             <a class="text-indigo-700 text-underscore" href={"/train/#{@type |> String.downcase}"}>
@@ -60,7 +60,9 @@ defmodule GeotrainerWeb.HomeLive do
 
     <div class="md:flex">
       <div class="mt-8 md:w-1/2">
-        <h2 class="text-lg font-semibold leading-6 text-gray-900">Clue: <%= @type %></h2>
+        <h2 class="text-lg font-semibold leading-6 text-gray-900">
+          Clue: <%= @type |> String.replace("_", " ") |> String.capitalize() %>
+        </h2>
         <ul class="mt-4 mr-4">
           <%= for clue <- @clues do %>
             <li class="col-span-1 flex">
