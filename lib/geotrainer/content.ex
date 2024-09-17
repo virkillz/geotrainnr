@@ -209,8 +209,12 @@ defmodule Geotrainer.Content do
       end)
       |> Enum.with_index()
       |> Enum.map(fn {clue, id} ->
-        answer = clue.answers |> List.first()
+        answer = clue.answers |> Enum.random()
         level = id |> div(5)
+
+        all_acceptable_answers =
+          clue.answers
+          |> Enum.map(fn x -> %{id: x.id, country: x.country} end)
 
         %{
           id: id,
@@ -229,7 +233,8 @@ defmodule Geotrainer.Content do
           answer: %{
             id: answer.id,
             country: answer.country
-          }
+          },
+          all_acceptable_answers: all_acceptable_answers
         }
       end)
     end
@@ -248,8 +253,12 @@ defmodule Geotrainer.Content do
     |> Enum.filter(fn x -> x.answers != [] end)
     |> Enum.with_index()
     |> Enum.map(fn {clue, id} ->
-      answer = clue.answers |> List.first()
+      answer = clue.answers |> Enum.random()
       level = id |> div(5)
+
+      all_acceptable_answers =
+        clue.answers
+        |> Enum.map(fn x -> %{id: x.id, country: x.country} end)
 
       %{
         id: id,
@@ -268,7 +277,8 @@ defmodule Geotrainer.Content do
         answer: %{
           id: answer.id,
           country: answer.country
-        }
+        },
+        all_acceptable_answers: all_acceptable_answers
       }
     end)
   end

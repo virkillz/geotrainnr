@@ -150,8 +150,17 @@ defmodule GeotrainerWeb.HomeLive do
 
           <%= if @answer_show do %>
             <div class="mt-8">
-              Correct Answer is:
+              <div>Correct Answer is:</div>
               <div class="font-semibold"><%= @answer.country %></div>
+
+              <%= if Enum.count(@card.all_acceptable_answers) > 1 do %>
+                <div class="mt-2">Acceptable Answers:</div>
+                [
+                <%= for answer <- @card.all_acceptable_answers do %>
+                  <span class="text-gray-500"><%= answer.country %></span>
+                <% end %>
+                ]
+              <% end %>
             </div>
 
             <%= if not is_nil(@explanation) do %>
@@ -216,6 +225,7 @@ defmodule GeotrainerWeb.HomeLive do
       |> assign(:answer_show, false)
       |> assign(:next_show, false)
       |> assign(:pack, pack)
+      |> assign(:card, card)
 
     {:ok, new_socket}
   end
@@ -223,9 +233,10 @@ defmodule GeotrainerWeb.HomeLive do
   def handle_event("answer", unsigned_params, socket) do
     answer_id = unsigned_params["id"]
 
-    answer = socket.assigns.answer
+    all_answers =
+      socket.assigns.card.all_acceptable_answers |> Enum.map(fn x -> inspect(x.id) end)
 
-    is_correct = "#{answer.id}" == answer_id
+    is_correct = answer_id in all_answers
 
     card_id = socket.assigns.card_id
 
@@ -297,6 +308,7 @@ defmodule GeotrainerWeb.HomeLive do
       |> assign(:answer_show, false)
       |> assign(:next_show, false)
       |> assign(:pack, pack)
+      |> assign(:card, card)
 
     {:noreply, new_socket}
   end
