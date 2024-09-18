@@ -10,7 +10,7 @@ defmodule Geotrainer.Content.Clue do
     "camera_generation",
     "floral",
     "sign",
-    "stop sign",
+    "stop_sign",
     "google_car",
     "guardrail",
     "building",
@@ -18,11 +18,11 @@ defmodule Geotrainer.Content.Clue do
     "road_number",
     "pole",
     "language",
-    "driving side",
+    "driving_side",
     "domain",
-    "licence plate",
+    "licence_plate",
     "region",
-    "walking sign",
+    "walking_sign",
     "chevron",
     "scenery",
     "camera",
@@ -37,6 +37,7 @@ defmodule Geotrainer.Content.Clue do
     field :image, :string
     field :type, :string
     field :explanation, :string
+    field :location, :string
     field :is_spesific, :boolean, default: true
 
     timestamps(type: :utc_datetime)
@@ -54,7 +55,7 @@ defmodule Geotrainer.Content.Clue do
   @doc false
   def changeset(clue, attrs) do
     clue
-    |> cast(attrs, [:type, :image, :description, :format, :explanation, :is_spesific])
+    |> cast(attrs, [:type, :image, :description, :location, :format, :explanation, :is_spesific])
     |> validate_required([:type, :format])
   end
 end

@@ -8,7 +8,7 @@ defmodule GeotrainerWeb.AnswerController do
     acceptable_answers = Content.list_acceptable_answers()
 
     answers =
-      Content.list_answers()
+      Content.list_country()
       |> Enum.sort_by(fn x -> x.country end)
       |> Enum.map(fn answer ->
         count =

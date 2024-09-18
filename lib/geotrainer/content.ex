@@ -21,13 +21,18 @@ defmodule Geotrainer.Content do
     Repo.all(Answer)
   end
 
-  def list_answers_preload_clues do
-    query = from(a in Answer, preload: [:clues])
+  def list_country() do
+    query = from(a in Answer, where: a.is_region == false)
+    Repo.all(query)
+  end
+
+  def list_country_preload_clues do
+    query = from(a in Answer, where: a.is_region == false, preload: [:clues])
     Repo.all(query)
   end
 
   def list_answer_preload_simplify() do
-    list_answers_preload_clues()
+    list_country_preload_clues()
     |> Enum.map(fn a ->
       %{
         id: a.id,
