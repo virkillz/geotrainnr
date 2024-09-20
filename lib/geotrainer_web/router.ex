@@ -73,7 +73,9 @@ defmodule GeotrainerWeb.Router do
 
     get "/answers/:id/type/:type", AnswerController, :show_filter_type
 
-    get "/countries", AnswerController, :index
+    get "/countries", AnswerController, :country_index
+    get "/countries/:id/add_region", AnswerController, :add_region
+    post "/countries/:id/add_region", AnswerController, :post_region
     resources "/answers", AnswerController
     resources "/clues", ClueController
     get "/clue_category", ClueController, :category_index

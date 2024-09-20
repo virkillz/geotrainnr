@@ -66,13 +66,13 @@ defmodule GeotrainerWeb.HomeLive do
         <ul class="mt-4 mr-4">
           <%= for clue <- @clues do %>
             <li class="col-span-1 flex">
-              <div class="flex-1 flex items-center justify-center bg-white truncate">
-                <div clasx="flex-1 items-center justify-center px-4 py-2 text-sm leading-5 truncate">
+              <div class="flex-auto flex items-center justify-center bg-white min-w-20">
+                <div clasx="flex-auto items-center justify-center px-4 py-2 text-sm leading-5 min-w-20">
                   <%= if clue.format == "image" do %>
                     <img
                       src={"/images/"<> clue.image}
                       alt="Clue image"
-                      class="border border-gray-400"
+                      class="border border-gray-400 w-full"
                     />
                   <% end %>
 
@@ -187,13 +187,20 @@ defmodule GeotrainerWeb.HomeLive do
 
   def mount(%{"region" => region, "mode" => type}, _session, socket) do
     game_data =
-      if region == "world" do
-        Content.list_clues_by_type_shuffled(type)
-      else
-        Content.list_game_data_by_region(region, type)
+      cond do
+        region == "world" ->
+          Content.list_clues_by_type_shuffled(type)
+
+        type == "regionguess" ->
+          Content.list_game_data_by_country(region)
+
+        true ->
+          Content.list_game_data_by_region(region, type)
       end
 
     level = 1
+
+    IO.inspect(game_data)
 
     {card, pack} = draw_card([], game_data, level)
 
@@ -284,7 +291,7 @@ defmodule GeotrainerWeb.HomeLive do
         draw_card(socket.assigns.pack, game_data, level)
       end
 
-    clue = card.clue
+    clue = card.clue |> IO.inspect()
     answer = card.answer
 
     remaining_options =

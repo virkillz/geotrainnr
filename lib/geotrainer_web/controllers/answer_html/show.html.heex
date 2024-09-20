@@ -1,20 +1,57 @@
-<.back navigate={~p"/answers"}>Back to answers</.back>
 
+<%= if is_nil(@parent_country) do %>
+<.back navigate={~p"/answers"}>Back to Country List</.back>
+<% else %>
+<.back navigate={~p"/answers/#{@parent_country.id}"}>Back to Parent Country</.back>
+<% end %>
 
+<div class="mb-2">
+  <.header>
+    <div class="text-3xl font-bold"><%= @answer.country %></div>
+  </.header>
+</div>
 
+<hr>
+
+<div class="my-4">
 <.header>
-  <div class="text-3xl font-bold"><%= @answer.country %></div>
+  <div class="text-xl font-bold">Sub Region</div>
+  <:actions>
+    <.link href={~p"/countries/#{@answer.id}/add_region"}>
+      <.button>Add Region</.button>
+    </.link>
+  </:actions>
+</.header>
+</div>
+
+<div class="grid grid-cols-5 gap-2 mt-5">
+<%= for region <- @subregions do %>
+  <a href={"/answers/#{region.id}"}>
+    <div class="px-4 py-2 border hover:bg-orange-200">
+      <div class="text-lg font-semibold"><%= region.city %></div>
+    </div>
+  </a>
+<% end %>
+</div>
+
+
+<hr class="my-4">
+
+<div class="my-4">
+<.header>
+  <div class="text-xl font-bold">Clues</div>
   <:actions>
     <.link href={~p"/clues/new/#{@answer.id}"}>
       <.button>Add Clue</.button>
     </.link>
   </:actions>
 </.header>
+</div>
 
 
-<h2 class="text-md font-semibold mt-10"> Filter based on Type</h2>
+<h2 class="text-md font-semibold mt-10"> Filter based on Clue Type</h2>
 
-<div class="grid grid-cols-4 gap-4 mt-5">
+<div class="grid grid-cols-5 gap-2 mt-5">
 
 <a href={"/answers/#{@answer.id}"}>
   <div class="border p-2 mx-4">
@@ -39,7 +76,7 @@
 
 <div class="my-16"></div>
 
-<.table id="clues" rows={@answer.clues} row_click={&JS.navigate(~p"/clues/#{&1}")}>
+<.table id="clues" rows={@answer.clues |> Enum.sort_by(fn x -> x.type end)} row_click={&JS.navigate(~p"/clues/#{&1}")}>
   <:col :let={clue} label="Type"><%= clue.type |> String.capitalize() %></:col>
   <:col :let={clue} label="Clue">
 

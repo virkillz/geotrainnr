@@ -4,11 +4,67 @@ defmodule GeotrainerWeb.AnswerController do
   alias Geotrainer.Content
   alias Geotrainer.Content.Answer
 
-  def index(conn, _params) do
+  def add_region(conn, %{"id" => id}) do
+    answer = Content.get_answer!(id)
+    changeset = Content.change_answer(%Answer{})
+    render(conn, :add_region, answer: answer, changeset: changeset)
+  end
+
+  def post_region(conn, %{"id" => id, "answer" => answer_params}) do
+    country = Content.get_answer!(id)
+    IO.inspect(answer_params)
+
+    map_url =
+      if upload = answer_params["map_image"] do
+        name = Nanoid.generate()
+        extension = Path.extname(upload.filename)
+        File.cp(upload.path, "priv/static/images/#{name}#{extension}")
+        "#{name}#{extension}"
+      else
+        ""
+      end
+
+    answer_params =
+      answer_params
+      |> Map.put("country", country.country <> " - " <> answer_params["city"])
+      |> Map.put("is_region", true)
+      |> Map.put("map_image", map_url)
+
+    case Content.create_answer(answer_params) do
+      {:ok, _answer} ->
+        conn
+        |> put_flash(:info, "Region added successfully.")
+        |> redirect(to: ~p"/answers/#{country}")
+
+      {:error, %Ecto.Changeset{} = changeset} ->
+        IO.inspect(changeset)
+        render(conn, :add_region, answer: country, changeset: changeset)
+    end
+  end
+
+  def country_index(conn, _params) do
     acceptable_answers = Content.list_acceptable_answers()
 
     answers =
       Content.list_country()
+      |> Enum.sort_by(fn x -> x.country end)
+      |> Enum.map(fn answer ->
+        count =
+          Enum.count(acceptable_answers, fn acceptable_answer ->
+            answer.id == acceptable_answer.answer_id
+          end)
+
+        Map.put(answer, :clue_count, count)
+      end)
+
+    render(conn, :index, answers: answers)
+  end
+
+  def index(conn, _params) do
+    acceptable_answers = Content.list_acceptable_answers()
+
+    answers =
+      Content.list_answers()
       |> Enum.sort_by(fn x -> x.country end)
       |> Enum.map(fn answer ->
         count =
@@ -42,7 +98,22 @@ defmodule GeotrainerWeb.AnswerController do
   def show(conn, %{"id" => id}) do
     answer = Content.get_answer_preload_clues!(id)
     clue_types = answer.clues |> Enum.map(fn x -> x.type end) |> Enum.uniq()
-    render(conn, :show, answer: answer, clue_types: clue_types)
+    subregions = Content.list_subregion(answer.country)
+
+    parent_country =
+      if String.contains?(answer.country, " - ") do
+        parent_country = String.split(answer.country, " - ") |> Enum.at(0)
+        Content.get_answer_from_country(parent_country)
+      else
+        nil
+      end
+
+    render(conn, :show,
+      answer: answer,
+      clue_types: clue_types,
+      subregions: subregions,
+      parent_country: parent_country
+    )
   end
 
   def show_filter_type(conn, %{"id" => id, "type" => type}) do

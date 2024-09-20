@@ -26,6 +26,19 @@ defmodule Geotrainer.Content do
     Repo.all(query)
   end
 
+  def list_subregion(country_name) do
+    term = country_name <> " - "
+
+    query =
+      from(a in Answer,
+        where: a.is_region == true,
+        where: like(a.country, ^"%#{String.replace(term, "%", "\\%")}%"),
+        preload: [:clues]
+      )
+
+    Repo.all(query)
+  end
+
   def list_country_preload_clues do
     query = from(a in Answer, where: a.is_region == false, preload: [:clues])
     Repo.all(query)
@@ -186,6 +199,66 @@ defmodule Geotrainer.Content do
   def list_clues_by_type(type) do
     query = from(c in Clue, where: c.type == ^type, preload: [:answers])
     Repo.all(query)
+  end
+
+  def list_game_data_by_country(country_name) do
+    list_subregion = list_subregion(country_name)
+
+    list_clues =
+      list_subregion
+      |> Enum.map(fn x ->
+        Enum.map(x.clues, fn y ->
+          y |> Map.put(:answers, [Map.put(x, :clues, [])])
+        end)
+      end)
+      |> List.flatten()
+
+    list_clues
+    |> Enum.group_by(fn x -> x.id end)
+    |> Enum.map(fn {clue_id, clues} ->
+      answers =
+        clues
+        |> Enum.map(fn clue ->
+          clue.answers |> List.first()
+        end)
+
+      list_clues
+      |> Enum.filter(fn x -> x.id == clue_id end)
+      |> List.first()
+      |> Map.put(:answers, answers)
+    end)
+    |> Enum.shuffle()
+    |> Enum.filter(fn x -> x.answers != [] end)
+    |> Enum.with_index()
+    |> Enum.map(fn {clue, id} ->
+      answer = clue.answers |> Enum.random()
+      level = id |> div(5)
+
+      all_acceptable_answers =
+        clue.answers
+        |> Enum.map(fn x -> %{id: x.id, country: x.country} end)
+
+      %{
+        id: id,
+        level: level + 1,
+        occurence: 0,
+        correct: 0,
+        accuracy: 0.0,
+        clue: %{
+          id: clue.id,
+          type: clue.type,
+          format: clue.format,
+          image: clue.image,
+          description: clue.description,
+          explanation: clue.explanation
+        },
+        answer: %{
+          id: answer.id,
+          country: answer.country
+        },
+        all_acceptable_answers: all_acceptable_answers
+      }
+    end)
   end
 
   def list_game_data_by_region(region, type) do

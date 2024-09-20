@@ -1,0 +1,8 @@
+<.back navigate={~p"/answers/#{@answer.id}"}>Back to answers</.back>
+
+<.header>
+  New Region of <%= @answer.country %>
+  <:subtitle>Use this form to manage answer records in your database.</:subtitle>
+</.header>
+
+<.region_form changeset={@changeset} action={~p"/countries/#{@answer.id}/add_region"} />
